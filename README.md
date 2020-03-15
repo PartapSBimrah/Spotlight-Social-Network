@@ -10,6 +10,8 @@ The database schema and the server structure, folder, system structure are not i
 
 PS: if(iAmSearchingAJob) System.out.println("Send me a mail if you have Work for me esaph.re@gmail.com);
 
+Playstore: https://play.google.com/store/apps/details?id=esaph.spotlight&hl=de
+<br><br>(The app won't work since I run out of money.)
 
 Server Projects:
 
