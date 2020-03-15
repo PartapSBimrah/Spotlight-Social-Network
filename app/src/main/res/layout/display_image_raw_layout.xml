@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="1dp"
+    android:id="@+id/display_image_raw_layout_ID">
+
+    <esaph.spotlight.navigation.globalActions.EsaphImageViewAscpectRatio
+        android:stateListAnimator="@animator/bubble_button_animation"
+        android:scaleType="centerCrop"
+        android:id="@+id/gridViewPrivateMomentMainBildMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ProgressBar
+        android:layout_marginRight="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:id="@+id/progressBarSmallViewLoading"
+        android:progressDrawable="@drawable/esaph_progressbar_light"
+        android:indeterminate="false"
+        android:background="@drawable/esaph_progressbar_light_background"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+    <ImageView
+        android:layout_margin="3dp"
+        android:visibility="gone"
+        android:id="@+id/gridViewPrivateMomentVideoOrBildImageView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="20dp"
+        android:layout_height="20dp" />
+
+</RelativeLayout>

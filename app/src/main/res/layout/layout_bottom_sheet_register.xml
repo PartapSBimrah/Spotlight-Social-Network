@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageViewBottomSheetDown"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+        app:srcCompat="@drawable/ic_down_arrow"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:id="@+id/textViewBottomSheetRegisterInfoText"
+        android:layout_below="@+id/imageViewBottomSheetDown"
+        android:textColor="@color/colorBlack"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:text="Du brauchst ein SpotLight konto, um diese Funktion nutzen zu können."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textViewBottomSheetRegisterRegister"
+        android:layout_margin="20dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:padding="6dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textViewBottomSheetRegisterInfoText"
+        android:background="@drawable/background_register_button"
+        android:textColor="@color/colorWhite"
+        android:text="@string/txt_login_Registrieren"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"
+        android:background="#F7F7F7"
+        android:layout_below="@+id/textViewBottomSheetRegisterRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textViewYouHaveAnAccount"
+            android:textSize="15sp"
+            android:textColor="@color/colorBlack"
+            android:text="Du hast bereits ein Konto?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textViewBottomSheetRegisterLogin"
+            android:textStyle="bold"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/textViewYouHaveAnAccount"
+            android:layout_toEndOf="@+id/textViewYouHaveAnAccount"
+            android:text="@string/txt_login_Anmelden"
+            android:textSize="15sp"
+            android:textColor="#42A5F5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

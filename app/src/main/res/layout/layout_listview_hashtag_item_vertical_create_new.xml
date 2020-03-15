@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/sentListUserItemRootView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@drawable/rounded_hashtag_grey"
+    android:layout_marginTop="1dp"
+    android:layout_marginBottom="1dp"
+    android:padding="1dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:stateListAnimator="@animator/bubble_button_animation">
+
+    <LinearLayout
+        android:padding="6dp"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:maxWidth="200dp"
+            android:text="#Radikal"
+            android:textSize="15sp"
+            android:textColor="@color/colorBlack"
+            android:id="@+id/textViewHashtagName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="@string/txt_tap_to_create"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:maxWidth="200dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryChat"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

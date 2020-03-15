@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="esaph.spotlight.navigation.SwipeNavigation">
+
+    <fragment
+        android:tag="TagNavigationCamera"
+        android:name="esaph.spotlight.navigation.kamera.NavigationCamera"
+        android:fitsSystemWindows="false"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <FrameLayout
+        android:visibility="invisible"
+        android:id="@+id/cameraEditorImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:visibility="invisible"
+        android:id="@+id/cameraEditorVideo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <esaph.spotlight.navigation.EsaphLockAbleViewPager
+        android:fitsSystemWindows="false"
+        android:clipToPadding="false"
+        android:id="@+id/mainNavigationVerticalSwipeViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </esaph.spotlight.navigation.EsaphLockAbleViewPager>
+
+    <FrameLayout
+        android:id="@+id/frameLayoutBottomOptionsCameraTools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </FrameLayout>
+
+    <androidx.cardview.widget.CardView
+        android:visibility="gone"
+        android:id="@+id/cardViewNoPermissions"
+        android:layout_centerInParent="true"
+        app:cardElevation="3dp"
+        app:cardCornerRadius="6dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:padding="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/testofiew"
+                android:textAlignment="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp"
+                android:text="@string/txt_berechtigungenFreigebenCameraSperre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="30dp"
+                android:textAlignment="center"
+                android:id="@+id/textViewRequestPermissionAgain"
+                android:padding="16dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/testofiew"
+                android:text="@string/txt_requestPermissions"
+                android:background="@drawable/background_blue_rounded"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <FrameLayout
+        android:fitsSystemWindows="true"
+        android:clipToPadding="true"
+        android:id="@+id/esaphMainFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayoutPrivateChat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+    <TextView
+        android:fitsSystemWindows="false"
+        android:visibility="gone"
+        android:textSize="15sp"
+        android:textColor="@color/colorWhite"
+        android:gravity="center"
+        android:text="@string/txt_no_internet"
+        android:background="@drawable/background_no_internet"
+        android:id="@+id/viewMainNoInternet"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+</RelativeLayout>

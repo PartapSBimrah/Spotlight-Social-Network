@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:stateListAnimator="@animator/bubble_button_animation"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    android:padding="6dp">
+
+    <esaph.spotlight.Esaph.EsaphCircleImageView.EsaphCircleImageView
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imageViewProfilbildPreview"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_toRightOf="@+id/imageViewProfilbildPreview"
+        android:layout_toEndOf="@+id/imageViewProfilbildPreview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_marginLeft="6dp"
+            android:layout_marginStart="6dp"
+            android:textSize="16sp"
+            android:textColor="@color/colorBlack"
+            android:id="@+id/textViewSearchUserUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_marginLeft="6dp"
+            android:layout_marginStart="6dp"
+            android:textSize="12sp"
+            android:textColor="@color/colorSearchingFriends"
+            android:id="@+id/textViewSearchUserVorname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <TextView
+        android:stateListAnimator="@animator/bubble_button_animation"
+        android:layout_centerVertical="true"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:padding="6dp"
+        android:textColor="@color/colorSearchingFriends"
+        android:background="@drawable/background_add"
+        android:id="@+id/textViewSearchUserWatcher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/textViewSearchUserProvince"
+        android:layout_toStartOf="@+id/textViewSearchUserProvince" />
+
+
+    <ImageView
+        android:stateListAnimator="@animator/bubble_button_animation"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"
+        android:padding="4dp"
+        android:tint="@color/colorBlack"
+        app:srcCompat="@drawable/ic_remove_close"
+        android:id="@+id/imageViewSearchUserCancelAnfrage"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_toLeftOf="@+id/textViewSearchUserWatcher"
+        android:layout_toStartOf="@+id/textViewSearchUserWatcher" />
+
+
+    <TextView
+        android:stateListAnimator="@animator/bubble_button_animation"
+        android:layout_centerVertical="true"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:layout_margin="6dp"
+        android:textSize="12sp"
+        android:padding="6dp"
+        android:background="@drawable/background_add"
+        android:textColor="@color/colorSearchingFriends"
+        android:id="@+id/textViewSearchUserProvince"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

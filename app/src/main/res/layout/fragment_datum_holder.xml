@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".navigation.spotlight.Moments.AktuellePrivateMomentView.DatumHolderFragment">
+
+    <TextView
+        android:background="@color/colorWhite"
+        android:textSize="35sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="28.05.2018"
+        android:textColor="@color/colorBlack"
+        android:id="@+id/textViewDisplayDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

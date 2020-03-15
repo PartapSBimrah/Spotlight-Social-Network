@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:fitsSystemWindows="false"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorBlack"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:fitsSystemWindows="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.viewpager.widget.ViewPager
+            android:clickable="false"
+            android:fitsSystemWindows="false"
+            android:id="@+id/viewPagerDayliPictures"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </androidx.viewpager.widget.ViewPager>
+
+        <LinearLayout
+            android:background="@color/colorTransparent"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="6dp"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/colorWhite"
+                android:shadowColor="@color/text_shadow"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:id="@+id/textViewLifeCloud"
+                android:text="@string/txt_lifecloud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="vor 20 min"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:textColor="@color/colorWhite"
+                android:shadowColor="@color/text_shadow"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                app:srcCompat="@drawable/ic_failed_sent"
+                android:id="@+id/imageViewFailedUpload"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="start"
+                android:textAlignment="textStart"
+                android:shadowColor="@color/text_shadow"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:includeFontPadding="false"
+                android:layout_marginBottom="12sp"
+                android:fitsSystemWindows="true"
+                android:textSize="14sp"
+                android:textColor="@color/colorWhite"
+                android:id="@+id/textViewHashtagsOverImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.borjabravo.readmoretextview.ReadMoreTextView
+                app:trimLength="50"
+                app:trimMode="trimModeLength"
+                app:colorClickableText="#ff938e"
+                android:gravity="start"
+                android:textAlignment="textStart"
+                android:shadowColor="@color/text_shadow"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:layout_marginBottom="12sp"
+                android:fitsSystemWindows="true"
+                android:textSize="13sp"
+                android:textColor="#f1f1f1"
+                android:id="@+id/textViewBeschreibung"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <TextView
+            android:stateListAnimator="@animator/bubble_button_animation"
+            android:layout_margin="16dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:padding="6dp"
+            android:text="@string/txt_tryAgain"
+            android:background="@drawable/background_rounded_white_bigview_main"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/textViewTryAgain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:clickable="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <include layout="@layout/layout_lifecloud_big_view_options" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

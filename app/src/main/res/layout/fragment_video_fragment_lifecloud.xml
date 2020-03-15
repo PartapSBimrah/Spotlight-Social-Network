@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorBlack">
+
+    <esaph.spotlight.navigation.globalActions.EsaphTextureVideoView
+        android:id="@+id/imageViewMainVideoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/textViewPrivateMomentInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/privateMomentViewTryAgainButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="6dp"
+        android:text="@string/txt_download_failed"
+        android:textColor="@color/colorWhite"
+        android:textSize="15sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:stateListAnimator="@animator/bubble_button_animation"
+        android:focusable="false"
+        android:clickable="false"
+        android:id="@+id/privateMomentViewTryAgainButton"
+        android:visibility="invisible"
+        android:padding="6dp"
+        android:textSize="15sp"
+        android:background="@drawable/background_changing_colours"
+        android:textColor="@color/colorWhite"
+        android:layout_centerInParent="true"
+        android:text="@string/txt_tryAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ProgressBar
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_margin="6dp"
+        android:id="@+id/progressBarBigViewDownloading"
+        android:indeterminate="false"
+        android:background="@drawable/esaph_progressbar_big_view_downloading_background"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/esaph_progressbar_big_view_downloading"
+        android:layout_width="200dp"
+        android:layout_height="200dp" />
+
+</RelativeLayout>

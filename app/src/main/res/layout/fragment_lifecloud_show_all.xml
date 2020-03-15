@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/colorWhite"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".navigation.spotlight.Moments.SortingFragment.SpotLightShowAll.SpotLightShowAllMoments">
+
+    <esaph.spotlight.Esaph.EsaphLifeCloudBackUpView.EsaphLifeCloudBackUpView
+        android:id="@+id/headerLifeCloudBackUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:background="@color/colorWhite"
+        android:clipToPadding="false"
+        android:fitsSystemWindows="true"
+        android:layout_below="@+id/headerLifeCloudBackUp"
+        android:id="@+id/momentsMainRecylerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animationCache="false"
+        android:scrollingCache="false"
+        android:smoothScrollbar="true">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <ImageView
+        android:clipToPadding="false"
+        android:fitsSystemWindows="true"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:tint="@color/colorBlack"
+        app:srcCompat="@drawable/ic_camera"
+        android:id="@+id/imageViewMomentsNoData"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
+
+    <TextView
+        android:clipToPadding="false"
+        android:fitsSystemWindows="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/imageViewMomentsNoData"
+        android:visibility="gone"
+        android:padding="6dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="15sp"
+        android:text="@string/txt_no_saved_pics"
+        android:id="@+id/textViewMomentsNoData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <esaph.spotlight.Esaph.EsaphDragable.EsaphDragableViewFragment
+        android:id="@+id/frameLayoutBigViewLifeCloud"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </esaph.spotlight.Esaph.EsaphDragable.EsaphDragableViewFragment>
+
+
+</RelativeLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@color/colorTransparent" >
+
+
+    <RelativeLayout
+        android:layout_marginBottom="6dp"
+        android:id="@+id/awdawd"
+        android:background="@drawable/background_blue_rounded"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:padding="15dp"
+            android:tint="@color/colorWhite"
+            app:srcCompat="@drawable/ic_sent_message"
+            android:layout_width="50dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textViewDialogReceivers" />
+
+        <ImageView
+            android:stateListAnimator="@animator/bubble_button_animation"
+            android:id="@+id/imageViewCloseDialog"
+            android:padding="13sp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            app:srcCompat="@drawable/ic_remove_close"
+            android:layout_width="50dp"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_margin="3dp"
+        android:layout_below="@+id/awdawd"
+        android:id="@+id/holderLayout"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:visibility="gone"
+            android:scaleType="centerCrop"
+            app:riv_corner_radius="16dp"
+            android:id="@+id/imageViewDialogMainPreview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <SurfaceView
+            android:visibility="gone"
+            android:id="@+id/textureViewDialogMainVideo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="6dp"
+        android:layout_below="@+id/holderLayout"
+        android:background="@drawable/background_rounded_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp">
+
+
+        <ImageView
+            android:stateListAnimator="@animator/bubble_button_animation"
+            android:padding="6dp"
+            android:tint="@color/colorGrey"
+            android:layout_margin="6dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            app:srcCompat="@drawable/ic_delete"
+            android:id="@+id/imageViewDialogDelete"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+
+        <ImageView
+            android:stateListAnimator="@animator/bubble_button_animation"
+            android:padding="6dp"
+            android:id="@+id/imageViewDialogSavePic"
+            android:layout_margin="6dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/imageViewDialogDelete"
+            android:layout_toRightOf="@+id/imageViewDialogDelete"
+            android:tint="@color/colorGrey"
+            app:srcCompat="@drawable/ic_save_picture"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:stateListAnimator="@animator/bubble_button_animation"
+        android:id="@+id/textViewDialogTryAgain"
+        android:padding="6dp"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="6dp"
+        android:layout_below="@+id/holderLayout"
+        android:background="@drawable/background_rounded_dialog"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryChat"
+        android:text="@string/txt_tryAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp" />
+
+
+    <ProgressBar
+        android:id="@+id/progressBarDialogUploading"
+        android:visibility="gone"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_alignTop="@+id/textViewDialogTryAgain"
+        android:layout_alignBottom="@+id/textViewDialogTryAgain"
+        android:layout_toLeftOf="@+id/textViewDialogTryAgain"
+        android:layout_toStartOf="@+id/textViewDialogTryAgain"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+
+
+</RelativeLayout>

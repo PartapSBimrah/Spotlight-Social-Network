@@ -1,0 +1,118 @@
+<FrameLayout
+    android:clickable="true"
+    android:focusable="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:paddingRight="16dp"
+        android:paddingEnd="16dp"
+        android:paddingLeft="16dp"
+        android:paddingStart="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/topToolsMoments"
+            android:focusable="true"
+            android:clickable="true"
+            android:fitsSystemWindows="false"
+            android:clipToPadding="false"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/relativLayoutTopHolder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <esaph.spotlight.Esaph.EsaphGradientTextView.EsaphGradientTextView
+                    android:padding="17dp"
+                    app:esColorArray="@array/colorGradient_Moments"
+                    android:layout_centerVertical="true"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:id="@+id/textViewTitleLayoutTop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:stateListAnimator="@animator/bubble_button_animation"
+                    android:text="@string/txt_Moments"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_marginEnd="17dp"
+                    android:layout_marginRight="17dp"
+                    android:layout_centerVertical="true"
+                    android:tint="#000000"
+                    android:background="@drawable/background_chat_icons"
+                    app:srcCompat="@drawable/ic_search_edittext"
+                    android:id="@+id/imageViewMomentsFragmentStartSearching"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:padding="8dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            tools:listitem="@layout/layout_moments_user_item"
+            android:layout_below="@+id/topToolsMoments"
+            android:id="@+id/recylerViewMoments"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/linearLayoutNoSearchResults"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:tint="#DBDBDB"
+                app:srcCompat="@drawable/ic_search_chats"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#B9B9B9"
+                android:text="@string/txt_searchStatus_KeinErgebniss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+    <FrameLayout
+        android:id="@+id/frameLayoutMainMoments"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+</FrameLayout>

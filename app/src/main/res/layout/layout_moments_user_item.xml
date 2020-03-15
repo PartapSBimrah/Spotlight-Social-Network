@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_centerHorizontal="true"
+        app:riv_border_width="0dp"
+        app:riv_corner_radius="16dp"
+        android:scaleType="centerCrop"
+        android:id="@+id/roundedImageViewMomentsRecylerView"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
+
+    <TextView
+        android:layout_marginTop="3dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#4D4D4D"
+        android:textSize="18sp"
+        android:layout_below="@+id/roundedImageViewMomentsRecylerView"
+        android:text="Subrim"
+        android:id="@+id/textViewUsernameMomentsRecyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:textColor="#6B6B6B"
+        android:textSize="15sp"
+        android:layout_below="@+id/textViewUsernameMomentsRecyclerView"
+        android:text="548"
+        android:id="@+id/textViewMomentsCountRecyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

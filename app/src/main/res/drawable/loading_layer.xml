@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:drawable="@color/colorWhite"/>
+
+    <item
+        android:bottom="250dp"
+        android:top="250dp"
+        android:left="250dp"
+        android:right="250dp"
+        android:gravity="center">
+        <bitmap
+            android:gravity="center"
+            android:src="@mipmap/app_logo_raw_transparent" />
+    </item>
+
+</layer-list>

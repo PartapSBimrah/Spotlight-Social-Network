@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/esaphAudioRecordingLayout"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_centerInParent="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <esaph.spotlight.spots.SpotMaker.SpotMakerView.SpotMakerView
+        android:id="@+id/spotMakerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </esaph.spotlight.spots.SpotMaker.SpotMakerView.SpotMakerView>
+
+    <RelativeLayout
+        android:translationY="80dp"
+        android:id="@+id/relativLayoutBottomEditingTools"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <RelativeLayout
+            android:id="@+id/relShit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_margin="6dp"
+                    android:stateListAnimator="@animator/bubble_button_animation"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/ic_square_background_color"
+                    android:id="@+id/imageViewBackgroundColor"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:alpha="0.0"
+                android:visibility="gone"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:padding="8dp"
+                android:stateListAnimator="@animator/bubble_button_animation"
+                android:background="@drawable/background_rounded_camera_editor_sent"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:text="@string/txt_senden"
+                android:id="@+id/imageViewSent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+        <esaph.spotlight.Esaph.EsaphColorSlider.EsaphColorSlider
+            android:layout_below="@+id/relShit"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+            android:id="@+id/esaphColorSliderSliding"
+            android:layout_width="300dp"
+            android:layout_height="30dp" />
+
+    </RelativeLayout>
+
+
+    <esaph.spotlight.Esaph.EsaphAudioRecorder.EsaphAudioRecorderVisualizerView
+        android:stateListAnimator="@animator/bubble_button_animation"
+        android:background="@android:color/transparent"
+        app:numColumns="32"
+        app:renderColor="@color/colorWhite"
+        app:renderRange="both"
+        android:layout_centerInParent="true"
+        android:id="@+id/VisualizerRecordingAudioView"
+        android:layout_width="150dp"
+        android:layout_height="100dp" />
+
+    <ImageView
+        android:visibility="gone"
+        android:stateListAnimator="@animator/bubble_button_animation"
+        android:fitsSystemWindows="true"
+        android:clipToPadding="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerVertical="true"
+        android:padding="12dp"
+        android:background="@drawable/white_circle"
+        android:tint="@color/colorBlack"
+        app:srcCompat="@drawable/ic_undo"
+        android:layout_toStartOf="@+id/VisualizerRecordingAudioView"
+        android:layout_toLeftOf="@+id/VisualizerRecordingAudioView"
+        android:id="@+id/imageViewTryAgainRecordingAudio"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textAlignment="center"
+        android:stateListAnimator="@animator/bubble_button_animation"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorWhite"
+        android:text="@string/txt_tab_to_record"
+        android:layout_below="@+id/VisualizerRecordingAudioView"
+        android:id="@+id/textViewAudioInfoState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <ImageView
+        android:layout_margin="6dp"
+        android:padding="10dp"
+        app:srcCompat="@drawable/ic_close"
+        android:id="@+id/imageViewClose"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".navigation.spotlight.Chats.PrivateChat.ChatListViewPager.ChatListViewPagerFragments.ChatItemFragmentText">
+
+    <ImageView
+        android:scaleType="fitCenter"
+        android:id="@+id/imageViewChatMainPreview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ProgressBar
+        android:layout_marginRight="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:id="@+id/progressBarSmallViewLoading"
+        android:progressDrawable="@drawable/esaph_progressbar_light"
+        android:indeterminate="false"
+        android:background="@drawable/esaph_progressbar_light_background"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <include layout="@layout/layout_part_user_informations" />
+
+</RelativeLayout>

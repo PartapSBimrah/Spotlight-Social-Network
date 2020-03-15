@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="esaph.spotlight.navigation.spotlight.Chats.PrivateChat.PrivateChat">
+
+    <RelativeLayout
+        android:fitsSystemWindows="false"
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:stateListAnimator="@animator/bubble_button_animation"
+            android:fitsSystemWindows="false"
+            android:tint="@color/colorBlack"
+            app:srcCompat="@drawable/ic_backward_arrow"
+            android:padding="12dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/imageViewChatBack"
+            android:layout_width="50dp"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_toEndOf="@+id/imageViewChatBack"
+            android:layout_toRightOf="@+id/imageViewChatBack"
+            android:fitsSystemWindows="false"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <esaph.spotlight.Esaph.EsaphCircleImageView.EsaphCircleImageView
+                android:stateListAnimator="@animator/bubble_button_animation"
+                android:fitsSystemWindows="false"
+                android:clipToPadding="false"
+                android:layout_margin="3dp"
+                android:id="@+id/imageViewPrivateChatTodayStory"
+                android:layout_width="45dp"
+                android:layout_height="45dp" />
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:fitsSystemWindows="false"
+                    android:textSize="18sp"
+                    android:text="Subrim"
+                    android:textColor="@color/colorBlack"
+                    android:id="@+id/textViewTopName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textViewAtVorname"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorDarkerGrey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:stateListAnimator="@animator/bubble_button_animation"
+            android:fitsSystemWindows="false"
+            android:tint="@color/colorBlack"
+            android:padding="13dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            app:srcCompat="@drawable/ic_show_more_button_with_three_dots"
+            android:id="@+id/imageViewMenuChat"
+            android:layout_width="50dp"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+    <View
+        android:fitsSystemWindows="false"
+        android:layout_below="@+id/relativeLayout"
+        android:background="@drawable/shadow_line_top_to_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="2dp" />
+
+    <View
+        android:layout_above="@+id/relativLayoutChoosePloppType"
+        android:fitsSystemWindows="true"
+        android:clipToPadding="true"
+        android:id="@+id/viewShadowBottom"
+        android:background="@drawable/shadow_line_bottom_to_top"
+        android:layout_width="match_parent"
+        android:layout_height="2dp" />
+
+    <esaph.spotlight.Esaph.EsaphListView.EsaphListViewKeepPosition
+        android:dividerHeight="0dp"
+        android:divider="@android:color/transparent"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_above="@+id/viewShadowBottom"
+        android:id="@+id/listViewKeepPosition"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </esaph.spotlight.Esaph.EsaphListView.EsaphListViewKeepPosition>
+
+    <esaph.spotlight.spots.SpotMaker.SpotMakerView.Objects.SpotTextRenderView
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:id="@+id/spotTextRenderViewDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <esaph.spotlight.Esaph.EsaphColorSlider.EsaphColorSlider
+        android:visibility="gone"
+        android:layout_above="@+id/relativLayoutChoosePloppType"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:alpha="0"
+        android:id="@+id/esaphColorSliderSliding"
+        android:layout_width="300dp"
+        android:layout_height="40dp" />
+
+    <RelativeLayout
+        android:background="#FAFAFA"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/relativLayoutChoosePloppType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:background="#FAFAFA"
+            android:id="@+id/linearLayoutChoosePloppType"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:fitsSystemWindows="true"
+            android:clipToPadding="true"
+            android:padding="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <esaph.spotlight.Esaph.EsaphColorCircle.EsaphColorCircle
+                android:stateListAnimator="@animator/bubble_button_animation"
+                android:layout_marginEnd="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/private_chat_background_retangle_choosen"
+                android:id="@+id/viewChooseColorPalettePresets"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+            <View
+                android:layout_marginEnd="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginRight="10dp"
+                android:stateListAnimator="@animator/bubble_button_animation"
+                android:background="@drawable/private_chat_background_retangle_choosen"
+                android:id="@+id/viewChooseBackground"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+            <View
+                android:layout_marginEnd="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginRight="10dp"
+                android:stateListAnimator="@animator/bubble_button_animation"
+                android:background="@drawable/private_chat_background_retangle_choosen"
+                android:id="@+id/viewChooseTextColor"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <esaph.spotlight.navigation.spotlight.Chats.PrivateChat.EsaphColorableEdittext
+                    android:layout_toStartOf="@+id/imageViewSent"
+                    android:layout_toLeftOf="@+id/imageViewSent"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:textCursorDrawable="@null"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:hint="@string/txt_message"
+                    android:textColor="#161616"
+                    android:stateListAnimator="@animator/bubble_button_animation"
+                    android:fitsSystemWindows="true"
+                    android:clipToPadding="true"
+                    android:padding="6dp"
+                    android:id="@+id/editTextWriteText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+
+                <LinearLayout
+                    android:alpha="0"
+                    android:translationX="100dp"
+                    android:id="@+id/linearLayoutMoreOptions"
+                    android:layout_toLeftOf="@+id/imageViewSent"
+                    android:layout_toStartOf="@+id/imageViewSent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:clickable="false"
+                        android:scaleX="0.0"
+                        android:scaleY="0.0"
+                        android:tint="#161616"
+                        android:stateListAnimator="@animator/bubble_button_animation"
+                        android:fitsSystemWindows="true"
+                        android:clipToPadding="true"
+                        app:srcCompat="@drawable/ic_font"
+                        android:padding="6dp"
+                        android:id="@+id/imageViewTemplatePicker"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp" />
+
+                    <ImageView
+                        android:clickable="false"
+                        android:scaleX="0.0"
+                        android:scaleY="0.0"
+                        android:tint="#161616"
+                        android:stateListAnimator="@animator/bubble_button_animation"
+                        android:fitsSystemWindows="true"
+                        android:clipToPadding="true"
+                        app:srcCompat="@drawable/ic_spotlight_sticker"
+                        android:padding="8dp"
+                        android:id="@+id/imageViewSentSticker"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp" />
+
+                    <ImageView
+                        android:clickable="false"
+                        android:scaleX="0.0"
+                        android:scaleY="0.0"
+                        android:tint="#161616"
+                        android:stateListAnimator="@animator/bubble_button_animation"
+                        android:fitsSystemWindows="true"
+                        android:clipToPadding="true"
+                        app:srcCompat="@drawable/ic_choose_emojie"
+                        android:padding="8dp"
+                        android:id="@+id/imageViewSentEmojie"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp" />
+
+                    <ImageView
+                        android:clickable="false"
+                        android:scaleX="0.0"
+                        android:scaleY="0.0"
+                        android:tint="#161616"
+                        android:stateListAnimator="@animator/bubble_button_animation"
+                        android:fitsSystemWindows="true"
+                        android:clipToPadding="true"
+                        app:srcCompat="@drawable/ic_audio_wave_spech_white"
+                        android:padding="6dp"
+                        android:id="@+id/imageViewSentAudio"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp" />
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:tint="#161616"
+                    app:srcCompat="@drawable/ic_plus_open_chat"
+                    android:padding="10dp"
+                    android:id="@+id/imageViewSent"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:visibility="gone"
+            android:id="@+id/frameLayoutKeyBoardFragmentChat"
+            android:layout_below="@+id/linearLayoutChoosePloppType"
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+        </FrameLayout>
+
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:fitsSystemWindows="false"
+        android:clipToPadding="false"
+        android:id="@+id/esaphFragmentFrameLayoutChat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+</RelativeLayout>

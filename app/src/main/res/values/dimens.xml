@@ -1,0 +1,15 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="header_height">250dp</dimen>
+    <dimen name="header_logo_size">100dp</dimen>
+    <dimen name="goldenRatio1">1dp</dimen>
+    <dimen name="goldenRatio2">2dp</dimen>
+    <dimen name="goldenRatio3">3dp</dimen>
+    <dimen name="goldenRatio4">5dp</dimen>
+    <dimen name="goldenRatio5">8dp</dimen>
+    <dimen name="goldenRatio6">13dp</dimen>
+    <dimen name="goldenRatio7">21dp</dimen>
+    <dimen name="goldenRatio8">34dp</dimen>
+    <dimen name="goldenRatio9">66dp</dimen>
+</resources>

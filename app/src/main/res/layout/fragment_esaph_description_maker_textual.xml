@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:focusable="true">
+
+    <esaph.spotlight.spots.SpotMaker.SpotMakerView.SpotMakerView
+        android:id="@+id/spotMakerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </esaph.spotlight.spots.SpotMaker.SpotMakerView.SpotMakerView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_above="@+id/relativLayoutBottomEditingTools"
+        android:id="@+id/recylerViewEffektChoose"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <RelativeLayout
+        android:translationY="80dp"
+        android:id="@+id/relativLayoutBottomEditingTools"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <RelativeLayout
+            android:id="@+id/relShit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_margin="6dp"
+                    android:stateListAnimator="@animator/bubble_button_animation"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/ic_square_background_color"
+                    android:id="@+id/imageViewBackgroundColor"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+
+                <ImageView
+                    android:layout_margin="6dp"
+                    android:stateListAnimator="@animator/bubble_button_animation"
+                    app:srcCompat="@drawable/ic_font"
+                    android:id="@+id/imageViewTextStyle"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:alpha="0.5"
+                android:clickable="false"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:padding="8dp"
+                android:stateListAnimator="@animator/bubble_button_animation"
+                android:background="@drawable/background_rounded_camera_editor_sent"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:text="@string/txt_done"
+                android:id="@+id/textViewDone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <esaph.spotlight.Esaph.EsaphColorSlider.EsaphColorSlider
+            android:layout_below="@+id/relShit"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+            android:id="@+id/esaphColorSliderSliding"
+            android:layout_width="300dp"
+            android:layout_height="30dp" />
+
+        <esaph.spotlight.Esaph.EsaphBubbleSeekBar.BubbleSeekBar
+            android:layout_marginTop="16dp"
+            app:bsb_is_float_type="false"
+            app:bsb_bubble_text_color="@color/colorBlack"
+            app:bsb_bubble_color="@color/colorWhite"
+            app:bsb_show_progress_in_float="false"
+            app:bsb_min="6"
+            app:bsb_max="20"
+            app:bsb_progress="15"
+            android:id="@+id/seekbarTextSize"
+            android:layout_below="@+id/esaphColorSliderSliding"
+            android:layout_width="300dp"
+            android:layout_height="30dp" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayoutUnderOptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewClose"
+        android:layout_alignStart="@+id/imageViewClose"
+        android:layout_alignEnd="@+id/imageViewClose"
+        android:layout_alignRight="@+id/imageViewClose"
+        android:layout_alignLeft="@+id/imageViewClose"
+        android:layout_marginTop="6dp">
+    </FrameLayout>
+
+
+    <ImageView
+        android:layout_margin="6dp"
+        android:padding="10dp"
+        app:srcCompat="@drawable/ic_close"
+        android:id="@+id/imageViewClose"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:background="#fafafa"
+    android:paddingBottom="6dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:clipToPadding="false"
+        android:fitsSystemWindows="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/imageViewBack"
+        app:srcCompat="@drawable/ic_backward_arrow"
+        android:padding="10dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:clipToPadding="false"
+        android:fitsSystemWindows="true"
+        android:gravity="center_vertical"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_toRightOf="@+id/imageViewBack"
+        android:layout_toEndOf="@+id/imageViewBack"
+        android:id="@+id/textViewText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <esaph.spotlight.Esaph.EsaphCircleImageView.EsaphCircleImageView
+        android:clipToPadding="false"
+        android:fitsSystemWindows="true"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="3dp"
+        android:layout_below="@+id/textViewText"
+        android:id="@+id/imageViewEsaphRoundedSaveAll"
+        android:layout_centerInParent="true"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
+
+    <esaph.spotlight.Esaph.EsaphGradientTextView.EsaphGradientTextView
+        app:esColorArray="@array/colorGradient_Chats"
+        android:clipToPadding="false"
+        android:fitsSystemWindows="true"
+        android:layout_below="@+id/imageViewEsaphRoundedSaveAll"
+        android:padding="6dp"
+        android:textSize="17sp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:id="@+id/textViewColoredBehindHitBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:clipToPadding="false"
+        android:fitsSystemWindows="true"
+        android:textColor="@color/colorMomentsGreyText"
+        android:id="@+id/textViewSavedImageCount"
+        android:layout_below="@+id/imageViewEsaphRoundedSaveAll"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

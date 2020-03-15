@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_rounded_dialog">
+
+
+    <TextView
+        android:id="@+id/textViewInfoDeletings"
+        android:textSize="15sp"
+        android:layout_margin="6dp"
+        android:text="@string/txt_AccountDeleteReally"
+        android:textColor="@color/colorBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="@string/txt_AccountDelete"
+        android:layout_margin="6dp"
+        android:background="@drawable/background_rounded_delete_account"
+        android:id="@+id/textViewAccountDeleteOnClick"
+        android:layout_below="@+id/textViewInfoDeletings"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+
+</RelativeLayout>

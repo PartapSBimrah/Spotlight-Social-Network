@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_centerInParent="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:background="@drawable/background_rounded_dialog">
+
+
+    <RelativeLayout
+        android:layout_marginBottom="10dp"
+        android:id="@+id/awdawd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <esaph.spotlight.Esaph.EsaphCircleImageView.EsaphCircleImageView
+            android:layout_marginRight="6dp"
+            android:layout_marginEnd="6dp"
+            android:padding="6dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:id="@+id/imageViewDialogLastPicOrProfilbild"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorBlack"
+            android:textSize="25sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewDialogUsername"
+            android:layout_toRightOf="@+id/imageViewDialogLastPicOrProfilbild"
+            android:layout_toEndOf="@+id/imageViewDialogLastPicOrProfilbild" />
+
+        <TextView
+            android:layout_marginEnd="6dp"
+            android:layout_marginRight="6dp"
+            android:id="@+id/textViewDialogRealName"
+            android:textSize="13sp"
+            android:textColor="@color/colorBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:stateListAnimator="@animator/bubble_button_animation"
+        android:layout_marginTop="6dp"
+        android:layout_below="@+id/awdawd"
+        android:id="@+id/oawhdoaow"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/imageViewIconMoments"
+            android:layout_centerVertical="true"
+            android:background="@drawable/background_chat_icons"
+            android:tint="@color/colorSearchingFriends"
+            android:padding="5dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="6dp"
+            app:srcCompat="@drawable/ic_camera"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_toEndOf="@+id/imageViewIconMoments"
+            android:layout_toRightOf="@+id/imageViewIconMoments"
+            android:stateListAnimator="@animator/bubble_button_animation"
+            android:gravity="center_vertical"
+            android:id="@+id/textViewDialogOpenMoments"
+            android:textColor="@color/colorSearchingFriends"
+            android:text="@string/txt_dialog_show_moments"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_marginBottom="10dp"
+        android:stateListAnimator="@animator/bubble_button_animation"
+        android:layout_marginTop="6dp"
+        android:id="@+id/shitHappens"
+        android:layout_below="@+id/oawhdoaow"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:tint="@color/colorSearchingFriends"
+            android:background="@drawable/background_chat_icons"
+            android:layout_centerVertical="true"
+            android:id="@+id/imageViewIconBlockUser"
+            android:padding="5dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="6dp"
+            app:srcCompat="@drawable/ic_block_user"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_toEndOf="@+id/imageViewIconBlockUser"
+            android:layout_toRightOf="@+id/imageViewIconBlockUser"
+            android:stateListAnimator="@animator/bubble_button_animation"
+            android:textColor="@color/colorSearchingFriends"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:text="@string/txt_blockUser"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textViewDialogBlockUser" />
+
+    </RelativeLayout>
+
+
+
+    <ImageView
+        android:layout_alignStart="@+id/textViewCurrentFriendStatus"
+        android:layout_alignLeft="@+id/textViewCurrentFriendStatus"
+        android:layout_alignBottom="@+id/textViewCurrentFriendStatus"
+        android:layout_alignTop="@+id/textViewCurrentFriendStatus"
+        android:stateListAnimator="@animator/bubble_button_animation"
+        android:id="@+id/imageViewUserAccountDeclineAnfrage"
+        android:focusable="false"
+        android:clickable="false"
+        android:visibility="invisible"
+        android:tint="@color/colorSearchingFriends"
+        app:srcCompat="@drawable/ic_remove_close"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+
+    <TextView
+        android:textStyle="bold"
+        android:stateListAnimator="@animator/bubble_button_animation"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/shitHappens"
+        android:padding="10dp"
+        android:gravity="center"
+        android:id="@+id/textViewCurrentFriendStatus"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+
+</RelativeLayout>

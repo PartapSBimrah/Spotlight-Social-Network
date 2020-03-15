@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/background_rounded_dialog"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:padding="20dp">
+
+    <TextView
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:text="@string/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textColor="#AAAAAA"
+        android:text="@string/txt_share_big_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="#E9E9E9"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <CheckBox
+        app:buttonTint="@color/colorDarkerGrey"
+        android:textColor="#999999"
+        android:gravity="center"
+        android:layout_gravity="start"
+        android:layout_marginBottom="25dp"
+        android:text="@string/txt_do_not_show_again"
+        android:id="@+id/checkBoxDoNotDisplayAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:stateListAnimator="@animator/bubble_button_animation"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="#42A5F5"
+        android:textStyle="bold"
+        android:text="@string/txt_yes_with_pleasure"
+        android:id="@+id/textViewShareIt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:stateListAnimator="@animator/bubble_button_animation"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:textAllCaps="true"
+        android:textSize="15sp"
+        android:textColor="#AAAAAA"
+        android:textStyle="bold"
+        android:text="@string/txt_dont_wanna_share"
+        android:id="@+id/textViewIDontWannaShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

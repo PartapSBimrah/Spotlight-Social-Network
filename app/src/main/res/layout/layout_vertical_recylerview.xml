@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_margin="6dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:textColor="@color/colorBlack"
+        android:text="@string/txt_zuletzt"
+        android:textSize="15sp"
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_alignBottom="@+id/textViewTitle"
+        android:layout_alignTop="@+id/textViewTitle"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        app:srcCompat="@drawable/ic_right_arrow"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/textViewTitle"
+        android:id="@+id/recylerviewMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <View
+        android:id="@+id/dividerTopView"
+        android:layout_below="@+id/recylerviewMain"
+        android:background="@drawable/shadow_line_top_to_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <TextView
+        android:visibility="gone"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:text="@string/txt_momentsYourPictureWillDisplayHereToday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

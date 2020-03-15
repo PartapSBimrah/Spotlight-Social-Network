@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimaryChat">#29B6F6</color>
+    <color name="colorChatDumpedRounded">#E6EEFF</color>
+    <color name="colorGreyChatVeryLight">#f7f7f7</color>
+
+    <color name="colorWhiteWithGrey">#efefef</color>
+    <color name="colorRecording">#EF5350</color>
+
+
+    <color name="colorPrimaryMoments">#ff5558</color>
+    <color name="colorMomentsGreyText">#b3b3b3</color>
+
+    <color name="colorChatItemOwnMessageBackground">#FAFAFA</color>
+
+
+    <color name="colorGreyImagePreview">#90a4ae</color>
+
+
+    <color name="colorFail">#ff5a52</color>
+
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#272727</color>
+    <color name="text_shadow">#7F000000</color>
+    <color name="colorDarkerGrey">#AFB2B9</color>
+    <color name="colorDarkerGreyTransparent">#9da4a4a4</color>
+    <color name="colorWhiteTransparent">#bbffffff</color>
+    <color name="colorGrey">#c9c9c9</color>
+    <color name="colorDivider">#ECF7F7F7</color>
+    <color name="colorTransparent">#00ffffff</color>
+    <color name="colorGreyNoImageData">#f5f5f5</color>
+
+    <color name="colorFineGrey">#fdfdfd</color>
+    <color name="shimmer_color">#a2878787</color>
+
+
+    <color name="colorDarkSpotPreviewBackground">#444444</color>
+    <color name="colorSearchingFriends">#586775</color>
+    <color name="actionbar_title_color">@android:color/white</color>
+
+
+
+
+</resources>

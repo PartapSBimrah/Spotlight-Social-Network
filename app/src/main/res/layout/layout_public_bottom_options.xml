@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/colorBlack"
+    android:gravity="center"
+    android:layout_centerHorizontal="true"
+    android:layout_gravity="end|bottom"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="6dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:padding="8dp"
+            android:button="@null"
+            android:background="@drawable/like_add_selector_big_view"
+            android:stateListAnimator="@animator/like_add_animation"
+            android:checked="false"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:id="@+id/imageViewAddToGallery"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/imageViewAddToGallery"
+            android:padding="3dp"
+            android:background="@drawable/background_count"
+            android:text="255"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/textViewSaveCount"
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:padding="4dp"
+            app:srcCompat="@drawable/ic_comment"
+            android:id="@+id/imageViewComments"
+            android:stateListAnimator="@animator/bubble_button_animation"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+
+        <TextView
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/imageViewComments"
+            android:padding="3dp"
+            android:background="@drawable/background_count"
+            android:text="3105"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/textViewCommentCount"
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:padding="8dp"
+            app:srcCompat="@drawable/ic_share"
+            android:id="@+id/imageViewShare"
+            android:stateListAnimator="@animator/bubble_button_animation"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/imageViewShare"
+            android:padding="3dp"
+            android:background="@drawable/background_count"
+            android:text="52"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/textViewShareCount"
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+
+    <esaph.spotlight.Esaph.EsaphCircleImageView.EsaphCircleImageView
+        app:esc_border_color_background="@color/colorWhite"
+        app:esc_border_width="1dp"
+        android:stateListAnimator="@animator/bubble_button_animation"
+        android:id="@+id/imageViewProfil"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
+</LinearLayout>

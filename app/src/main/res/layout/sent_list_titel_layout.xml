@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:clickable="false"
+    android:focusable="false">
+
+    <TextView
+        android:textStyle="bold"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:paddingRight="6dp"
+        android:paddingEnd="6dp"
+        android:paddingLeft="6dp"
+        android:paddingStart="6dp"
+        android:text="@string/txt_gruppen"
+        android:id="@+id/titlePlaceHolderTextView"
+        android:textColor="@color/colorBlack"
+        android:textSize="17sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

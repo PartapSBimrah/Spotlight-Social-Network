@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        app:riv_corner_radius="20dp"
+        android:scaleType="centerCrop"
+        android:id="@+id/imageViewTab"
+        android:layout_width="120dp"
+        android:layout_height="80dp" />
+
+    <TextView
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:textColor="@color/colorWhite"
+
+        android:layout_marginBottom="8dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="15sp"
+        android:text="test"
+        android:layout_alignBottom="@+id/imageViewTab"
+        android:id="@+id/textViewTabUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+</RelativeLayout>

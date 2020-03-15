@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp"
+    android:id="@+id/relativLayoutRootView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:cardElevation="1.5dp"
+        app:cardCornerRadius="6dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_alignParentTop="true"
+                android:id="@+id/relativLayoutTopThing"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:maxWidth="100dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginLeft="6dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:padding="4dp"
+                    android:layout_centerVertical="true"
+                    android:text="@string/txt_tryAgain"
+                    android:id="@+id/textViewImageStatus"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginLeft="6dp"
+                    android:textSize="13sp"
+                    android:textColor="@color/colorDarkerGrey"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <com.wang.avi.AVLoadingIndicatorView
+                    android:visibility="gone"
+                    android:padding="13dp"
+                    android:layout_toStartOf="@+id/textViewImageStatus"
+                    android:layout_toLeftOf="@+id/textViewImageStatus"
+                    app:indicatorColor="@color/colorPrimaryChat"
+                    app:indicatorName="LineScalePulseOutRapidIndicator"
+                    android:id="@+id/progressBarUploadingImage"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_below="@+id/relativLayoutTopThing"
+                android:id="@+id/RelativHolderForBeatifully"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp">
+
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:id="@+id/imageViewChatMainPreview"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp" />
+
+                <ImageView
+                    android:layout_margin="6dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/imageViewVideoIcon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+
+                <TextView
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="6dp"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textColor="@color/colorWhite"
+                    android:shadowColor="@color/text_shadow"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="2"
+                    android:textSize="13sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ProgressBar
+                    android:layout_marginRight="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginStart="30dp"
+                    android:visibility="gone"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/progressBarSmallViewLoading"
+                    android:progressDrawable="@drawable/esaph_progressbar_light"
+                    android:indeterminate="false"
+                    android:background="@drawable/esaph_progressbar_light_background"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:shadowColor="@color/text_shadow"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:textStyle="bold"
+                android:layout_margin="6dp"
+                android:textColor="@color/colorWhite"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:textSize="12sp"
+                android:id="@+id/textViewChatMessageUhrzeit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_below="@+id/RelativHolderForBeatifully"
+                android:id="@+id/aNextShitView"
+                android:background="@color/colorGrey"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp" />
+
+            <com.borjabravo.readmoretextview.ReadMoreTextView
+                app:trimLength="100"
+                app:trimMode="trimModeLength"
+                app:colorClickableText="#00BCD4"
+                android:layout_below="@+id/aNextShitView"
+                android:textAlignment="textStart"
+                android:gravity="start"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:textSize="13sp"
+                android:maxWidth="300dp"
+                android:textColor="@color/colorGrey"
+                android:id="@+id/textViewHashtags"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.borjabravo.readmoretextview.ReadMoreTextView
+                app:trimLength="100"
+                app:trimMode="trimModeLength"
+                app:colorClickableText="#00BCD4"
+                android:layout_below="@+id/textViewHashtags"
+                android:textAlignment="textStart"
+                android:gravity="start"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginBottom="6dp"
+                android:textSize="16sp"
+                android:maxWidth="300dp"
+                android:textColor="@color/colorBlack"
+                android:id="@+id/textViewBeschreibung"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_margin="6dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/textViewBeschreibung"
+                android:padding="8dp"
+                android:background="@drawable/background_rounded_red"
+                app:srcCompat="@drawable/ic_delete_button"
+                android:id="@+id/imageViewDelete"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

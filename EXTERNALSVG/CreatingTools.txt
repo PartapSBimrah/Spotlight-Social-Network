@@ -1,0 +1,3 @@
+Converter: http://inloop.github.io/svg2android/
+
+Creator: https://editor.method.ac

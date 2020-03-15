@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="EsaphAnimationLoader">
+        <attr name="am_color" format="color"/>
+        <attr name="am_type">
+            <enum name="Sharingan" value="11"/>
+            <enum name="TwinFishesSpinner" value="7"/>
+            <enum name="ClassicSpinner" value="0"/>
+
+            <enum name="LineSpinner" value="2"/>
+            <enum name="FishSpinner" value="1"/>
+            <enum name="PhoneWave" value="10"/>
+
+            <enum name="ThreePulse" value="3"/>
+            <enum name="FourPulse" value="4"/>
+            <enum name="FivePulse" value="5"/>
+
+            <enum name="Worm" value="8"/>
+            <enum name="Whirlpool" value="9"/>
+            <enum name="Radar" value="6"/>
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="EsaphTabView">
+
+        <attr name="es_TabTextSize" format="dimension" />
+        <attr name="es_TabTextColorSelected" format="color"/>
+        <attr name="es_TabTextColorUnselected" format="color"/>
+
+    </declare-styleable>
+
+
+    <declare-styleable name="EsaphDragableViewFragment">
+        <attr name="df_dragView" format="reference" />
+        <attr name="df_panelDownMaxPercentage" format="float" />
+    </declare-styleable>
+
+
+    <declare-styleable name="EsaphDragableView">
+
+        <attr name="esd_PanelID" format="reference" />
+
+    </declare-styleable>
+    
+    <declare-styleable name="EsaphCircleImageView">
+        <attr name="esc_border_width" format="dimension" />
+        <attr name="esc_border_color_background" format="color" />
+        <attr name="esc_border_overlay" format="boolean" />
+        <attr name="esc_fill_color" format="color" />
+    </declare-styleable>
+
+
+    <declare-styleable name="RecordView">
+        <attr name="esc_slide_to_cancel_arrow" format="reference" />
+        <attr name="esc_slide_to_cancel_arrow_color" format="color" />
+        <attr name="esc_slide_to_cancel_bounds" format="dimension" />
+        <attr name="esc_slide_to_cancel_margin_right" format="dimension" />
+        <attr name="esc_slide_to_cancel_text" format="string" />
+        <attr name="esc_counter_time_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="RecordButton">
+        <attr name="mic_icon" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="ShimmerLayout">
+        <attr name="shimmer_color" format="color|reference"/>
+        <attr name="shimmer_animation_duration" format="integer|reference"/>
+        <attr name="shimmer_auto_start" format="boolean|reference"/>
+        <attr name="shimmer_angle" format="integer|reference"/>
+        <attr name="shimmer_mask_width" format="float|reference"/>
+        <attr name="shimmer_gradient_center_color_width" format="float|reference"/>
+        <attr name="shimmer_reverse_animation" format="boolean|reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="EsaphAudioRecorderVisualizerView">
+        <attr format="integer" name="numColumns"/>
+        <attr format="color" name="renderColor"/>
+        <attr name="renderRange"><enum name="top" value="0"/>
+            <enum name="bottom" value="1"/>
+            <enum name="both" value="2"/>
+        </attr>
+
+        <attr name="renderType">
+            <flag name="bar" value="0x1"/><flag name="pixel" value="0x2"/>
+            <flag name="fade" value="0x4"/>
+        </attr>
+
+    </declare-styleable>
+
+    <attr format="color" name="dotsColor"/>
+    <attr format="color" name="selectedDotColor"/>
+    <attr format="color" name="dotsStrokeColor"/>
+    <attr format="dimension" name="dotsSize"/>
+    <attr format="float" name="dotsWidthFactor"/>
+    <attr format="dimension" name="dotsSpacing"/>
+    <attr format="dimension" name="dotsCornerRadius"/>
+    <attr format="dimension" name="dotsStrokeWidth"/>
+    <attr format="float" name="stiffness"/>
+    <attr format="float" name="dampingRatio"/>
+    <attr format="boolean" name="progressMode"/>
+
+    <declare-styleable name="DotsIndicator">
+        <attr name="dotsColor"/>
+        <attr name="selectedDotColor"/>
+        <attr name="dotsSize"/>
+        <attr name="dotsWidthFactor"/>
+        <attr name="dotsSpacing"/>
+        <attr name="dotsCornerRadius"/>
+        <attr name="progressMode"/>
+    </declare-styleable>
+
+    <declare-styleable name="SpringDotsIndicator">
+        <attr name="dotsColor"/>
+        <attr name="dotsSize"/>
+        <attr name="dotsSpacing"/>
+        <attr name="dotsCornerRadius"/>
+        <attr name="dotsStrokeWidth"/>
+        <attr name="dotsStrokeColor"/>
+        <attr name="stiffness"/>
+        <attr name="dampingRatio"/>
+    </declare-styleable>
+
+    <declare-styleable name="WormDotsIndicator">
+        <attr name="dotsColor"/>
+        <attr name="dotsSize"/>
+        <attr name="dotsSpacing"/>
+        <attr name="dotsCornerRadius"/>
+        <attr name="dotsStrokeWidth"/>
+        <attr name="dotsStrokeColor"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="CropImageView">
+
+        <attr name="cropGuidelines">
+            <enum name="off" value="0"/>
+            <enum name="onTouch" value="1"/>
+            <enum name="on" value="2"/>
+        </attr>
+        <attr name="cropScaleType">
+            <enum name="fitCenter" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="centerCrop" value="2"/>
+            <enum name="centerInside" value="3"/>
+        </attr>
+        <attr name="cropShape">
+            <enum name="rectangle" value="0"/>
+            <enum name="oval" value="1"/>
+        </attr>
+        <attr name="cropAutoZoomEnabled" format="boolean"/>
+        <attr name="cropMaxZoom" format="integer"/>
+        <attr name="cropMultiTouchEnabled" format="boolean"/>
+        <attr name="cropFixAspectRatio" format="boolean"/>
+        <attr name="cropAspectRatioX" format="integer"/>
+        <attr name="cropAspectRatioY" format="integer"/>
+        <attr name="cropInitialCropWindowPaddingRatio" format="float"/>
+        <attr name="cropBorderLineThickness" format="dimension"/>
+        <attr name="cropBorderLineColor" format="color"/>
+        <attr name="cropBorderCornerThickness" format="dimension"/>
+        <attr name="cropBorderCornerOffset" format="dimension"/>
+        <attr name="cropBorderCornerLength" format="dimension"/>
+        <attr name="cropBorderCornerColor" format="color"/>
+        <attr name="cropGuidelinesThickness" format="dimension"/>
+        <attr name="cropGuidelinesColor" format="color"/>
+        <attr name="cropBackgroundColor" format="color"/>
+        <attr name="cropSnapRadius" format="dimension"/>
+        <attr name="cropTouchRadius" format="dimension"/>
+        <attr name="cropSaveBitmapToInstanceState" format="boolean"/>
+        <attr name="cropShowCropOverlay" format="boolean"/>
+        <attr name="cropShowProgressBar" format="boolean"/>
+        <attr name="cropMinCropWindowWidth" format="dimension"/>
+        <attr name="cropMinCropWindowHeight" format="dimension"/>
+        <attr name="cropMinCropResultWidthPX" format="float"/>
+        <attr name="cropMinCropResultHeightPX" format="float"/>
+        <attr name="cropMaxCropResultWidthPX" format="float"/>
+        <attr name="cropMaxCropResultHeightPX" format="float"/>
+        <attr name="cropFlipHorizontally" format="boolean"/>
+        <attr name="cropFlipVertically" format="boolean"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="ColorSlider">
+        <attr name="cs_colors" format="reference" />
+        <attr name="cs_hex_colors" format="reference" />
+        <attr name="cs_from_color" format="color" />
+        <attr name="cs_to_color" format="color" />
+        <attr name="cs_steps" format="integer" />
+        <attr name="cs_selector_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="BubbleSeekBar">
+        <attr name="bsb_min" format="float|reference"/> <!--min < max, default: 0.0f-->
+        <attr name="bsb_max" format="float|reference"/> <!--min < max, default: 100.0f-->
+        <attr name="bsb_progress" format="float|reference"/> <!--real time progress value, default: min-->
+        <attr name="bsb_is_float_type" format="boolean"/> <!--support for float type-->
+        <attr name="bsb_track_size" format="dimension|reference"/> <!--height of right-track(on the right of thumb), default: 2dp-->
+        <!--height of left-track(on the left of thumb), default: 2dp higher than right-track's height-->
+        <attr name="bsb_second_track_size" format="dimension|reference"/>
+        <attr name="bsb_thumb_radius" format="dimension|reference"/> <!--radius of thumb, default: 2dp higher than left-track's height-->
+        <!--radius of thumb when be dragging, default: 2 times of left-track's height-->
+        <attr name="bsb_thumb_radius_on_dragging" format="dimension|reference"/>
+        <attr name="bsb_track_color" format="color|reference"/> <!--color of right-track, default: R.color.colorPrimary-->
+        <attr name="bsb_second_track_color" format="color|reference"/> <!--color of left-track, default: R.color.colorAccent-->
+        <attr name="bsb_thumb_color" format="color|reference"/> <!--color of thumb, default: same as left-track's color-->
+        <attr name="bsb_section_count" format="integer|reference"/> <!--shares of whole progress(max - min), default: 10-->
+        <attr name="bsb_show_section_mark" format="boolean"/> <!--show demarcation points or not, default: false-->
+        <attr name="bsb_auto_adjust_section_mark" format="boolean"/> <!--auto scroll to the nearest section_mark or not, default: false-->
+        <attr name="bsb_show_section_text" format="boolean"/> <!--show section-text or not, default: false-->
+        <attr name="bsb_section_text_size" format="dimension|reference"/> <!--text size of section-text, default: 14sp-->
+        <attr name="bsb_section_text_color" format="color|reference"/> <!--text color of section-text, default: same as right-track's color-->
+        <!--text position of section-text relative to track, sides, bottom_sides, below_section_mark, default: sides-->
+        <attr name="bsb_section_text_position">
+            <enum name="sides" value="0"/>
+            <enum name="bottom_sides" value="1"/>
+            <enum name="below_section_mark" value="2"/>
+        </attr>
+        <attr name="bsb_section_text_interval" format="integer"/> <!--the interval of two section-text, default: 1-->
+        <attr name="bsb_show_thumb_text" format="boolean"/> <!--show real time progress-text under thumb or not, default: false-->
+        <attr name="bsb_thumb_text_size" format="dimension|reference"/> <!--text size of progress-text, default: 14sp-->
+        <attr name="bsb_thumb_text_color" format="color|reference"/> <!--text color of progress-text, default: same as left-track's color-->
+        <attr name="bsb_show_progress_in_float" format="boolean"/> <!--show bubble-progress in float or not, default: false-->
+        <attr name="bsb_touch_to_seek" format="boolean"/> <!--touch anywhere on track to quickly seek, default: false-->
+        <attr name="bsb_seek_step_section" format="boolean"/> <!--seek one step by one section, the progress is discrete, default: false-->
+        <attr name="bsb_seek_by_section" format="boolean"/> <!--seek by section, the progress may not be linear, default: false-->
+        <attr name="bsb_bubble_color" format="color|reference"/> <!--color of bubble, default: same as left-track's color-->
+        <attr name="bsb_bubble_text_size" format="dimension|reference"/> <!--text size of bubble-progress, default: 14sp-->
+        <attr name="bsb_bubble_text_color" format="color|reference"/> <!--text color of bubble-progress, default: #ffffffff-->
+        <attr name="bsb_anim_duration" format="integer"/> <!--duration of animation, default: 200ms-->
+        <attr name="bsb_always_show_bubble" format="boolean"/> <!--bubble shows all time, default: false-->
+        <attr name="bsb_always_show_bubble_delay" format="integer"/> <!--the delay duration before bubble shows all the time, default: 200ms-->
+        <attr name="bsb_hide_bubble" format="boolean"/> <!--hide bubble, default: false-->
+        <attr name="bsb_rtl" format="boolean"/> <!--right to left, default: false-->
+        <attr name="android:enabled"/>
+    </declare-styleable>
+
+    <declare-styleable name="CameraView">
+        <attr name="es_CameraOrientation" format="enum">
+            <enum name="FRONT" value="0"/>
+            <enum name="BACK" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="PhotoEditorView">
+        <attr name="es_scaleType" format="enum">
+            <enum name="CENTER_CROP" value="0"/>
+            <enum name="FIT_CENTER" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="EsaphGradientTextView">
+        <attr name="esColorArray" format="reference" />
+    </declare-styleable>
+
+</resources>

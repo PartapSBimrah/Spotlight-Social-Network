@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite"
+    tools:context="esaph.spotlight.navigation.spotlight.PublicPostsNavigation.NavigationPublic">
+
+
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageViewMainBild"
+        android:layout_marginTop="150dp"
+        app:srcCompat="@drawable/ic_worker"
+        android:layout_width="200dp"
+        android:layout_height="200dp" />
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/textViewMain"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imageViewMainBild"
+        android:text="@string/txt_still_working"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_marginTop="6dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textViewMain"
+        android:textSize="15sp"
+        android:text="30 Days left"
+        android:textColor="#0990ff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+
+</RelativeLayout>

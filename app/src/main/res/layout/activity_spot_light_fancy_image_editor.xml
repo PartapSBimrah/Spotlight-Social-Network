@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:clickable="false"
+    android:focusable="false"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".navigation.kamera.CameraOverlayFragments.Editing.BottomMiddleViewCameraEditingImage"
+    android:background="@color/colorBlack">
+
+    <esaph.spotlight.Esaph.EsaphSpotLightPhotoEditor.EditorPack.PhotoEditorView
+        android:fitsSystemWindows="false"
+        app:es_scaleType="FIT_CENTER"
+        android:id="@+id/mIdPhotoEditorView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <View
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/background_shadow_bottom_filters"
+        android:layout_width="match_parent"
+        android:layout_height="170dp" />
+
+    <RelativeLayout
+        android:fitsSystemWindows="false"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:id="@+id/operationLayoutView"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/imageViewRemovePicture"
+            android:id="@+id/frameLayoutUnderOptions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </FrameLayout>
+
+        <ImageView
+            android:stateListAnimator="@animator/bubble_button_animation"
+            android:fitsSystemWindows="false"
+            android:padding="8dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            app:srcCompat="@drawable/ic_remove_close"
+            android:id="@+id/imageViewRemovePicture"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <esaph.spotlight.Esaph.EsaphSpotLightPhotoEditor.EditorPack.EsaphTrashbinView
+            android:tint="@color/colorWhite"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/esaphTrashbinView"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <ImageView
+            android:stateListAnimator="@animator/bubble_button_animation"
+            android:fitsSystemWindows="false"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_alignTop="@+id/imageViewRemovePicture"
+            android:layout_toStartOf="@+id/imageViewRemovePicture"
+            android:layout_toLeftOf="@+id/imageViewRemovePicture"
+            android:visibility="gone"
+            android:padding="12dp"
+            app:srcCompat="@drawable/ic_undo"
+            android:id="@+id/imageViewUndo"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <ImageView
+            android:stateListAnimator="@animator/bubble_button_animation"
+            android:fitsSystemWindows="false"
+            android:layout_marginEnd="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_alignTop="@+id/imageViewRemovePicture"
+            android:layout_toStartOf="@+id/imageViewUndo"
+            android:layout_toLeftOf="@+id/imageViewUndo"
+            android:visibility="gone"
+            android:padding="10dp"
+            app:srcCompat="@drawable/ic_redo"
+            android:id="@+id/imageViewRedo"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <esaph.spotlight.Esaph.EsaphSpotLightPhotoEditor.EsaphColorPicker
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:fitsSystemWindows="false"
+            android:visibility="invisible"
+            android:id="@+id/viewColorPicker"
+            android:layout_width="50dp"
+            android:layout_height="350dp" />
+
+        <LinearLayout
+            android:fitsSystemWindows="false"
+            android:id="@+id/linearLayoutEditingItems"
+            android:orientation="vertical"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <esaph.spotlight.navigation.kamera.CameraOverlayFragments.Editing.EsaphEditingColorCircleImageView
+                    android:stateListAnimator="@animator/bubble_button_animation"
+                    android:tint="@color/colorWhite"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/ic_draw_canvas"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/imageViewDrawCanvas" />
+
+
+                <TextView
+                    android:shadowColor="@color/text_shadow"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="2"
+                    android:textSize="12sp"
+                    android:text="@string/txt_draw"
+                    android:textColor="@color/colorWhite"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <esaph.spotlight.navigation.kamera.CameraOverlayFragments.Editing.EsaphEditingColorCircleImageView
+                    android:stateListAnimator="@animator/bubble_button_animation"
+                    android:tint="@color/colorWhite"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/ic_font"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/imageViewText" />
+
+
+                <TextView
+                    android:shadowColor="@color/text_shadow"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="2"
+                    android:textSize="12sp"
+                    android:text="@string/txt_text"
+                    android:id="@+id/textViewText"
+                    android:textColor="@color/colorWhite"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:stateListAnimator="@animator/bubble_button_animation"
+                    android:tint="@color/colorWhite"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/ic_choose_emojie"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/imageViewSmiley" />
+
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:shadowColor="@color/text_shadow"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="2"
+                    android:textSize="12sp"
+                    android:text="@string/txt_emojie"
+                    android:id="@+id/textViewSmiley"
+                    android:textColor="@color/colorWhite"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:stateListAnimator="@animator/bubble_button_animation"
+                    android:padding="10dp"
+                    android:id="@+id/imageViewAddSticker"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:srcCompat="@drawable/ic_spotlight_sticker" />
+
+                <TextView
+                    android:shadowColor="@color/text_shadow"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="2"
+                    android:gravity="center"
+                    android:id="@+id/textViewAddSticker"
+                    android:textColor=  "@color/colorWhite"
+                    android:text="@string/txt_sticker"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <esaph.spotlight.Esaph.EsaphCircleImageView.EsaphCircleImageView
+                    android:stateListAnimator="@animator/bubble_button_animation"
+                    app:esc_border_width="2dp"
+                    app:esc_border_color_background="@color/colorWhite"
+                    android:tint="@color/colorWhite"
+                    android:padding="8dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/imageViewFilterEffekt" />
+
+
+                <TextView
+                    android:shadowColor="@color/text_shadow"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="2"
+                    android:textSize="12sp"
+                    android:text="@string/txt_filter"
+                    android:textColor="@color/colorWhite"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/linearLyoutFaceCropView"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <esaph.spotlight.Esaph.EsaphCircleImageView.EsaphCircleImageView
+                    android:padding="8dp"
+                    android:stateListAnimator="@animator/bubble_button_animation"
+                    android:clickable="false"
+                    android:id="@+id/imageViewAutoFaceCrop"
+                    app:esc_border_color_background="@color/colorWhite"
+                    app:esc_border_width="2dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+
+                <TextView
+                    android:shadowColor="@color/text_shadow"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="2"
+                    android:textSize="12sp"
+                    android:text="@string/txt_sticker"
+                    android:textColor="@color/colorWhite"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativLayoutBottomExtras"
+            android:fitsSystemWindows="true"
+            android:gravity="bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:visibility="gone"
+                android:layout_above="@+id/nextShitLayout"
+                android:id="@+id/recylerViewEffektChoose"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <LinearLayout
+                android:layout_alignParentBottom="true"
+                android:gravity="bottom"
+                android:id="@+id/nextShitLayout"
+                android:layout_marginBottom="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_marginRight="12sp"
+                    android:layout_marginEnd="12sp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:stateListAnimator="@animator/bubble_button_animation"
+                        android:padding="10dp"
+                        android:id="@+id/imageViewSavePicturePreview"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        app:srcCompat="@drawable/ic_save_picture" />
+
+                    <TextView
+                        android:shadowColor="@color/text_shadow"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="2"
+                        android:gravity="center"
+                        android:id="@+id/textViewSavePictureStatus"
+                        android:textColor=  "@color/colorWhite"
+                        android:text="@string/txt_Speichern"
+                        android:textSize="12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginRight="12sp"
+                    android:layout_marginEnd="12sp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:stateListAnimator="@animator/bubble_button_animation"
+                        android:tint="@color/colorWhite"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/ic_tag_choose"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/imageViewChooseTag" />
+
+
+                    <TextView
+                        android:shadowColor="@color/text_shadow"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="2"
+                        android:textSize="12sp"
+                        android:text="@string/txt_hashtag"
+                        android:id="@+id/textViewChoosenTag"
+                        android:textColor="@color/colorWhite"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_marginRight="12sp"
+                    android:layout_marginEnd="12sp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:stateListAnimator="@animator/bubble_button_animation"
+                        android:padding="8dp"
+                        android:id="@+id/imageViewSaveLifeCloud"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        app:srcCompat="@drawable/ic_heart_save" />
+
+                    <TextView
+                        android:shadowColor="@color/text_shadow"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="2"
+                        android:gravity="center"
+                        android:id="@+id/textViewViewSaveLifeCloud"
+                        android:textColor="@color/colorWhite"
+                        android:text="@string/txt_lifecloud"
+                        android:textSize="12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutShaderEffects"
+                    android:visibility="gone"
+                    android:layout_marginRight="12sp"
+                    android:layout_marginEnd="12sp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:stateListAnimator="@animator/bubble_button_animation"
+                        android:id="@+id/imageViewShaderEffects"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp" />
+
+                    <TextView
+                        android:shadowColor="@color/text_shadow"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="2"
+                        android:gravity="center"
+                        android:id="@+id/textViewShaderEffects"
+                        android:textColor="@color/colorWhite"
+                        android:text="@string/txt_effect"
+                        android:textSize="12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:textAlignment="center"
+                android:gravity="center"
+                android:stateListAnimator="@animator/bubble_button_animation"
+                android:layout_alignBottom="@+id/nextShitLayout"
+                android:layout_alignTop="@+id/nextShitLayout"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/colorBlack"
+                android:layout_margin="16dp"
+                android:padding="6dp"
+                android:text="@string/txt_Speichern"
+                android:background="@drawable/background_rounded_camera_editor_sent"
+                android:textSize="18sp"
+                android:id="@+id/textViewSaveImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_centerInParent="true"
+        android:id="@+id/relativLayoutEffectPropertiesPreview"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <esaph.spotlight.Esaph.EsaphCameraEffectPropertiesPreview.EsaphCameraEffectPropertiesPreview
+            android:background="@drawable/background_rounded_white"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:id="@+id/esaphEffectProperties"
+            android:padding="3dp"
+            android:layout_margin="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

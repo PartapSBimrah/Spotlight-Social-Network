@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:gravity="center"
+    android:layout_gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/colorTransparent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:padding="20dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/background_rounded_transparency_design"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_margin="6dp"
+            android:text="@string/txt_really_remove"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <esaph.spotlight.Esaph.EsaphCircleImageView.EsaphCircleImageView
+            android:layout_margin="6dp"
+            app:esc_border_color_background="@color/colorWhite"
+            app:esc_border_width="1dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/imageViewDialogDeletePicOrVideo"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+
+        <TextView
+            android:stateListAnimator="@animator/bubble_button_animation"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="6dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:padding="8dp"
+            android:background="@drawable/edittext_rounded_transparent"
+            android:textSize="17sp"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/textViewDeletePicDialogReally"
+            android:text="@string/txt_delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

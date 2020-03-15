@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+    android:background="#673AB7">
+
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="30sp"
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_register_wieistdeinname"
+        android:layout_below="@+id/register_back_button" />
+
+
+    <EditText
+        android:textStyle="bold"
+        android:textCursorDrawable="@null"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:maxLength="20"
+        android:textSize="17sp"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorWhite"
+        android:gravity="center"
+        android:background="@drawable/background_login_edittext"
+        android:id="@+id/registerVorname"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:hint="@string/txt_register_vorname"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="22dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:textStyle="bold"
+        android:textCursorDrawable="@null"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="17sp"
+        android:imeOptions="actionDone"
+        android:maxLength="20"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorWhite"
+        android:gravity="center"
+        android:background="@drawable/background_login_edittext"
+        android:id="@+id/registerNachname"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:hint="@string/txt_register_nachname"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/registerVorname"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <LinearLayout
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_below="@+id/registerNachname"
+        android:id="@+id/linearLayoutDescriptionMaker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            app:riv_corner_radius="8dp"
+            android:layout_marginBottom="16dp"
+            android:visibility="gone"
+            android:scaleType="fitCenter"
+            android:id="@+id/imageViewShowDoneDescription"
+            android:layout_width="200dp"
+            android:layout_height="200dp" />
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="#9C27B0"
+            android:textSize="15sp"
+            android:padding="6dp"
+            android:background="@drawable/background_rounded_purple"
+            android:id="@+id/textViewCreateDescriptionPlopp"
+            android:text="@string/txt_tell_somethingAboutYou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:stateListAnimator="@animator/bubble_button_animation"
+        android:fitsSystemWindows="true"
+        android:tint="@color/colorWhite"
+        android:padding="10dp"
+        android:layout_marginTop="6dp"
+        android:id="@+id/register_back_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/ic_backward_arrow"/>
+
+    <ImageView
+        android:tint="@color/colorWhite"
+        android:padding="10dp"
+        android:layout_width="50dp"
+        android:id="@+id/imageViewRegisterVorname"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/registerNachname"
+        android:layout_alignEnd="@+id/registerVorname"
+        android:layout_alignRight="@+id/registerVorname"
+        android:layout_alignTop="@+id/registerVorname"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/ic_register_correct" />
+
+    <ImageView
+        android:tint="@color/colorWhite"
+        android:padding="10dp"
+        android:visibility="invisible"
+        android:id="@+id/imageViewRegisterNachname"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageViewRegisterVorname"
+        android:layout_alignRight="@+id/imageViewRegisterVorname"
+        android:layout_alignTop="@+id/registerNachname"
+        app:srcCompat="@drawable/ic_register_correct"
+        android:layout_alignBottom="@+id/registerNachname"
+        android:layout_alignLeft="@+id/imageViewRegisterVorname"
+        android:layout_alignStart="@+id/imageViewRegisterVorname" />
+
+    <TextView
+        android:textStyle="bold"
+        android:textAlignment="textStart"
+        android:gravity="start"
+        android:layout_margin="6dp"
+        android:textColor="@color/colorWhite"
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayoutDescriptionMaker"
+        android:text="@string/txt_register_lawandorder"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:stateListAnimator="@animator/bubble_button_animation"
+        android:textStyle="bold"
+        android:textSize="13sp"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/colorWhite"
+        android:id="@+id/registerDatenschutz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_login_datenschutzerklarung"
+        android:layout_below="@+id/textView5"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5" />
+
+    <TextView
+        android:stateListAnimator="@animator/bubble_button_animation"
+        android:textStyle="bold"
+        android:textSize="13sp"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/colorWhite"
+        android:id="@+id/registerHaftungsausschluss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/registerDatenschutz"
+        android:layout_alignStart="@+id/registerDatenschutz"
+        android:layout_below="@+id/registerDatenschutz"
+        android:text="@string/txt_login_haftungsausschluss" />
+
+    <TextView
+        android:textStyle="bold"
+        android:stateListAnimator="@animator/bubble_button_animation"
+        android:padding="6dp"
+        android:background="@drawable/background_login_button"
+        android:textColor="@color/colorWhite"
+        android:textSize="15sp"
+        android:layout_margin="16dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:text="@string/txt_AlsoRegistred"
+        android:id="@+id/textViewAlsoHaveAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:alpha="0.5"
+        android:clickable="false"
+        android:textStyle="bold"
+        android:stateListAnimator="@animator/bubble_button_animation"
+        style="?android:attr/borderlessButtonStyle"
+        android:fitsSystemWindows="true"
+        android:layout_marginBottom="12dp"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/background_register_button"
+        android:id="@+id/buttonWeiter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_register_weiter"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/textView5"
+        android:layout_alignEnd="@+id/textView5" />
+
+    <FrameLayout
+        android:id="@+id/frameLayoutRegisterVorname"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+</RelativeLayout>

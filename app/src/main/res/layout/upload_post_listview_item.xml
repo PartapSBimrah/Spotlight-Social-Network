@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/chatPartnerListViewItemRootView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingEnd="16dp"
+    android:background="@android:color/transparent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:padding="12dp"
+        app:srcCompat="@drawable/ic_failed_sent"
+        android:layout_marginRight="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/uploadPostImageViewLeftIcon"
+        android:layout_width="48dp"
+        android:layout_height="48dp" />
+
+    <RelativeLayout
+        android:padding="16dp"
+        android:layout_toLeftOf="@+id/roundedImageViewMessagePreview"
+        android:layout_toStartOf="@+id/roundedImageViewMessagePreview"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/uploadPostImageViewLeftIcon"
+        android:layout_toEndOf="@+id/uploadPostImageViewLeftIcon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:ellipsize="end"
+            android:layout_marginBottom="0.5dp"
+            android:textStyle="bold"
+            android:text="Enrique"
+            android:singleLine="true"
+            android:textSize="16sp"
+            android:textColor="@color/colorBlack"
+            android:id="@+id/uploadPostTextViewReceivers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_below="@+id/uploadPostTextViewReceivers"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:layout_marginTop="0.5dp"
+            android:text="vor 2 min"
+            android:textSize="15sp"
+            android:textColor="#606E74"
+            android:id="@+id/uploadPostTextViewDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+            android:layout_alignTop="@+id/uploadPostTextViewDetails"
+            android:layout_alignBottom="@+id/uploadPostTextViewDetails"
+            android:visibility="gone"
+            android:layout_marginTop="4dp"
+            app:rcBackgroundColor="#E6E6E6"
+            app:rcProgressColor="@color/colorBlack"
+            app:rcRadius="9dp"
+            app:rcMax="100"
+            app:rcProgress="0"
+            android:id="@+id/progressBarSmallViewLoading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:scaleType="centerCrop"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        app:riv_border_width="0dp"
+        app:riv_corner_radius="8dp"
+        android:id="@+id/roundedImageViewMessagePreview"
+        android:layout_width="35dp"
+        android:layout_height="35dp" />
+
+</RelativeLayout>

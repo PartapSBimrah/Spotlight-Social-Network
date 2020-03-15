@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".navigation.spotlight.Chats.PrivateChat.ChatListViewPager.ChatListViewPagerFragments.ChatItemFragmentText">
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:id="@+id/imageViewChatMainPreview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.hanks.htextview.fall.FallTextView
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="6"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
+        android:gravity="center"
+        android:layout_alignBottom="@+id/imageViewVisualAudio"
+        android:layout_alignTop="@+id/imageViewVisualAudio"
+        android:layout_alignRight="@+id/imageViewVisualAudio"
+        android:layout_alignEnd="@+id/imageViewVisualAudio"
+        android:layout_alignLeft="@+id/imageViewVisualAudio"
+        android:layout_alignStart="@+id/imageViewVisualAudio"
+        android:layout_below="@+id/imageViewVisualAudio"
+        android:id="@+id/textViewPlayLength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.chibde.visualizer.CircleBarVisualizer
+        android:layout_centerInParent="true"
+        android:id="@+id/imageViewVisualAudio"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
+
+    <include layout="@layout/layout_part_user_informations" />
+
+</RelativeLayout>

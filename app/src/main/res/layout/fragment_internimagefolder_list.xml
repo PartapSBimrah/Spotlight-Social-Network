@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorWhite"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <esaph.spotlight.Esaph.EsaphLifeCloudBackUpView.EsaphLifeCloudBackUpView
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true"
+        android:id="@+id/topView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </esaph.spotlight.Esaph.EsaphLifeCloudBackUpView.EsaphLifeCloudBackUpView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/topView"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true"
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

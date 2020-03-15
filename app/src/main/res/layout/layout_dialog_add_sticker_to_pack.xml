@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_margin="6dp"
+    android:padding="20dp"
+    android:background="@drawable/background_rounded_dialog"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:background="@null"
+        android:layout_below="@+id/relativLayoutStickerPackCreatorTop"
+        android:id="@+id/recylerViewShowStickerPacks"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <RelativeLayout
+        android:layout_alignParentTop="true"
+        android:id="@+id/relativLayoutStickerPackCreatorTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:stateListAnimator="@animator/bubble_button_animation"
+            android:textStyle="bold"
+            android:textCursorDrawable="@null"
+            android:maxLength="30"
+            android:paddingStart="30dp"
+            android:paddingLeft="30dp"
+            android:maxLines="1"
+            android:inputType="text"
+            android:scrollHorizontally="true"
+            android:ellipsize="end"
+            android:layout_margin="10dp"
+            android:textSize="15sp"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorDarkerGrey"
+            android:hint="@string/txt_write_new_StickerPackNameEdittextHint"
+            android:padding="6dp"
+            android:background="@drawable/edittext_rounded_search_swipeview"
+            android:id="@+id/editTextSearchOrCreateNewStickerPackName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:padding="6dp"
+            android:layout_alignStart="@+id/editTextSearchOrCreateNewStickerPackName"
+            android:layout_alignLeft="@+id/editTextSearchOrCreateNewStickerPackName"
+            android:layout_alignTop="@+id/editTextSearchOrCreateNewStickerPackName"
+            android:layout_alignBottom="@+id/editTextSearchOrCreateNewStickerPackName"
+            android:tint="@color/colorDarkerGrey"
+            app:srcCompat="@drawable/ic_search_edittext"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_below="@+id/relativLayoutStickerPackCreatorTop"
+        android:layout_alignBottom="@+id/recylerViewShowStickerPacks"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        android:id="@+id/linearLayoutEsaphNoStickerPacks"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:tint="@color/colorDarkerGrey"
+            android:id="@+id/nagivationGroupImageViewNoChats"
+            app:srcCompat="@drawable/ic_spotlight_sticker"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+
+        <TextView
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:id="@+id/textViewMain"
+            android:text="@string/txt_no_stickerpacks_created"
+            android:textColor="@color/colorDarkerGrey"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:stateListAnimator="@animator/bubble_button_animation"
+        android:layout_below="@+id/recylerViewShowStickerPacks"
+        android:visibility="gone"
+        android:layout_margin="10dp"
+        android:textSize="17sp"
+        android:padding="10dp"
+        android:text="@string/txt_hinzufuegen"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textViewAddStickerConfirm"
+        android:background="@drawable/background_add_sticker_add"
+        android:textColor="@color/colorWhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

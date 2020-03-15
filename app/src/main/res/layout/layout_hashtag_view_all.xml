@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFineGrey"
+    tools:context="esaph.spotlight.navigation.spotlight.Moments.InternViews.GalleryViewDate">
+
+    <esaph.spotlight.Esaph.EsaphHashtagInfoStateViewTop.EsaphHashtagStateInfoViewTop
+        android:layout_alignParentTop="true"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true"
+        android:id="@+id/topView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </esaph.spotlight.Esaph.EsaphHashtagInfoStateViewTop.EsaphHashtagStateInfoViewTop>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:clipToPadding="false"
+        android:fitsSystemWindows="true"
+        android:layout_below="@+id/topView"
+        android:background="@drawable/viewpager_main_background"
+        android:id="@+id/galleryViewDateRecylerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animationCache="false"
+        android:scrollingCache="false"
+        android:smoothScrollbar="true">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <esaph.spotlight.Esaph.EsaphDragable.EsaphDragableViewFragment
+        android:id="@+id/frameLayoutGalleryViewDate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </esaph.spotlight.Esaph.EsaphDragable.EsaphDragableViewFragment>
+
+
+</RelativeLayout>

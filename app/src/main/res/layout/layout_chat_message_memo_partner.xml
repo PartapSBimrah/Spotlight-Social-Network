@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/colorChatItemOwnMessageBackground"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_below="@+id/imageViewProfilbild"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        app:riv_corner_radius="12dp"
+        android:id="@+id/imageViewChatMainPreview"
+        android:scaleType="fitCenter"
+        android:layout_width="330dp"
+        android:layout_height="200dp" />
+
+    <TextView
+        android:layout_toRightOf="@+id/imageViewProfilbild"
+        android:layout_toEndOf="@+id/imageViewProfilbild"
+        android:layout_alignBottom="@+id/imageViewProfilbild"
+        android:layout_alignTop="@+id/imageViewProfilbild"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:padding="6dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:text="vor 20min"
+        android:textSize="15sp"
+        android:id="@+id/textViewChatMessageUhrzeit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <esaph.spotlight.Esaph.EsaphCircleImageView.EsaphCircleImageView
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        app:esc_border_width="1dp"
+        app:esc_border_color_background="@color/colorWhite"
+        android:id="@+id/imageViewProfilbild"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
+
+    <com.chibde.visualizer.CircleBarVisualizer
+        android:layout_alignRight="@+id/imageViewChatMainPreview"
+        android:layout_alignStart="@+id/imageViewChatMainPreview"
+        android:layout_alignEnd="@+id/imageViewChatMainPreview"
+        android:layout_alignLeft="@+id/imageViewChatMainPreview"
+        android:layout_alignTop="@+id/imageViewChatMainPreview"
+        android:layout_alignBottom="@+id/imageViewChatMainPreview"
+        android:id="@+id/imageViewVisualAudio"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
+
+    <com.hanks.htextview.fall.FallTextView
+        android:textColor="@color/colorPrimaryChat"
+        android:gravity="center"
+        android:layout_alignTop="@+id/imageViewVisualAudio"
+        android:layout_alignBottom="@+id/imageViewVisualAudio"
+        android:layout_alignRight="@+id/imageViewVisualAudio"
+        android:layout_alignEnd="@+id/imageViewVisualAudio"
+        android:layout_alignLeft="@+id/imageViewVisualAudio"
+        android:layout_alignStart="@+id/imageViewVisualAudio"
+        android:layout_below="@+id/imageViewVisualAudio"
+        android:id="@+id/textViewPlayLength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

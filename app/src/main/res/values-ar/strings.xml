@@ -1,0 +1,835 @@
+<resources>
+    <string name="app_name">Spotlight</string>
+
+
+    <!--LoginActivity-->
+    <string name="title_activity_login">"دخول"</string>
+    <string name="txt_login_Username">"اسم المستخدم"</string>
+    <string name="txt_login_Password">"كلمة المرور"</string>
+    <string name="txt_login_PasswordForgotten">"نسيت كلمة المرور؟"</string>
+    <string name="txt_login_NeuesPasswortAnfordern">"اطلب كلمة مرور جديدة"</string>
+    <string name="txt_login_Anmelden">"تسجيل"</string>
+    <string name="txt_login_Abmelden">"تسجيل الخروج"</string>
+    <string name="txt_Support">"الدعم ، تقرير المشاكل"</string>
+    <string name="txt_AccountDelete">"حذف الحساب"</string>
+    <string name="txt_AccountDeleteReally">"هل حقا حذف؟"</string>
+    <string name="txt_login_Registrieren">"تسجيل"</string>
+    <string name="txt_login_haftungsausschluss">"تنصل"</string>
+    <string name="txt_impressum">"بصمة"</string>
+    <string name="txt_login_datenschutzerklarung">"سياسة الخصوصية"</string>
+
+
+    <!--Register activity-->
+    <string name="txt__alertFailedEmailTitle">"لا"</string>
+    <string name="txt__alertFailedEmailDetails">"تم الوصول إلى حد التسجيل ، حاول مرة أخرى في الساعة التالية: D"</string>
+    <string name="txt__alertCheckMailTitle">"لحظة واحدة"</string>
+    <string name="txt__alertCheckMailDetails">"تحقق مما إذا تم الوصول إلى حد التسجيل."</string>
+    <string name="txt_register_wieistdeinname">"ما اسمك؟"</string>
+    <string name="txt_register_vorname">"الأسم الأول"</string>
+    <string name="txt_register_nachname">"لقب"</string>
+    <string name="txt_register_lawandorder">"بالمتابعة ، أنت توافق على شروط الاستخدام وسياسة الخصوصية وإخلاء المسؤولية."</string>
+    <string name="txt_register_weiter">"أكثر"</string>
+    <string name="txt_register_fastFertig">"على وشك الانتهاء"</string>
+    <string name="txt_register_username">"اسمك المستعار"</string>
+    <string name="txt_register_password">"كلمة المرور"</string>
+    <string name="txt_register_password_repeat">"كرر كلمة المرور"</string>
+    <string name="txt_register_email">"بريدك الالكتروني"</string>
+    <string name="txt_register_birthday">"عيد ميلاد"</string>
+
+    <!--ERRORS-->
+    <string name="txt__errorBenutzernameVergeben">"اسم المستخدم مأخوذ بالفعل"</string>
+    <string name="txt__errorBenutzernameMinMax">"اسم المستخدم يجب أن يكون الحد الأدنى. احتفظ بحرفين ويمكن أن يكون الحد الأقصى. لديك 20 حرفا"</string>
+    <string name="txt__errorEmailVergeben">"البريد الإلكتروني مسجل بالفعل"</string>
+    <string name="txt__errorEmailUngültig">"بريد إلكتروني غير صالح"</string>
+    <string name="txt__errorPasswortMatchingError">"كلمة المرور غير متطابقة"</string>
+    <string name="txt__errorMinAlter">"يجب أن يكون عمرك 12 سنة على الأقل"</string>
+    <string name="txt__error_Vorname">"يجب أن يكون الاسم الأول على الأقل. حرف واحد ويسمح بحد أقصى لديك 20 حرفا"</string>
+    <string name="txt__error_Nachname">"يجب أن يكون الاسم الأخير على الأقل. حرف واحد ويسمح بحد أقصى لديك 20 حرفا"</string>
+
+    <string name="txt__alert_BenutzerErstellenFehlerTitel">"تسجيل"</string>
+    <string name="txt__alert_BenutzerErstellenFehler">"خطأ في التسجيل ، هناك خطأ ما في الاسم الأول واسم العائلة. يرجى إعادة تشغيل التطبيق."</string>
+    <string name="txt__alertMaxConnections">"تم الوصول إلى عدد الاتصالات القصوى الخاصة بك. وقت الانتظار: أقل من دقيقة"</string>
+    <string name="txt__alertLogIn">"تسجيل الدخول"</string>
+    <string name="txt_Account">"البيانات الشخصية"</string>
+    <string name="txt_AccountDeletingProgress">"حذف ملف التعريف بما في ذلك البيانات &#8230;"</string>
+    <string name="txt_AccountDeletingFailed">"أوه ، لقد حدث خطأ."</string>
+    <string name="txt__alertRegister">"تسجيل"</string>
+    <string name="txt__alertUserExists">"المستخدم موجود بالفعل."</string>
+    <string name="txt__alertNeverHappens">"آسف ، لم يكن يجب أن يحدث هذا"</string>
+    <string name="txt__alertUnoMomento">"لحظة واحدة &#8230;"</string>
+    <string name="txt_alertWrongPassword">"كلمة مرور خاطئة."</string>
+    <string name="txt_alertEmailVerification">"لقد أرسلنا إليك بريدًا إلكترونيًا ، الرجاء التحقق من ذلك لاستخدام التطبيق. لا يمكننا معرفة ما إذا كان عنوان البريد الإلكتروني الخاص بك."</string>
+    <string name="txt_alertServerOffline">"عذرًا ، خوادمنا بلا اتصال بالإنترنت. نحن نحاول حل المشكلة في أقرب وقت ممكن."</string>
+    <string name="txt_alertAnmeldungSuccesfull">"تسجيل الدخول ناجح."</string>
+    <string name="txt_alertEmailVerficationTitle">"التحقق من البريد الإلكتروني"</string>
+    <string name="txt_alertPermissionMissingTitle">"أذونات"</string>
+    <string name="txt_alertPermissionMissing">"يرجى الافراج عن أذونات لاستخدام التطبيق."</string>
+    <string name="txt_alertPermissionButtonTrue">"تصريح"</string>
+    <string name="txt_alertPermissionButtonFalse">"رفض"</string>
+    <string name="txt_alertCountryDbDetailsCancel">"إجهاض"</string>
+    <string name="txt_alertPostingPhotoNotSavedToUpdatePost">"خطأ ، يمكن أن تعد صورة للتحميل. (مساحة صغيرة جدًا)"</string>
+    <string name="txt_alertLogInFriendSyncFailed">"لا يمكن مزامنة الأصدقاء. حاول مرة أخرى لاحقًا أو اتصل بالدعم."</string>
+    <string name="txt_alertLogInDatenbankAbgleich">"مزامنة قاعدة البيانات قيد التشغيل."</string>
+    <string name="txt_alertCameraCantOpenTitle">"خطأ الكاميرا"</string>
+    <string name="txt_alertCameraCantTakePictureDetails">"خطأ. الكاميرا لا تريد بعد الآن ، لا تأخذ الكاميرا صورة. "</string>
+    <string name="txt_alertPinFailedToDownloadDetails">"خطأ. لقد حدث خطأ."</string>
+    <string name="txt_alertMomentFailedToDeleteTitleDetails">"عفوا. لا يمكن حذف صورتك :("</string>
+    <string name="txt_failedSynchronisationTitel">"تزامن"</string>
+    <string name="txt_failedSynchronisationDetails">"Aii ، لا يمكن مزامنة محادثاتك. حاول مرة أخرى."</string>
+    <string name="txt_failedToHandleFriends">"خطأ."</string>
+    <string name="txt_failedToHandleFriendsDetails">"حدث خطأ ما."</string>
+    <string name="txt_no_internet">"لا يوجد اتصال بالإنترنت"</string>
+    <string name="txt_gefunden">"أسس"</string>
+    <string name="txt_failed_newPwRequest">"عفوا. حدث خطأ ما. :( "</string>
+    <string name="txt_newPwRequested">"لقد أرسلنا إليك رسالة بريد إلكتروني تحتوي على رابط. مع هذا يمكنك تغيير كلمة المرور الخاصة بك."</string>
+    <string name="txt_newPwAlreadyRequested">"لقد تلقيت بالفعل بريدًا إلكترونيًا منا."</string>
+    <string name="txt_newPwRequestTITLE">"إعادة تعيين كلمة المرور"</string>
+    <string name="txt_info_clear_chat">"إذا حذفت سجل الدردشات هذا ، فستفقد جميع الرسائل المفقودة من هذه المحادثة. (يتم الاحتفاظ بالصور ومقاطع الفيديو)"</string>
+
+    <!-- Sucheleiste -->
+    <string name="txt_searchStatus_Suche">"البحث &#8230;"</string>
+    <string name="txt_searchStatus_KeinErgebniss">"لم يتم العثور على شيء"</string>
+    <string name="txt_TippeUmOpen">"اضغط على لفتح"</string>
+
+    <!--LiveThumpHaupBoard-->
+    <string name="txt_einstellungen">"إعدادات"</string>
+    <string name="txt_Moments">"لحظات"</string>
+    <string name="txt_hinzufuegen">"إضافة"</string>
+
+    <string name="txt_group_member_leftGroup">"غادر %s المجموعة."</string>
+    <string name="txt_group_member_wasKicked">"تمت إزالة %s ."</string>
+    <string name="txt_group_you_removed">"لقد قام %s بإزالتك."</string>
+
+
+    <string name="txt_search">"بحث"</string>
+    <string name="txt_blockUser">"كتلة"</string>
+    <string name="txt_Abbrechen">"إجهاض"</string>
+    <string name="txt_dialog_show_moments">"لحظاتنا"</string>
+    <string name="txt_momente_with">"لحظات مع %s"</string>
+    <string name="txt_tryAgain">"إعادة المحاولة"</string>
+    <string name="txt_download_failed">"فشل التنزيل"</string>
+    <string name="txt_new_friendAnfrageNotification">"يريد %s أن يكون صديقك"</string>
+    <string name="txt_new_friendShipIsTrueNotification">"أنت صديق مع %s الآن."</string>
+    <string name="txt_new_friendAnfrageNotificationTitel">"طلب صداقة جديد"</string>
+    <string name="txt_new_friendAnfrageAccepted">"صديق جديد"</string>
+    <string name="txt_senden_an">"ارسل الى"</string>
+    <string name="txt_senden">"إرسال"</string>
+
+    <!-- Scroll-Liste -->
+    <string name="txt_gerade">"فقط"</string>
+    <string name="txt_sMinutes">"قبل %1$s دقيقة"</string>
+    <string name="txt_sHoursWithMinutes">"قبل %1$s std %2$s min"</string>
+    <string name="txt_sHoursSingle">"قبل %1$s std"</string>
+    <string name="txt_sWeeks">قبل %1$s w</string>
+    <string name="txt_sDays">before %1$d d</string>
+
+    <!-- Friends -->
+    <string name="txt_friends_Searching_person">"البحث عن أشخاص"</string>
+    <string name="txt_friend_status_friendship">"إزالة كصديق"</string>
+    <string name="txt_friend_status_i_got_anfrage">"استعرض - قبل - قبول"</string>
+    <string name="txt_friend_status_anfrageVerschickt">"طلب"</string>
+    <string name="txt_friend_status_i_blocked">"مشاركة"</string>
+
+
+    <!--ShortiTexter-->
+    <string name="txt_inviteFriends">"ادعو اصدقاء"</string>
+    <string name="txt_no_savedPostsPrivateGallerie">"يتم عرض صورك هنا"</string>
+
+    <!--Benutzer-->
+    <string name="txt_beitraegeAnzahl">"%s مشاركات"</string>
+
+    <string name="txt_block_UserTitle">"كتلة"</string>
+    <string name="txt_removeFriend_UserTitle">"أزل الصديق؟"</string>
+    <string name="txt_remove">"نزع"</string>
+
+    <!--Kamera-->
+
+    <array name="array_select_eraseAll">
+        <item>Eigenen Bilder nur für Nutzer ausblenden(Bilder sind für den Nutzer wieder einsehbar
+            wenn er freigegeben wird).
+        </item>
+        <item>Eigenen Bilder löschen (Achtung deine Bilder werden unwiederruflich gelöscht).</item>
+    </array>
+
+    <!-- Posting -->
+    <string name="txt_beschreibung">"وصف &#8230;"</string>
+    <string name="txt_title_top_person_posts">"أصدقاء"</string>
+    <string name="txt_zuletzt">"آخر"</string>
+
+    <string name="txt_postPicture">"إرسال"</string>
+
+    <!--Notifications-->
+    <string name="txt_noti_user_saved_your_postInPrivate">"حفظ %s مشاركتك."</string>
+
+    <!-- CHAT -->
+
+    <string name="txt_clear_Chat">"حذف محفوظات الدردشة"</string>
+
+
+    <string name="txt_chat_status_own_Opened">"تم نشر مشاركتك"</string>
+    <string name="txt_chat_status_own_saved">"حفظت مشاركتك"</string>
+    <string name="txt_chat_status_own_Senden">"إرسال &#8230;"</string>
+    <string name="txt_chat_status_own_Uploaded">"تم تحميلها"</string>
+    <string name="txt_chat_status_own_sent">"أرسلت"</string>
+    <string name="txt_chat_status_own_message_failed_sending">"ابقَ لأسفل لرؤية المزيد."</string>
+    <string name="txt_chat_status_own_chat_opened">"الرسالة مفتوحة"</string>
+
+    <string name="txt_chat_status_new_message_text">"رسالة جديدة"</string>
+    <string name="txt_chat_status_new_message_bild">"صورة جديدة"</string>
+    <string name="txt_chat_status_new_message_video">"فيديو جديد"</string>
+    <string name="txt_IMAGE">"صور"</string>
+    <string name="txt_VIDEO">"فيديو"</string>
+    <string name="txt_chat_status_partner_opened">"تسلم"</string>
+
+
+    <string name="txt_chat_SHORT_Gespeichert">"تسجيل"</string>
+    <string name="txt_chat_SHORT_Gesehen">"ينظر"</string>
+    <string name="txt_chat_SHORT_Hochgeladen">"تم تحميلها"</string>
+    <string name="txt_chat_SHORT_PartnerGespeichert">"%s المحفوظة"</string>
+    <string name="txt_chat_SHORT_PartnerGesehen">"%s مفتوح"</string>
+    <string name="txt_chat_SHORT_POINT">&#160;•&#160;</string>
+
+    <!-- LOCATION DATABASE -->
+
+    <string-array name="XX_Locations_Country">
+        <item>"أندورا"</item>
+        <item>"الإمارات العربية المتحدة"</item>
+        <item>"أفغانستان"</item>
+        <item>"أنتيغوا وبربودا"</item>
+        <item>"أنغيلا"</item>
+        <item>"ألبانيا"</item>
+        <item>"أرمينيا"</item>
+        <item>"جزر الأنتيل الهولندية"</item>
+        <item>"أنغولا"</item>
+        <item>"الأرجنتين"</item>
+        <item>"النمسا"</item>
+        <item>"أستراليا"</item>
+        <item>"أروبا"</item>
+        <item>"أذربيجان"</item>
+        <item>"البوسنة و الهرسك"</item>
+        <item>"بربادوس"</item>
+        <item>"بنغلاديش"</item>
+        <item>"بلجيكا"</item>
+        <item>"بوركينا فاسو"</item>
+        <item>"بلغاريا"</item>
+        <item>"البحرين"</item>
+        <item>"بوروندي"</item>
+        <item>"بنين"</item>
+        <item>"برمودا"</item>
+        <item>"بروناي دار السلام"</item>
+        <item>"بوليفيا"</item>
+        <item>"البرازيل"</item>
+        <item>"الباهاما"</item>
+        <item>"بوتان"</item>
+        <item>"بوتسوانا"</item>
+        <item>"روسيا البيضاء"</item>
+        <item>"بليز"</item>
+        <item>"كندا"</item>
+        <item>"جزر كوكوس (كيلينغ)"</item>
+        <item>"جمهورية الكونغو الديمقراطية"</item>
+        <item>"جمهورية افريقيا الوسطى"</item>
+        <item>"الكونغو"</item>
+        <item>"سويسرا"</item>
+        <item>"ساحل العاج (ساحل العاج)"</item>
+        <item>"جزر كوك"</item>
+        <item>"تشيلي"</item>
+        <item>"الكاميرون"</item>
+        <item>"الصين"</item>
+        <item>"كولومبيا"</item>
+        <item>"كوستاريكا"</item>
+        <item>"كوبا"</item>
+        <item>"الرأس الأخضر"</item>
+        <item>"جزيرة الكريسماس"</item>
+        <item>"قبرص"</item>
+        <item>"جمهورية التشيك"</item>
+        <item>"ألمانيا"</item>
+        <item>"جيبوتي"</item>
+        <item>"الدنمارك"</item>
+        <item>"دومينيكا"</item>
+        <item>"جمهورية الدومينيكان"</item>
+        <item>"الجزائر"</item>
+        <item>"الاكوادور"</item>
+        <item>"استونيا"</item>
+        <item>"مصر"</item>
+        <item>"الصحراء الغربية"</item>
+        <item>"إريتريا"</item>
+        <item>"إسبانيا"</item>
+        <item>"أثيوبيا"</item>
+        <item>"فنلندا"</item>
+        <item>"فيجي"</item>
+        <item>"جزر فوكلاند (مالفيناس)"</item>
+        <item>"ولايات ميكرونيزيا الموحدة"</item>
+        <item>"جزر فارو"</item>
+        <item>"فرنسا"</item>
+        <item>"الغابون"</item>
+        <item>"بريطانيا العظمى (بريطانيا)"</item>
+        <item>"غرينادا"</item>
+        <item>"جورجيا"</item>
+        <item>"غيانا الفرنسية"</item>
+        <item>"غيرنسي"</item>
+        //Hier spiele ich
+        <item>"غانا"</item>
+        <item>"جبل طارق"</item>
+        <item>"غرينلاند"</item>
+        <item>"غامبيا"</item>
+        <item>"غينيا"</item>
+        <item>"جوادلوب"</item>
+        <item>"غينيا الاستوائية"</item>
+        <item>"يونان"</item>
+        <item>"جورجيا وجزر ساندويتش"</item>
+        <item>"غواتيمالا"</item>
+        <item>"غينيا بيساو"</item>
+        <item>"غيانا"</item>
+        <item>"هونغ كونغ"</item>
+        <item>"هندوراس"</item>
+        <item>"كرواتيا (هرفاتسكا)"</item>
+        <item>"هايتي"</item>
+        <item>"هنغاريا"</item>
+        <item>"أندونيسيا"</item>
+        <item>"أيرلندا"</item>
+        <item>"إسرائيل"</item>
+        <item>"الهند"</item>
+        <item>"العراق"</item>
+        <item>"إيران"</item>
+        <item>"أيسلندا"</item>
+        <item>"إيطاليا"</item>
+        <item>"جامايكا"</item>
+        <item>"الأردن"</item>
+        <item>"اليابان"</item>
+        <item>"كينيا"</item>
+        <item>"قيرغيزستان"</item>
+        <item>"كمبوديا"</item>
+        <item>"كيريباس"</item>
+        <item>"جزر القمر"</item>
+        <item>"سانت كيتس ونيفيس"</item>
+        <item>"كوريا الشمالية"</item>
+        <item>"كوريا الجنوبية"</item>
+        <item>"الكويت"</item>
+        <item>"جزر كايمان"</item>
+        <item>"كازاخستان"</item>
+        <item>"لاوس"</item>
+        <item>"لبنان"</item>
+        <item>"سانت لوسيا"</item>
+        <item>"ليختنشتاين"</item>
+        <item>"سري لانكا"</item>
+        <item>"ليبيريا"</item>
+        <item>"ليسوتو"</item>
+        <item>"ليتوانيا"</item>
+        <item>"لوكسمبورغ"</item>
+        <item>"لاتفيا"</item>
+        <item>"ليبيا"</item>
+        <item>"المغرب"</item>
+        <item>"موناكو"</item>
+        <item>"مولدوفا"</item>
+        <item>"مدغشقر"</item>
+        <item>"جزر مارشال"</item>
+        <item>"مقدونيا"</item>
+        <item>"مالي"</item>
+        <item>"ميانمار"</item>
+        <item>"منغوليا"</item>
+        <item>"ماكاو"</item>
+        <item>"جزر ماريانا الشمالية"</item>
+        <item>"مارتينيك"</item>
+        <item>"موريتانيا"</item>
+        <item>"مونتسيرات"</item>
+        <item>"مالطا"</item>
+        <item>"موريشيوس"</item>
+        <item>"جزر المالديف"</item>
+        <item>"مالاوي"</item>
+        <item>"المكسيك"</item>
+        <item>"ماليزيا"</item>
+        <item>"موزمبيق"</item>
+        <item>"ناميبيا"</item>
+        <item>"كاليدونيا الجديدة"</item>
+        <item>"النيجر"</item>
+        <item>"جزيرة نورفولك"</item>
+        <item>"نيجيريا"</item>
+        <item>"نيكاراغوا"</item>
+        <item>"هولندا"</item>
+        <item>"النرويج"</item>
+        <item>"نيبال"</item>
+        <item>"ناورو"</item>
+        <item>"نيوي"</item>
+        <item>"نيوزيلندا (اوتياروا)"</item>
+        <item>"عمان"</item>
+        <item>"بناما"</item>
+        <item>"بيرو"</item>
+        <item>"بولينيزيا الفرنسية"</item>
+        <item>"بابوا غينيا الجديدة"</item>
+        <item>"الفلبين"</item>
+        <item>"باكستان"</item>
+        <item>"بولندا"</item>
+        <item>"سان بيار وميكلون"</item>
+        <item>"بيتكيرن"</item>
+        <item>"الأراضي الفلسطينية"</item>
+        <item>"البرتغال"</item>
+        <item>"بالاو"</item>
+        <item>"باراغواي"</item>
+        <item>"قطر"</item>
+        <item>"جمع شمل"</item>
+        <item>"رومانيا"</item>
+        <item>"الاتحاد الروسي"</item>
+        <item>"رواندا"</item>
+        <item>"المملكة العربية السعودية"</item>
+        <item>"جزر سليمان"</item>
+        <item>"سيشيل"</item>
+        <item>"سودان"</item>
+        <item>"السويد"</item>
+        <item>"سنغافورة"</item>
+        <item>"سانت هيلانة"</item>
+        <item>"سلوفينيا"</item>
+        <item>"سفالبارد وجان مايان"</item>
+        <item>"سلوفاكيا"</item>
+        <item>"سيراليون"</item>
+        <item>"سان مارينو"</item>
+        <item>"السنغال"</item>
+        <item>"الصومال"</item>
+        <item>"سورينام"</item>
+        <item>"ساو تومي وبرنسيبي"</item>
+        <item>"السلفادور"</item>
+        <item>"سوريا"</item>
+        <item>"سوازيلاند"</item>
+        <item>"جزر تركس وكايكوس"</item>
+        <item>"تشاد"</item>
+        <item>"الأراضي الجنوبية الفرنسية"</item>
+        <item>"توغو"</item>
+        <item>"تايلاند"</item>
+        <item>"طاجيكستان"</item>
+        <item>"توكيلاو"</item>
+        <item>"تركمانستان"</item>
+        <item>"تونس"</item>
+        <item>"تونغا"</item>
+        <item>"تركيا"</item>
+        <item>"ترينيداد وتوباغو"</item>
+        <item>"توفالو"</item>
+        <item>"تايوان"</item>
+        <item>"تنزانيا"</item>
+        <item>"أوكرانيا"</item>
+        <item>"أوغندا"</item>
+        <item>"أوروغواي"</item>
+        <item>"أوزبكستان"</item>
+        <item>"سانت فنسنت وجزر غرينادين"</item>
+        <item>"فنزويلا"</item>
+        <item>"جزر فيرجن (بريطانيا)"</item>
+        <item>"جزر فيرجن (الولايات المتحدة)"</item>
+        <item>"فيتنام"</item>
+        <item>"فانواتو"</item>
+        <item>"واليس وفوتونا"</item>
+        <item>"ساموا"</item>
+        <item>"يمني"</item>
+        <item>"مايوت"</item>
+        <item>"جنوب افريقيا"</item>
+        <item>"زامبيا"</item>
+        <item>"زائير (سابقة)"</item>
+        <item>"زيمبابوي"</item>
+        <item>"الولايات المتحدة الأمريكية"</item>
+    </string-array>
+
+
+    <string-array name="XX_Locations_CountryID">
+        <item>"AD"</item>
+        <item>"AE"</item>
+        <item>"AF"</item>
+        <item>"AG"</item>
+        <item>"منظمة العفو الدولية"</item>
+        <item>"AL"</item>
+        <item>"AM"</item>
+        <item>"TO"</item>
+        <item>"AO"</item>
+        <item>"AR"</item>
+        <item>"AT"</item>
+        <item>"AU"</item>
+        <item>"AW"</item>
+        <item>"من الألف إلى الياء"</item>
+        <item>"BA"</item>
+        <item>"BB"</item>
+        <item>"BD"</item>
+        <item>"BE"</item>
+        <item>"BF"</item>
+        <item>"BG"</item>
+        <item>"حمالة صدر"</item>
+        <item>"BI"</item>
+        <item>"BJ"</item>
+        <item>"BM"</item>
+        <item>"BN"</item>
+        <item>"BO"</item>
+        <item>"BR"</item>
+        <item>"BS"</item>
+        <item>"BT"</item>
+        <item>"BW"</item>
+        <item>"BY"</item>
+        <item>"BZ"</item>
+        <item>"CA"</item>
+        <item>"CC"</item>
+        <item>"القرص المضغوط"</item>
+        <item>"CF"</item>
+        <item>"CG"</item>
+        <item>"CH"</item>
+        <item>"CI"</item>
+        <item>"CK"</item>
+        <item>"CL"</item>
+        <item>"CM"</item>
+        <item>"CN"</item>
+        <item>"CO"</item>
+        <item>"CR"</item>
+        <item>"CU"</item>
+        <item>"CV"</item>
+        <item>"CX"</item>
+        <item>"CY"</item>
+        <item>"CZ"</item>
+        <item>"DE"</item>
+        <item>"DJ"</item>
+        <item>"DK"</item>
+        <item>"DM"</item>
+        <item>"DO"</item>
+        <item>"DZ"</item>
+        <item>"EC"</item>
+        <item>"EE"</item>
+        <item>"EC"</item>
+        <item>"EH"</item>
+        <item>"ER"</item>
+        <item>"ES"</item>
+        <item>"ET"</item>
+        <item>"FI"</item>
+        <item>"FJ"</item>
+        <item>"FK"</item>
+        <item>"FM"</item>
+        <item>"FO"</item>
+        <item>"FR"</item>
+        <item>"GA"</item>
+        <item>"GB"</item>
+        <item>"DG"</item>
+        <item>"GE"</item>
+        <item>"GF"</item>
+        <item>"GG"</item>
+        <item>"GH"</item>
+        <item>"GI"</item>
+        <item>"GL"</item>
+        <item>"GM"</item>
+        <item>"GN"</item>
+        <item>"GP"</item>
+        <item>"GQ"</item>
+        <item>"GR"</item>
+        <item>"GS"</item>
+        <item>"GT"</item>
+        <item>"GW"</item>
+        <item>"GY"</item>
+        <item>"HK"</item>
+        <item>"HN"</item>
+        <item>"HR"</item>
+        <item>"HT"</item>
+        <item>"HU"</item>
+        <item>"الهوية"</item>
+        <item>"IE"</item>
+        <item>"IL"</item>
+        <item>"IN"</item>
+        <item>"IQ"</item>
+        <item>"IR"</item>
+        <item>"IS"</item>
+        <item>"IT"</item>
+        <item>"JM"</item>
+        <item>"JO"</item>
+        <item>"JP"</item>
+        <item>"KE"</item>
+        <item>"KG"</item>
+        <item>"KH"</item>
+        <item>"KI"</item>
+        <item>"KM"</item>
+        <item>"KN"</item>
+        <item>"KP"</item>
+        <item>"KR"</item>
+        <item>"KW"</item>
+        <item>"KY"</item>
+        <item>"معسكر إعتقال"</item>
+        <item>"LA"</item>
+        <item>"LB"</item>
+        <item>"LC"</item>
+        <item>"LI"</item>
+        <item>"LK"</item>
+        <item>"LR"</item>
+        <item>"LS"</item>
+        <item>"LT"</item>
+        <item>"LU"</item>
+        <item>"LV"</item>
+        <item>"LY"</item>
+        <item>"MA"</item>
+        <item>"MC"</item>
+        <item>"MD"</item>
+        <item>"MG"</item>
+        <item>"MH"</item>
+        <item>"MK"</item>
+        <item>"ML"</item>
+        <item>"MM"</item>
+        <item>"MN"</item>
+        <item>"MO"</item>
+        <item>"MP"</item>
+        <item>"MQ"</item>
+        <item>"MR"</item>
+        <item>"MS"</item>
+        <item>"MT"</item>
+        <item>"MU"</item>
+        <item>"MV"</item>
+        <item>"MW"</item>
+        <item>"MX"</item>
+        <item>"MY"</item>
+        <item>"MZ"</item>
+        <item>"NA"</item>
+        <item>"NC"</item>
+        <item>"NE"</item>
+        <item>"NF"</item>
+        <item>"NG"</item>
+        <item>"NI"</item>
+        <item>"NL"</item>
+        <item>"NO"</item>
+        <item>"NP"</item>
+        <item>"NR"</item>
+        <item>"NU"</item>
+        <item>"NZ"</item>
+        <item>"OM"</item>
+        <item>"PA"</item>
+        <item>"PE"</item>
+        <item>"PF"</item>
+        <item>"PG"</item>
+        <item>"PH"</item>
+        <item>"PK"</item>
+        <item>"PL"</item>
+        <item>"PM"</item>
+        <item>"PN"</item>
+        <item>"PS"</item>
+        <item>"PT"</item>
+        <item>"PW"</item>
+        <item>"PY"</item>
+        <item>"QA"</item>
+        <item>"RE"</item>
+        <item>"RO"</item>
+        <item>"RU"</item>
+        <item>"RW"</item>
+        <item>"SA"</item>
+        <item>"SB"</item>
+        <item>"SC"</item>
+        <item>"SD"</item>
+        <item>"SE"</item>
+        <item>"SG"</item>
+        <item>"SH"</item>
+        <item>"SI"</item>
+        <item>"SJ"</item>
+        <item>"SK"</item>
+        <item>"SL"</item>
+        <item>"SM"</item>
+        <item>"SN"</item>
+        <item>"SO"</item>
+        <item>"SR"</item>
+        <item>"ST"</item>
+        <item>"SV"</item>
+        <item>"SY"</item>
+        <item>"SZ"</item>
+        <item>"TC"</item>
+        <item>"TD"</item>
+        <item>"TF"</item>
+        <item>"TG"</item>
+        <item>"TH"</item>
+        <item>"TJ"</item>
+        <item>"TK"</item>
+        <item>"TM"</item>
+        <item>"TN"</item>
+        <item>"TO"</item>
+        <item>"TR"</item>
+        <item>"TT"</item>
+        <item>"التلفزيون"</item>
+        <item>"TW"</item>
+        <item>"TZ"</item>
+        <item>"UA"</item>
+        <item>"UG"</item>
+        <item>"UY"</item>
+        <item>"UZ"</item>
+        <item>"VC"</item>
+        <item>"VE"</item>
+        <item>"VG"</item>
+        <item>"VI"</item>
+        <item>"VN"</item>
+        <item>"VU"</item>
+        <item>"WF"</item>
+        <item>"WS"</item>
+        <item>"YE"</item>
+        <item>"YT"</item>
+        <item>"ZA"</item>
+        <item>"ZM"</item>
+        <item>"ZR"</item>
+        <item>"ZW"</item>
+        <item>"الولايات المتحدة"</item>
+    </string-array>
+
+    <string name="txt_gruppen">"مجموعة"</string>
+    <string name="XX_txt_share_own_app">"https://play.google.com/store/apps/details؟id=esaph.spotlight"</string>
+    <string name="txt_newMessageCount">"%s رسائل جديدة"</string>
+    <string name="txt_gestern">أمس</string>
+    <string name="txt_still_working">"لا تزال تعمل &#8230;"</string>
+
+    <string name="txt_no_chats_info">"ليس لديك أي أصدقاء حتى الآن"</string>
+    <string name="txt_no_saved_pics">"سيتم عرض الصور المحفوظة هنا"</string>
+
+    <string name="txt_days_ago">"قبل %d يومًا"</string>
+    <string name="txt_weeks_ago">"قبل %d أسبوع"</string>
+    <string name="txt_take_pic">"التقط صورة"</string>
+    <string name="txt_smileys_not_allowed">"الرموز التعبيرية غير مسموح بها."</string>
+    <string name="txt_delete">"حذف"</string>
+    <string name="txt_blocked_info_dialog">"انقر أعلاه للوصول إلى الصور الخاصة بك"</string>
+    <string name="txt_createAccount">"تحديث جديد: إنشاء حساب وتجربته: D"</string>
+
+
+    <string name="txt_rules_accept">"أنا أقبل"</string>
+    <string name="txt_register_lawandorder_DIALOG">"بالضغط على \"أوافق\" ، فإنك توافق على شروط الاستخدام وسياسة الخصوصية الخاصة بنا. إخلاء المسؤولية بما في ذلك"</string>
+    <string name="txt_unsave_warning">"لقد مرت 24 ساعة ، يتم حذف المساهمة عند حفظها."</string>
+    <string name="txt_bildFreigeben">"مشاركة"</string>
+    <string name="txt_bildEntspeichern">"Entspeichern"</string>
+    <string name="txt_Speichern">"حفظ"</string>
+    <string name="txt_ImageNotOpened">"لم يفتح المستخدم بعد"</string>
+    <string name="txt_chat_information_write_user">"ابدأ المحادثة مع %s"</string>
+    <string name="txt_really_remove">"هل حقا حذف؟"</string>
+    <string name="txt_berechtigungenFreigebenCameraSperre">"لم تقم بتعيين أذونات SpotLight على الكاميرا"</string>
+    <string name="txt_requestPermissions">"فتح الأذونات"</string>
+    <string name="txt_no_hashtags_set">"لم تقم بإنشاء أي علامات تصنيف حتى الآن"</string>
+    <string name="txt_choose_hashtag">"اختر علامة تصنيف"</string>
+    <string name="txt_createFirstHashtag">"إنشاء علامة تصنيف"</string>
+    <string name="txt_hashtTagChar">"# %s"</string>
+    <string name="txt_welcome_dummy_login">"ترحيب"</string>
+    <string name="txt_draw">"رسم"</string>
+    <string name="txt_hashtag">"الهاشتاج"</string>
+    <string name="txtUserTypingTrippleDot">&#8230;يكتب</string>
+    <string name="txt_NEW">"جديد"</string>
+    <string name="txt_alert_noMomentsTodayWithTitle">"صور اليوم"</string>
+    <string name="txt_alert_noMomentsTodayWithDetails">"أرسل الصورة الأولى إلى %s"</string>
+    <string name="txt_tap_to_invite">"انقر لدعوة صديقك"</string>
+    <string name="txt_text">"نص"</string>
+    <string name="txt_tab_to_edit">"اضغط للكتابة"</string>
+    <string name="txt_emojie">"Emojie"</string>
+    <string name="txt_filter">"فلتر"</string>
+    <string name="txt_undo">"فك"</string>
+    <string name="txt_saveSticker">"حفظ اللاصق"</string>
+    <string name="txt_sticker">"لاصقة"</string>
+    <string name="txt_no_stickerpacks_created">"قم بإنشاء ملصقك الأول"</string>
+    <string name="txt_write_new_StickerPackNameEdittextHint">"ابحث ، أو اكتب لإنشاء حزمة ملصقات"</string>
+    <string name="txt_ups">"عفوا"</string>
+    <string name="txt_save_all">"حفظ الكل"</string>
+    <string name="txt_nothing_new">"لا يوجد أخبار"</string>
+    <string name="txt_lifecloud">LifeCloud</string>
+
+    <string-array name="arrayInfoStatesForChatPartner">
+        <item>"%s ديه بك %s المحفوظة"</item>
+        <item>"%s ديه بك %s إزالتها"</item>
+        <item>"حذف %s شيء"</item>
+        <item>"%s لقد كنت أفكر %s أفرج"</item>
+        <item>"%s %s أزال %s"</item>
+    </string-array>
+
+    <string-array name="arrayRegisterGeschlecht">
+        <item>"ذكر"</item>
+        <item>"أنثى"</item>
+    </string-array>
+
+    <string name="txt_invite">"دعا"</string>
+    <string name="txt_gesichert">"مضمون"</string>
+    <string name="txt_lifecloud_your_postings">"نسختك الاحتياطية"</string>
+    <string name="txt_something_went_wrong">"حدث خطأ ما"</string>
+    <string name="txt_chat_status_partner_allowed">"لقد جعل شيء مرئيًا مرة أخرى"</string>
+    <string name="txt_chat_status_partner_disallowed">"هل اختفى شيء ما"</string>
+    <string name="txt_share">"سهم"</string>
+    <string name="txt_edit">"تحرير"</string>
+    <string name="txt_effect">"الآثار"</string>
+    <string name="txt_distance">"بعد"</string>
+    <string name="txt_laenge">"طول"</string>
+    <string name="txt_your_hashtags">"هاشتاج الخاص بك"</string>
+    <string name="txt_insgesamt">"الإجمالي %s"</string>
+    <string name="txt_choose_storage_size">"اختر مقدار المساحة التي ترغب في إتاحتها لـ SpotLight"</string>
+    <string name="txt_storage_usage">"استخدام الذاكرة"</string>
+    <string name="txt_momentsYourPictureWillDisplayHereToday">"يتم عرض صورك هنا ، احفظ صورتك الأولى"</string>
+    <string name="txt_sorted_by_day">"مجمعة حسب الأيام"</string>
+    <string name="txt_YouHashtagsWillDisplayHere">"سيتم عرض علامات التصنيف الخاصة بك هنا"</string>
+    <string name="txt_allMoments">"كل اللحظات"</string>
+    <string name="txt_show_all">"عرض الكل"</string>
+    <string name="txt_lifecloud_hereFind">هنا يمكنك العثور على مساهماتك المضمونة</string>
+    <string name="txt_heute">اليوم</string>
+
+    <plurals name="txtSentToPersons">
+        <item quantity="one">ارسل الى صديق</item>
+        <item quantity="other">تم الإرسال إلى أصدقاء٪s</item>
+    </plurals>
+
+    <plurals name="txtBeitragCount">
+        <item quantity="one">٪s مشاركة مع علامة التصنيف هذه</item>
+        <item quantity="other">٪s مشاركات باستخدام علامة التصنيف هذه</item>
+    </plurals>
+
+    <string name="crop_image_menu_rotate_left">أدر عكس اتجاه عقارب الساعة</string>
+    <string name="crop_image_menu_rotate_right">أدر</string>
+    <string name="crop_image_menu_crop">قُصّ</string>
+    <string name="crop_image_menu_flip">اقلب</string>
+    <string name="crop_image_menu_flip_horizontally">اقلب أفقيًا</string>
+    <string name="crop_image_menu_flip_vertically">اقلب رأسيًا</string>
+
+    <string name="pick_image_intent_chooser_title">اختر مصدرًا</string>
+
+    <string name="crop_image_activity_no_permissions">إلغاء؛ الأذونات المطلوبة غير ممنوحة</string>
+
+    <string name="txt_hintSearchForSeason">ابحث في الموسم</string>
+    <string name="txt_back">إلى الوراء</string>
+    <string name="txt_hintSearchForLifeCloud">ابحث في LifeCloud الخاص بك</string>
+    <string name="txt_with">مع</string>
+    <string name="txt_AlsoRegistred">انا مسجل بالفعل</string>
+    <string name="txt_SpotLightSkipButtonTutorial" >أنت لا تريد الاشتراك؟ نحن نقدم لك فرصة لمحاولة التطبيق دون الحاجة للتسجيل. :)</string>
+    <string name="txt_at_placeholder">\@%s</string>
+
+    <string name="txt_TutTakePicAndVid">"اضغط مرة واحدة لالتقاط صورة ، والتوقف لتسجيل الفيديو."</string>
+    <string name="txt_person">"شخص"</string>
+    <string name="txt_message">"رسالة"</string>
+    <string name="txt_tab_to_record">"اضغط لبدء التسجيل. اضغط مرة أخرى لإيقاف التسجيل"</string>
+    <string name="txt_speek_somethink">"قل لي شيئا"</string>
+    <string name="txt_tell_somethingAboutYou">"قل لي شيئا عنك"</string>
+    <string name="txt_text_normal">"عادة"</string>
+    <string name="txt_text_bold">"شحم"</string>
+    <string name="txt_text_cursiv">"مائل"</string>
+    <string name="txt_shaderGlow">"توهج"</string>
+    <string name="txt_shaderPoints">"نقاط"</string>
+    <string name="txt_no_effects">"لا يوجد تأثير"</string>
+    <string name="txt_camera_effect_normal">"بدون"</string>
+    <string name="txt_tab_to_choose">"انقر لتحديد مبتسم"</string>
+    <string name="txt_camera_effect_sticker_hunt">"وجه هنتر"</string>
+    <string name="txt_alertDbPositiveButtonTryAgain">"حاول مرة أخرى"</string>
+    <string name="txt_text_placeholder">"نص"</string>
+    <string name="txt_done">"القيام به"</string>
+    <string name="txt_tap_to_create">"انقر لإنشاء"</string>
+    <string name="txt_title_find_new_friends">"العثور على أصدقاء"</string>
+    <string name="txt_friend_status_follow_too">"اتبع أيضا"</string>
+    <string name="txt_friend_status_unfollow">"لا تتبع بعد الآن"</string>
+    <string name="txt_friend_status_follow">"تابع"</string>
+
+
+    <string name="txt_chat_status_message_text">"رسالة"</string>
+    <string name="txt_chat_status_message_audio">"رسالة صوتية"</string>
+    <string name="txt_chat_status_message_sticker">"لاصقة"</string>
+    <string name="txt_chat_status_message_emojie">"Emojie"</string>
+    <string name="txt_chat_status_message_bild">"صورة"</string>
+    <string name="txt_chat_status_message_video">"فيديو"</string>
+    <string name="txt_chat_status_new_message_audio">"رسالة صوتية جديدة"</string>
+    <string name="txt_chat_status_new_message_sticker">"ملصقات جديدة"</string>
+    <string name="txt_chat_status_new_message_emojie">"جديد Emojie"</string>
+    <string name="txt_profilanzeigen" >عرض ملف التعريف</string>
+    <string name="txt_privateChatTutorialExpandTextualEditor" >اسحب بإصبعك لفتح المحرر</string>
+    <string name="txt_profilbild" >صورة الملف الشخصي</string>
+    <string name="txt_profilbild_aendern" >تغيير صورة الملف الشخصي</string>
+    <string name="txt_profilbild_entfernen" >إزالة صورة الملف الشخصي</string>
+    <string name="txt_dialog_send_info_state_senden">إرسال</string>
+    <string name="txt_dialog_send_info_state_gesendet">أرسلت</string>
+    <string name="txt_loginOrRegister">تسجيل الدخول أو التسجيل</string>
+    <string name="txt_tryApp">المحاولة الأولى فقط</string>
+
+    <string name="txt_dont_wanna_share">لا ، لا أريد مشاركة ذلك😞</string>
+    <string name="txt_share_big_text">يطلب منك! دعم لنا إذا كنت تحب وتبادل المرح مع أصدقائك. سنكون سعداء إذا أوصيت Spotlight لشخص ما. :)</string>
+    <string name="txt_yes_with_pleasure">بكل سرور!😎</string>
+    <string name="txt_overlay_filter">Overlay</string>
+    <string name="txt_notification_not_uploaded_yet">لم يتم تحميل بعض الصور</string>
+    <string name="txt_do_not_show_again">لا تظهر بعد الآن</string>
+    <string name="txt_dragUp">سحب ما يصل</string>
+    <string name="txt_new_faces">New Faces</string>
+
+</resources>

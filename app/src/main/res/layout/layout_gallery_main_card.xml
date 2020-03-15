@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:stateListAnimator="@animator/bubble_button_animation"
+        android:layout_margin="6dp"
+        app:cardElevation="3dp"
+        app:cardCornerRadius="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/imageViewMemoryItemCollectionImage"
+                android:scaleType="centerCrop"
+                android:layout_height="200dp"
+                android:layout_width="match_parent"
+                app:riv_corner_radius_top_left="6dip"
+                app:riv_corner_radius_top_right="6dip"
+                app:riv_corner_radius_bottom_right="6dip"
+                app:riv_corner_radius_bottom_left="6dip" />
+
+            <ProgressBar
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                android:id="@+id/progressBarSmallViewLoading"
+                android:progressDrawable="@drawable/esaph_progressbar_light"
+                android:indeterminate="false"
+                android:background="@drawable/esaph_progressbar_light_background"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+            <TextView
+                android:layout_margin="6dp"
+                android:layout_below="@+id/imageViewMemoryItemCollectionImage"
+                android:textStyle="bold"
+                android:gravity="start"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewMemoryItemCollectionTitle" />
+
+            <TextView
+                android:layout_margin="6dp"
+                android:layout_below="@+id/imageViewMemoryItemCollectionImage"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:padding="3dp"
+                android:id="@+id/textViewMemoryItemCollectionPostCount"
+                android:gravity="center_horizontal"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

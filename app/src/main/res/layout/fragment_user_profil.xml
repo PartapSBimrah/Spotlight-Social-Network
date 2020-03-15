@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".navigation.spotlight.PublicPostsNavigation.UserProfile.UserProfilVisitShow"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+
+        <ImageView
+            android:stateListAnimator="@animator/bubble_button_animation"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:padding="10dp"
+            app:srcCompat="@drawable/ic_backward_arrow"
+            android:id="@+id/imageViewBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+
+        <TextView
+            android:layout_toRightOf="@+id/imageViewBack"
+            android:layout_toEndOf="@+id/imageViewBack"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            android:text="@string/txt_back"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:paddingRight="6dp"
+        android:paddingEnd="6dp"
+        android:paddingLeft="6dp"
+        android:paddingStart="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <esaph.spotlight.Esaph.EsaphCircleImageView.EsaphCircleImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/imageViewProfilBild"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+
+        <ImageView
+            android:layout_margin="6dp"
+            android:padding="8dp"
+            android:background="@drawable/ic_no_image_circle"
+            android:layout_alignRight="@+id/imageViewProfilBild"
+            android:layout_alignEnd="@+id/imageViewProfilBild"
+            android:id="@+id/accountChangeProfilbild"
+            app:srcCompat="@drawable/ic_down_arrow"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        <ImageView
+            android:id="@+id/accountOptionsArrow"
+            android:padding="12dp"
+            app:srcCompat="@drawable/ic_down_arrow"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recylerViewHorizontal"
+            android:layout_toLeftOf="@+id/accountOptionsArrow"
+            android:layout_toStartOf="@+id/accountOptionsArrow"
+            android:layout_alignBottom="@+id/imageViewProfilBild"
+            android:layout_alignTop="@+id/imageViewProfilBild"
+            android:layout_toEndOf="@+id/imageViewProfilBild"
+            android:layout_toRightOf="@+id/imageViewProfilBild"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <View
+            android:id="@+id/dividerBelowHashtags"
+            android:layout_toRightOf="@+id/imageViewProfilBild"
+            android:layout_toEndOf="@+id/imageViewProfilBild"
+            android:layout_below="@+id/imageViewProfilBild"
+            android:background="@color/colorGrey"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp" />
+
+        <TextView
+            android:layout_margin="6dp"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/textViewAccountName"
+            android:layout_below="@+id/dividerBelowHashtags"
+            android:text="Subrim"
+            android:textColor="@color/colorBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+            android:id="@+id/linearLayoutStatistics"
+            android:gravity="center"
+            android:layout_below="@+id/textViewAccountName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textViewFollower"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_margin="6dp"
+                android:padding="6dp"
+                android:background="@drawable/background_rounded_grey_line"
+                android:text="530 Follower"
+                android:textSize="13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textViewFollowing"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_margin="6dp"
+                android:padding="6dp"
+                android:background="@drawable/background_rounded_grey_line"
+                android:text="12 Following"
+                android:textSize="13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textViewAufrufe"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_margin="6dp"
+                android:padding="6dp"
+                android:background="@drawable/background_rounded_grey_line"
+                android:text="255K Aufrufe"
+                android:textSize="13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <com.borjabravo.readmoretextview.ReadMoreTextView
+            android:id="@+id/textViewAccountDescription"
+            app:trimLength="100"
+            app:colorClickableText="@color/colorDarkerGrey"
+            android:textSize="16sp"
+            android:textColor="@color/colorBlack"
+            android:text="Hey, my name is Julian, and this is my account."
+            android:layout_below="@+id/linearLayoutStatistics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+
+    <View
+        android:layout_marginTop="6dp"
+        android:background="@drawable/shadow_line_top_to_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recylerViewAccountMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+</LinearLayout>

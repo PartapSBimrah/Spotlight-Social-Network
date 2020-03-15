@@ -1,0 +1,293 @@
+<resources>
+    <string-array name="array_effects">
+        <item>"нет"</item>
+        <item>"радуга"</item>
+    </string-array>
+
+    <string-array name="array_stroke_types">
+        <item>"линия"</item>
+        <item>"точек"</item>
+        <item>"Длинные очки"</item>
+    </string-array>
+
+    <string-array name="spotlight_backup_options">
+        <item>"Без ограничений"</item>
+        <item>"50 МБ"</item>
+        <item>"150 МБ"</item>
+        <item>"300 МБ"</item>
+        <item>"500 МБ"</item>
+        <item>"GB"</item>
+    </string-array>
+
+    <string-array name="arraySortingMechanismsPrivate">
+        <item>"все"</item>
+        <item>"мой"</item>
+    </string-array>
+
+
+    <string-array name="SPOT_TEMPLATES">
+        <item>{"BGC":-1,"TS":80,"TC":-7617718,"FTA":1,"FS":0,"FFY":"waker"}</item>
+        <item>{"BGC":-1,"TS":80,"TC":-3285959,"FTA":1,"FS":0,"FFY":"philliboo"}</item>
+        <item>{"BGC":-1,"TS":80,"TC":-16738680,"FTA":1,"FS":0,"FFY":"outersid"}</item>
+        <item>{"BGC":-1,"TS":80,"TC":-3285959,"FTA":1,"FS":0,"FFY":"youre_gone"}</item>
+        <item>{"BGC":-1,"TS":80,"TC":-11751600,"FTA":1,"FS":0,"FFY":"centreclaws"}</item>
+        <item>{"BGC":-1,"TS":80,"TC":-5317,"FTA":1,"FS":0,"FFY":"waker"}</item>
+        <item>{"BGC":-1,"TS":80,"TC":-1499549,"FTA":1,"FS":0,"FFY":"actionj"}</item>
+        <item>{"BGC":-1,"TS":80,"TC":-8825528,"FTA":1,"FS":0,"FFY":"rm_playtime_3d"}</item>
+        <item>{"BGC":-1,"TS":80,"TC":-11751600,"FTA":1,"FS":0,"FFY":"penguinattack"}</item>
+        <item>{"BGC":-1,"TS":80,"TC":-10011977,"FTA":1,"FS":0,"FFY":"penguinattack"}</item>
+        <item>{"BGC":-1,"TS":80,"TC":-12627531,"FTA":1,"FS":0,"FFY":"rm_playtime_3d"}</item>
+        <item>{"BGC":-1,"TS":80,"TC":-43230,"FTA":1,"FS":0,"FFY":"monodb_"}</item>
+        <item>{"BGC":-1,"TS":80,"TC":-26624,"FTA":1,"FS":0,"FFY":"centreclawsbeam"}</item>
+        <item>{"BGC":-1,"TS":80,"TC":-12627531,"FTA":1,"FS":0,"FFY":"edbwt"}</item>
+        <item>{"BGC":-1,"TS":80,"TC":-6381922,"FTA":1,"FS":0,"FFY":"actionj"}</item>
+        <item>{"BGC":-1,"TS":80,"TC":-16537100,"FTA":1,"FS":0,"FFY":"gwibble_"}</item>
+        <item>{"BGC":-1,"TS":80,"TC":-3285959,"FTA":1,"FS":0,"FFY":"edbwt"}</item>
+        <item>{"BGC":-1,"TS":80,"TC":-1499549,"FTA":1,"FS":0,"FFY":"monodb_"}</item>
+        <item>{"BGC":-1,"TS":80,"TC":-1,"FTA":1,"FS":0,"FFY":"jandles"}</item>
+        <item>{"BGC":-1,"TS":80,"TC":-16121,"FTA":1,"FS":0,"FFY":"condition3dfilled_regular"}</item>
+        <item>{"BGC":-1,"TS":80,"TC":-5317,"FTA":1,"FS":0,"FFY":"musicals"}</item>
+        <item>{"BGC":-1,"TS":80,"TC":-26624,"FTA":1,"FS":0,"FFY":"philliboo"}</item>
+        <item>{"BGC":-1,"TS":80,"TC":-3285959,"FTA":1,"FS":0,"FFY":"philliboo"}</item>
+        <item>{"BGC":-1,"TS":80,"TC":-1,"FTA":1,"FS":0,"FFY":"good_dog_plain"}</item>
+        <item>{"BGC":-1,"TS":80,"TC":-6381922,"FTA":1,"FS":0,"FFY":"youre_gone"}</item>
+        <item>{"BGC":-1,"TS":80,"TC":-10011977,"FTA":1,"FS":0,"FFY":"good_dog_plain"}</item>
+        <item>{"BGC":-1,"TS":80,"TC":-12627531,"FTA":1,"FS":0,"FFY":"good_dog_plain"}</item>
+        <item>{"BGC":-1,"TS":80,"TC":-1,"FTA":1,"FS":0,"FFY":"musicals"}</item>
+        <item>{"BGC":-1,"TS":80,"TC":-16121,"FTA":1,"FS":0,"FFY":"philliboo"}</item>
+        <item>{"BGC":-1,"TS":80,"TC":-769226,"FTA":1,"FS":0,"FFY":"jandles"}</item>
+        <item>{"BGC":17170443,"TS":80,"TC":-10011977,"FTA":1,"FS":0,"FFY":"rm_tubeway_chrome"}</item>
+        <item>{"BGC":17170443,"TS":80,"TC":-14575885,"FTA":1,"FS":0,"FFY":"centreclaws"}</item>
+        <item>{"BGC":17170443,"TS":80,"TC":-16121,"FTA":1,"FS":0,"FFY":"penguinattack"}</item>
+        <item>{"BGC":17170443,"TS":80,"TC":-1499549,"FTA":1,"FS":0,"FFY":"waker"}</item>
+        <item>{"BGC":17170443,"TS":80,"TC":-1499549,"FTA":1,"FS":0,"FFY":"disco3"}</item>
+        <item>{"BGC":17170443,"TS":80,"TC":-1499549,"FTA":1,"FS":0,"FFY":"centreclaws"}</item>
+        <item>{"BGC":17170443,"TS":80,"TC":-6381922,"FTA":1,"FS":0,"FFY":"outersid"}</item>
+        <item>{"BGC":17170443,"TS":80,"TC":-6381922,"FTA":1,"FS":0,"FFY":"condition3d_regular"}</item>
+        <item>{"BGC":17170443,"TS":80,"TC":-3285959,"FTA":1,"FS":0,"FFY":"rm_tubeway_chrome"}</item>
+        <item>{"BGC":17170443,"TS":80,"TC":-7617718,"FTA":1,"FS":0,"FFY":"condition3d_regular"}</item>
+        <item>{"BGC":17170443,"TS":80,"TC":-12627531,"FTA":1,"FS":0,"FFY":"undergroundnf"}</item>
+        <item>{"BGC":17170443,"TS":80,"TC":-10453621,"FTA":1,"FS":0,"FFY":"jandles"}</item>
+        <item>{"BGC":17170443,"TS":80,"TC":-16537100,"FTA":1,"FS":0,"FFY":"youre_gone"}</item>
+        <item>{"BGC":17170443,"TS":80,"TC":-8825528,"FTA":1,"FS":0,"FFY":"centreclaws"}</item>
+        <item>{"BGC":17170443,"TS":80,"TC":-16728876,"FTA":1,"FS":0,"FFY":"edbwt"}</item>
+        <item>{"BGC":17170443,"TS":80,"TC":-769226,"FTA":1,"FS":0,"FFY":"monodb_"}</item>
+        <item>{"BGC":17170443,"TS":80,"TC":-6381922,"FTA":1,"FS":0,"FFY":"gwibble_"}</item>
+        <item>{"BGC":17170443,"TS":80,"TC":-8825528,"FTA":1,"FS":0,"FFY":"outersid"}</item>
+        <item>{"BGC":17170443,"TS":80,"TC":-7617718,"FTA":1,"FS":0,"FFY":"condition3dfilled_regular"}</item>
+        <item>{"BGC":17170443,"TS":80,"TC":-26624,"FTA":1,"FS":0,"FFY":"plg"}</item>
+        <item>{"BGC":17170443,"TS":80,"TC":-6381922,"FTA":1,"FS":0,"FFY":"musicals"}</item>
+        <item>{"BGC":17170443,"TS":80,"TC":-14575885,"FTA":1,"FS":0,"FFY":"jandles"}</item>
+        <item>{"BGC":17170443,"TS":80,"TC":-12627531,"FTA":1,"FS":0,"FFY":"actionj"}</item>
+    </string-array>
+
+    <string-array name="TEXT_TEMPLATES_NAMES">
+        <item>Emotions</item>
+        <item>Events</item>
+        <item>Fruits</item>
+        <item>Animals</item>
+        <item>Friends</item>
+        <item>SG Edition Pack</item>
+    </string-array>
+
+    <string-array name="TEXT_TEMPLATES_EMOTIONS">
+        <item>Honey</item>
+        <item>Love</item>
+        <item>Talk with my Hand</item>
+        <item>Why so Serious</item>
+        <item>Cuute</item>
+        <item>Grr</item>
+        <item>Hrr</item>
+        <item>Darling</item>
+        <item>I am Angry</item>
+        <item>Kitty</item>
+        <item>I am your dog, Wuff</item>
+        <item>Do you mean?</item>
+        <item>Wait a minute</item>
+        <item>Show me</item>
+        <item>Really?</item>
+        <item>What you said!?</item>
+        <item>I am happy</item>
+        <item>Love u</item>
+        <item>Candy</item>
+        <item>Go leave</item>
+        <item>Take it away</item>
+        <item>Heart broken</item>
+        <item>Tell me more</item>
+        <item>Thank you</item>
+        <item>Next one pleaase</item>
+        <item>Auu</item>
+        <item>Pick me up</item>
+        <item>Ohh</item>
+        <item>Yes</item>
+        <item>No</item>
+        <item>Find me</item>
+        <item>I can feel you love</item>
+        <item>It hurts</item>
+        <item>SOS</item>
+    </string-array>
+
+
+
+    <string-array name="TEXT_TEMPLATES_EVENTS">
+        <item>Cinema?</item>
+        <item>Swimming?</item>
+        <item>Shopping?</item>
+        <item>Triggered?</item>
+        <item>Let us go to a Bar</item>
+        <item>Somethink new?</item>
+        <item>Go driving?</item>
+        <item>Heeelp</item>
+        <item>Buy me some Candy</item>
+        <item>Lets go shopping</item>
+        <item>Remind me</item>
+        <item>Netflix &amp; Chill?</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item>Lets go to the Disco</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+
+
+
+
+    <string-array name="TEXT_TEMPLATES_FRUITS">
+        <item>Frozen yogurt</item>
+        <item>Flying Banana</item>
+        <item>Orange</item>
+        <item>Strawberry Cake</item>
+        <item>Pineapple</item>
+        <item>Apple pan</item>
+        <item>Pineapple pan</item>
+        <item>Blueberrie flow</item>
+        <item>Grapes</item>
+        <item>Honeydew</item>
+        <item>Horned Melon</item>
+        <item>Jabuticaba</item>
+        <item>Kiwi</item>
+        <item>Lychee</item>
+        <item>Mango</item>
+        <item>Peach</item>
+        <item>Raspberry</item>
+        <item>Watermelon</item>
+        <item>Zucchini</item>
+        <item>Rambutan</item>
+        <item>Olive</item>
+        <item>Yali Pear</item>
+        <item>Elephant Fruit</item>
+        <item>Dewberry</item>
+        <item>Fig</item>
+        <item>Apricot</item>
+        <item>Apple</item>
+    </string-array>
+
+
+
+
+    <string-array name="TEXT_TEMPLATES_ANIMALS">
+        <item>I was attacked by a bear</item>
+        <item>My dog has eaten my homework</item>
+        <item>Cat</item>
+        <item>A Elephant is living in my car</item>
+        <item>Mouse</item>
+        <item>Penguin</item>
+        <item>A Bear is in my bed</item>
+        <item>Chinchilla</item>
+        <item>The Monkey has stolen my sunglasses</item>
+        <item>Duck</item>
+        <item>Crocodile</item>
+        <item>Cow</item>
+        <item>Butterfly</item>
+        <item>Fish</item>
+        <item>Bird</item>
+        <item>Bat</item>
+        <item>Camel</item>
+        <item>Alligator</item>
+        <item>Ant</item>
+        <item>Gorilla</item>
+        <item>Horse</item>
+        <item>Frog</item>
+        <item>Leopard</item>
+        <item>Lizard</item>
+        <item>The Octopus </item>
+        <item>Delphine</item>
+        <item>Aaa Shark attack</item>
+    </string-array>
+
+
+
+    <string-array name="TEXT_TEMPLATES_FRIENDS">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+
+
+    <string-array name="TEXT_TEMPLATES_SG">
+        <item>Dicke blubba</item>
+        <item>Schrott</item>
+        <item>Burnout</item>
+        <item>Powershifting</item>
+        <item>Drrifting</item>
+        <item>Speedshifting</item>
+        <item>Drifting Mifting Powershifting</item>
+        <item>Suizid Gebiet</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+</resources>

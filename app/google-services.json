@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "603220131126",
+    "firebase_url": "https://spotlight-3ce30.firebaseio.com",
+    "project_id": "spotlight-3ce30",
+    "storage_bucket": "spotlight-3ce30.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:603220131126:android:0f8f346d954a2148",
+        "android_client_info": {
+          "package_name": "esaph.spotlight"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsQ75ZQv17rUt2N2ArzaerjMDsjd2_Rk0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "603220131126-qb8c793oov8ga26m60a7uljdqji4de25.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

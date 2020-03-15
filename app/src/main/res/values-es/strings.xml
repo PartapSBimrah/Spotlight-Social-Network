@@ -1,0 +1,839 @@
+<resources>
+    <string name="app_name">Spotlight</string>
+
+
+    <!--LoginActivity-->
+    <string name="title_activity_login">"Registro"</string>
+    <string name="txt_login_Username">"nombre de usuario"</string>
+    <string name="txt_login_Password">"contraseña"</string>
+    <string name="txt_login_PasswordForgotten">"¿Olvidaste tu contraseña?"</string>
+    <string name="txt_login_NeuesPasswortAnfordern">"Solicitar nueva contraseña"</string>
+    <string name="txt_login_Anmelden">"registro"</string>
+    <string name="txt_login_Abmelden">"finalizar la sesión"</string>
+    <string name="txt_Support">"Soporte, reportar problemas."</string>
+    <string name="txt_AccountDelete">"Eliminar cuenta"</string>
+    <string name="txt_AccountDeleteReally">"¿Realmente eliminar?"</string>
+    <string name="txt_login_Registrieren">"registro"</string>
+    <string name="txt_login_haftungsausschluss">"renuncia"</string>
+    <string name="txt_impressum">"huella"</string>
+    <string name="txt_login_datenschutzerklarung">"política de privacidad"</string>
+
+
+    <!--Register activity-->
+    <string name="txt__alertFailedEmailTitle">"Oh no"</string>
+    <string name="txt__alertFailedEmailDetails">"Límite de registro alcanzado, inténtalo de nuevo en la próxima hora: D"</string>
+    <string name="txt__alertCheckMailTitle">"Un momento"</string>
+    <string name="txt__alertCheckMailDetails">"Compruebe si se alcanza el límite de registro."</string>
+    <string name="txt_register_wieistdeinname">"Cual es tu nombre"</string>
+    <string name="txt_register_vorname">"primer nombre"</string>
+    <string name="txt_register_nachname">"apellido"</string>
+    <string name="txt_register_lawandorder">"Al continuar, usted acepta nuestros Términos de uso, Política de privacidad y Descargo de responsabilidad."</string>
+    <string name="txt_register_weiter">"más"</string>
+    <string name="txt_register_fastFertig">"Casi terminado"</string>
+    <string name="txt_register_username">"Tu apodo"</string>
+    <string name="txt_register_password">"contraseña"</string>
+    <string name="txt_register_password_repeat">"Repetir contraseña"</string>
+    <string name="txt_register_email">"Tu email"</string>
+    <string name="txt_register_birthday">"cumpleaños"</string>
+
+    <!--ERRORS-->
+    <string name="txt__errorBenutzernameVergeben">"El nombre de usuario ya está tomado"</string>
+    <string name="txt__errorBenutzernameMinMax">"El nombre de usuario debe ser min. Tiene 2 caracteres y puede max. Tener 20 caracteres"</string>
+    <string name="txt__errorEmailVergeben">"El correo electrónico ya está registrado"</string>
+    <string name="txt__errorEmailUngültig">"Email invalido"</string>
+    <string name="txt__errorPasswortMatchingError">"La contraseña no coincide"</string>
+    <string name="txt__errorMinAlter">"Debes tener al menos 12 años de edad."</string>
+    <string name="txt__error_Vorname">"El primer nombre debe ser min. 1 personaje y permitido max. Tener 20 caracteres"</string>
+    <string name="txt__error_Nachname">"El apellido debe ser min. 1 personaje y permitido max. Tener 20 caracteres"</string>
+
+    <string name="txt__alert_BenutzerErstellenFehlerTitel">"registro"</string>
+    <string name="txt__alert_BenutzerErstellenFehler">"Error al registrarse, algo está mal con su nombre y apellido. Por favor, reinicie la aplicación."</string>
+    <string name="txt__alertMaxConnections">"Su número de conexiones máximas ha sido alcanzado.\n\nTiempo de espera: menos de un minuto"</string>
+    <string name="txt__alertLogIn">"registro"</string>
+    <string name="txt_Account">"perfil"</string>
+    <string name="txt_AccountDeletingProgress">"Eliminar perfil incluyendo datos &#8230;"</string>
+    <string name="txt_AccountDeletingFailed">"ohh, ha ocurrido un error"</string>
+    <string name="txt__alertRegister">"registro"</string>
+    <string name="txt__alertUserExists">"El usuario ya existe."</string>
+    <string name="txt__alertNeverHappens">"Oh, lo siento, eso no debería haber ocurrido."</string>
+    <string name="txt__alertUnoMomento">"Un momento &#8230;"</string>
+    <string name="txt_alertWrongPassword">"Contraseña incorrecta."</string>
+    <string name="txt_alertEmailVerification">"Le hemos
+enviado un correo electrónico, verifique que use la aplicación. No 
+podemos saber si es su dirección de correo electrónico \"."</string>
+    <string name="txt_alertServerOffline">"Lo sentimos, nuestros servidores están fuera de línea. Intentamos solucionar el problema lo antes posible."</string>
+    <string name="txt_alertAnmeldungSuccesfull">"Inicio de sesión exitoso."</string>
+    <string name="txt_alertEmailVerficationTitle">"Verificación de correo electrónico"</string>
+    <string name="txt_alertPermissionMissingTitle">"permisos"</string>
+    <string name="txt_alertPermissionMissing">"Por favor libere los permisos para usar la aplicación."</string>
+    <string name="txt_alertPermissionButtonTrue">"permiso"</string>
+    <string name="txt_alertPermissionButtonFalse">"rechazar"</string>
+    <string name="txt_alertCountryDbDetailsCancel">"abortar"</string>
+    <string name="txt_alertPostingPhotoNotSavedToUpdatePost">"Error, podría preparar la imagen para subir. (Muy poco espacio)"</string>
+    <string name="txt_alertLogInFriendSyncFailed">"Los amigos no pudieron ser sincronizados. Inténtalo de nuevo más tarde, o contacta al soporte."</string>
+    <string name="txt_alertLogInDatenbankAbgleich">"La sincronización de la base de datos se está ejecutando."</string>
+    <string name="txt_alertCameraCantOpenTitle">"error en la cámara"</string>
+    <string name="txt_alertCameraCantTakePictureDetails">"Lamentablemente. La cámara ya no quiere, la cámara no toma una foto. "</string>
+    <string name="txt_alertPinFailedToDownloadDetails">"Lamentablemente. Ha ocurrido un error."</string>
+    <string name="txt_alertMomentFailedToDeleteTitleDetails">"Vaya. Tu foto no pudo ser borrada :("</string>
+    <string name="txt_failedSynchronisationTitel">"sincronización"</string>
+    <string name="txt_failedSynchronisationDetails">"Aii, tus conversaciones no pudieron ser sincronizadas. Inténtalo de nuevo"</string>
+    <string name="txt_failedToHandleFriends">"Lamentablemente."</string>
+    <string name="txt_failedToHandleFriendsDetails">"Algo salió mal."</string>
+    <string name="txt_no_internet">"No hay conexión a internet"</string>
+    <string name="txt_gefunden">"fundar"</string>
+    <string name="txt_failed_newPwRequest">"Vaya. Algo salió mal. :( "</string>
+    <string name="txt_newPwRequested">"Te enviamos un email con un enlace. Con esto puedes cambiar tu contraseña."</string>
+    <string name="txt_newPwAlreadyRequested">"Ya has recibido un correo electrónico de nosotros."</string>
+    <string name="txt_newPwRequestTITLE">"Restablecer contraseña"</string>
+    <string name="txt_info_clear_chat">"Si elimina 
+este historial de chat, todos los mensajes perdidos se perderán de esta 
+conversación\n\n(se guardarán las imágenes y los videos)"</string>
+
+    <!-- Sucheleiste -->
+    <string name="txt_searchStatus_Suche">"Búsqueda &#8230;"</string>
+    <string name="txt_searchStatus_KeinErgebniss">"Nada encontrado"</string>
+    <string name="txt_TippeUmOpen">"Presione para abrir"</string>
+
+    <!--LiveThumpHaupBoard-->
+    <string name="txt_einstellungen">"ajustes"</string>
+    <string name="txt_Moments">Momentos</string>
+    <string name="txt_hinzufuegen">"añadir"</string>
+
+    <string name="txt_group_member_leftGroup">"%s abandonó el grupo."</string>
+    <string name="txt_group_member_wasKicked">"%s ha sido eliminado."</string>
+    <string name="txt_group_you_removed">"%s ha eliminado."</string>
+
+
+    <string name="txt_search">"búsqueda"</string>
+    <string name="txt_blockUser">"bloque"</string>
+    <string name="txt_Abbrechen">"abortar"</string>
+    <string name="txt_dialog_show_moments">"Nuestros momentos"</string>
+    <string name="txt_momente_with">"Momentos con %s"</string>
+    <string name="txt_tryAgain">"Inténtalo de nuevo"</string>
+    <string name="txt_download_failed">"Descarga fallida"</string>
+    <string name="txt_new_friendAnfrageNotification">"%s quiere ser tu amigo"</string>
+    <string name="txt_new_friendShipIsTrueNotification">"Eres amigo de %s ahora."</string>
+    <string name="txt_new_friendAnfrageNotificationTitel">"Nueva solicitud de amistad"</string>
+    <string name="txt_new_friendAnfrageAccepted">"Nueva amiga"</string>
+    <string name="txt_senden_an">"Enviar a"</string>
+    <string name="txt_senden">"enviar"</string>
+
+    <!-- Scroll-Liste -->
+    <string name="txt_gerade">"justo"</string>
+    <string name="txt_sMinutes">"antes de %1$d min"</string>
+    <string name="txt_sHoursWithMinutes">"antes de %1$d std %2$s min"</string>
+    <string name="txt_sHoursSingle">"antes de %1$d std"</string>
+    <string name="txt_sWeeks">antes de %1$d W</string>
+    <string name="txt_sDays">antes de %1$d T</string>
+
+    <!-- Friends -->
+    <string name="txt_friends_Searching_person">"Búsqueda de personas"</string>
+    <string name="txt_friend_status_friendship">"Quitar como amigo"</string>
+    <string name="txt_friend_status_i_got_anfrage">"aceptar"</string>
+    <string name="txt_friend_status_anfrageVerschickt">"pedido"</string>
+    <string name="txt_friend_status_i_blocked">"compartir"</string>
+
+
+    <!--ShortiTexter-->
+    <string name="txt_inviteFriends">"Invitar amigos"</string>
+    <string name="txt_no_savedPostsPrivateGallerie">"Tus imágenes se muestran aquí."</string>
+
+    <!--Benutzer-->
+    <string name="txt_beitraegeAnzahl">"%s mensajes"</string>
+
+    <string name="txt_block_UserTitle">"bloque"</string>
+    <string name="txt_removeFriend_UserTitle">"¿Eliminar amigo?"</string>
+    <string name="txt_remove">"eliminar"</string>
+
+    <!--Kamera-->
+
+    <array name="array_select_eraseAll">
+        <item>Eigenen Bilder nur für Nutzer ausblenden(Bilder sind für den Nutzer wieder einsehbar
+            wenn er freigegeben wird).
+        </item>
+        <item>Eigenen Bilder löschen (Achtung deine Bilder werden unwiederruflich gelöscht).</item>
+    </array>
+
+    <!-- Posting -->
+    <string name="txt_beschreibung">"Descripción &#8230;"</string>
+    <string name="txt_title_top_person_posts">"amigos"</string>
+    <string name="txt_zuletzt">"pasado"</string>
+
+    <string name="txt_postPicture">"enviar"</string>
+
+    <!--Notifications-->
+    <string name="txt_noti_user_saved_your_postInPrivate">"%s guardó tu publicación."</string>
+
+    <!-- CHAT -->
+
+    <string name="txt_clear_Chat">"Eliminar el historial de chat"</string>
+
+
+    <string name="txt_chat_status_own_Opened">"Tiene tu post abierto"</string>
+    <string name="txt_chat_status_own_saved">"Guardado tu post"</string>
+    <string name="txt_chat_status_own_Senden">"Enviar &#8230;"</string>
+    <string name="txt_chat_status_own_Uploaded">"subido"</string>
+    <string name="txt_chat_status_own_sent">"enviado"</string>
+    <string name="txt_chat_status_own_message_failed_sending">"Mantenga presionado para ver más."</string>
+    <string name="txt_chat_status_own_chat_opened">"Mensaje abierto"</string>
+
+    <string name="txt_chat_status_new_message_text">"Nuevo mensaje"</string>
+    <string name="txt_chat_status_new_message_bild">"Nueva imagen"</string>
+    <string name="txt_chat_status_new_message_video">"Nuevo video"</string>
+    <string name="txt_IMAGE">"imagen"</string>
+    <string name="txt_VIDEO">"vídeo"</string>
+    <string name="txt_chat_status_partner_opened">"recibir"</string>
+
+
+    <string name="txt_chat_SHORT_Gespeichert">"conectado"</string>
+    <string name="txt_chat_SHORT_Gesehen">"visto"</string>
+    <string name="txt_chat_SHORT_Hochgeladen">"subido"</string>
+    <string name="txt_chat_SHORT_PartnerGespeichert">"%s guardado"</string>
+    <string name="txt_chat_SHORT_PartnerGesehen">"%s Abierto"</string>
+    <string name="txt_chat_SHORT_POINT">&#160;•&#160;</string>
+
+    <!-- LOCATION DATABASE -->
+
+    <string-array name="XX_Locations_Country">
+        <item>"Andorra"</item>
+        <item>"Emiratos Arabes Unidos"</item>
+        <item>"Afganistán"</item>
+        <item>"Antigua y Barbuda"</item>
+        <item>"anguilla"</item>
+        <item>"Albania"</item>
+        <item>"Armenia"</item>
+        <item>"Antillas Holandesas"</item>
+        <item>"Angola"</item>
+        <item>"Argentina"</item>
+        <item>"Austria"</item>
+        <item>"Australia"</item>
+        <item>"aruba"</item>
+        <item>"Azerbaiyán"</item>
+        <item>"Bosnia y Herzegovina"</item>
+        <item>"Barbados"</item>
+        <item>"Bangladesh"</item>
+        <item>"Bélgica"</item>
+        <item>"Burkina Faso"</item>
+        <item>"Bulgaria"</item>
+        <item>"bahrein"</item>
+        <item>"Burundi"</item>
+        <item>"Benin"</item>
+        <item>"Bermuda"</item>
+        <item>"Brunei Darussalam"</item>
+        <item>"Bolivia"</item>
+        <item>"Brasil"</item>
+        <item>"Bahamas"</item>
+        <item>"Bután"</item>
+        <item>"Botswana"</item>
+        <item>"bielorrusia"</item>
+        <item>"belice"</item>
+        <item>"Canadá"</item>
+        <item>"Islas Cocos (Keeling)"</item>
+        <item>"República Democrática del Congo"</item>
+        <item>"Republica centroafricana"</item>
+        <item>"Congo"</item>
+        <item>"Suiza"</item>
+        <item>"Costa de Marfil (Costa de Marfil)"</item>
+        <item>"Islas Cook"</item>
+        <item>"Chile"</item>
+        <item>"Camerún"</item>
+        <item>"China"</item>
+        <item>"Colombia"</item>
+        <item>"Costa rica"</item>
+        <item>"Cuba"</item>
+        <item>"Cabo Verde"</item>
+        <item>"Isla de navidad"</item>
+        <item>"Chipre"</item>
+        <item>"Republica checa"</item>
+        <item>"Alemania"</item>
+        <item>"Djibouti"</item>
+        <item>"Dinamarca"</item>
+        <item>"dominica"</item>
+        <item>"Republica dominicana"</item>
+        <item>"Argelia"</item>
+        <item>"Ecuador"</item>
+        <item>"Estonia"</item>
+        <item>"Egipto"</item>
+        <item>"Sahara Occidental"</item>
+        <item>"Eritrea"</item>
+        <item>"España"</item>
+        <item>"Etiopía"</item>
+        <item>"Finlandia"</item>
+        <item>"Fiji"</item>
+        <item>"Islas Malvinas (Islas Malvinas)"</item>
+        <item>"Estados federados de micronesia"</item>
+        <item>"Islas feroe"</item>
+        <item>"Francia"</item>
+        <item>"Gabón"</item>
+        <item>"Gran Bretaña (Reino Unido)"</item>
+        <item>"Granada"</item>
+        <item>"Georgia"</item>
+        <item>"Guayana Francesa"</item>
+        <item>"Guernsey"</item>
+        //Hier spiele ich
+        <item>"Ghana"</item>
+        <item>"Gibraltar"</item>
+        <item>"Groenlandia"</item>
+        <item>"Gambia"</item>
+        <item>"Guinea"</item>
+        <item>"guadalupe"</item>
+        <item>"Guinea ecuatorial"</item>
+        <item>"Grecia"</item>
+        <item>"S. Georgia y S. Sandwich Islands"</item>
+        <item>"Guatemala"</item>
+        <item>"Guinea-Bissau"</item>
+        <item>"Guayana"</item>
+        <item>"Hong Kong"</item>
+        <item>"Honduras"</item>
+        <item>"Croacia (Hrvatska)"</item>
+        <item>"Haití"</item>
+        <item>"Hungría"</item>
+        <item>"Indonesia"</item>
+        <item>"Irlanda"</item>
+        <item>"Israel"</item>
+        <item>"India"</item>
+        <item>"Irak"</item>
+        <item>"Irán"</item>
+        <item>"Islandia"</item>
+        <item>"Italia"</item>
+        <item>"Jamaica"</item>
+        <item>"Jordania"</item>
+        <item>"Japón"</item>
+        <item>"Kenia"</item>
+        <item>"Kirguizistán"</item>
+        <item>"Camboya"</item>
+        <item>"Kiribati"</item>
+        <item>"Comoras"</item>
+        <item>"San Cristóbal y Nieves"</item>
+        <item>"Corea (norte)"</item>
+        <item>"Corea del Sur"</item>
+        <item>"Kuwait"</item>
+        <item>"Islas caiman"</item>
+        <item>"Kazajstán"</item>
+        <item>"Laos"</item>
+        <item>"Líbano"</item>
+        <item>"Santa lucia"</item>
+        <item>"Liechtenstein"</item>
+        <item>"Sri Lanka"</item>
+        <item>"Liberia"</item>
+        <item>"Lesoto"</item>
+        <item>"Lituania"</item>
+        <item>"Luxemburgo"</item>
+        <item>"Letonia"</item>
+        <item>"Libia"</item>
+        <item>"Marruecos"</item>
+        <item>"Mónaco"</item>
+        <item>"moldavia"</item>
+        <item>"Madagascar"</item>
+        <item>"Islas Marshall"</item>
+        <item>"macedonia"</item>
+        <item>"mali"</item>
+        <item>"Myanmar"</item>
+        <item>"Mongolia"</item>
+        <item>"macao"</item>
+        <item>"Islas Marianas del Norte"</item>
+        <item>"Martinica"</item>
+        <item>"Mauritania"</item>
+        <item>"montserrat"</item>
+        <item>"Malta"</item>
+        <item>"Isla mauricio"</item>
+        <item>"Maldivas"</item>
+        <item>"Malawi"</item>
+        <item>"México"</item>
+        <item>"Malasia"</item>
+        <item>"Mozambique"</item>
+        <item>"Namibia"</item>
+        <item>"Nueva caledonia"</item>
+        <item>"Níger"</item>
+        <item>"Isla Norfolk"</item>
+        <item>"Nigeria"</item>
+        <item>"Nicaragua"</item>
+        <item>"Países Bajos"</item>
+        <item>"Noruega"</item>
+        <item>"Nepal"</item>
+        <item>"Nauru"</item>
+        <item>"Niue"</item>
+        <item>"Nueva Zelanda (Aotearoa)"</item>
+        <item>"Omán"</item>
+        <item>"Panamá"</item>
+        <item>"Perú"</item>
+        <item>"Polinesia francesa"</item>
+        <item>"Papua nueva guinea"</item>
+        <item>"Filipinas"</item>
+        <item>"Pakistán"</item>
+        <item>"Polonia"</item>
+        <item>"San Pedro y Miquelón"</item>
+        <item>"Pitcairn"</item>
+        <item>"Territorio palestino"</item>
+        <item>"Portugal"</item>
+        <item>"Palau"</item>
+        <item>"Paraguay"</item>
+        <item>"Katar"</item>
+        <item>"reunión"</item>
+        <item>"Rumania"</item>
+        <item>"Federación Rusa"</item>
+        <item>"Ruanda"</item>
+        <item>"Arabia Saudita"</item>
+        <item>"Islas de solomon"</item>
+        <item>"seychelles"</item>
+        <item>"Sudán"</item>
+        <item>"Suecia"</item>
+        <item>"Singapur"</item>
+        <item>"Santa helena"</item>
+        <item>"Eslovenia"</item>
+        <item>"Svalbard y Jan Mayen"</item>
+        <item>"Eslovaquia"</item>
+        <item>"Sierra leona"</item>
+        <item>"San Marino"</item>
+        <item>"Senegal"</item>
+        <item>"Somalia"</item>
+        <item>"Surinam"</item>
+        <item>"Santo Tomé y Príncipe"</item>
+        <item>"El salvador"</item>
+        <item>"Siria"</item>
+        <item>"suazilandia"</item>
+        <item>"Islas Turcas y Caicos"</item>
+        <item>"Chad"</item>
+        <item>"Territorios franceses del sur"</item>
+        <item>"Togo"</item>
+        <item>"Tailandia"</item>
+        <item>"Tayikistán"</item>
+        <item>"Tokelau"</item>
+        <item>"Turkmenistán"</item>
+        <item>"Túnez"</item>
+        <item>"Tonga"</item>
+        <item>"pavo"</item>
+        <item>"Trinidad y tobago"</item>
+        <item>"Tuvalu"</item>
+        <item>"Taiwán"</item>
+        <item>"Tanzania"</item>
+        <item>"Ucrania"</item>
+        <item>"Uganda"</item>
+        <item>"Uruguay"</item>
+        <item>"Uzbekistán"</item>
+        <item>"San Vicente y las Granadinas"</item>
+        <item>"Venezuela"</item>
+        <item>"Islas Vírgenes (británicas)"</item>
+        <item>"Islas Vírgenes (EE.UU.)"</item>
+        <item>"Viet Nam"</item>
+        <item>"Vanuatu"</item>
+        <item>"Wallis y Futuna"</item>
+        <item>"Samoa"</item>
+        <item>"Yemen"</item>
+        <item>"Mayotte"</item>
+        <item>"Sudáfrica"</item>
+        <item>"Zambia"</item>
+        <item>"Zaire (ex)"</item>
+        <item>"Zimbabue"</item>
+        <item>"Estados unidos de america"</item>
+    </string-array>
+
+
+    <string-array name="XX_Locations_CountryID">
+        <item>"AD"</item>
+        <item>"AE"</item>
+        <item>"AF"</item>
+        <item>"AG"</item>
+        <item>"AI"</item>
+        <item>"Alabama"</item>
+        <item>"AM"</item>
+        <item>"A"</item>
+        <item>"AO"</item>
+        <item>"Arkansas"</item>
+        <item>"AT"</item>
+        <item>"AU"</item>
+        <item>"AW"</item>
+        <item>"Arizona"</item>
+        <item>"BA"</item>
+        <item>"BB"</item>
+        <item>"BD"</item>
+        <item>"SER"</item>
+        <item>"BF"</item>
+        <item>"BG"</item>
+        <item>"sostén"</item>
+        <item>"BI"</item>
+        <item>"BJ"</item>
+        <item>"BM"</item>
+        <item>"BN"</item>
+        <item>"BO"</item>
+        <item>"BR"</item>
+        <item>"BS"</item>
+        <item>"BT"</item>
+        <item>"BW"</item>
+        <item>"POR"</item>
+        <item>"BZ"</item>
+        <item>"California"</item>
+        <item>"CC"</item>
+        <item>"CD"</item>
+        <item>"CF"</item>
+        <item>"CG"</item>
+        <item>"CH"</item>
+        <item>"CI"</item>
+        <item>"CK"</item>
+        <item>"CL"</item>
+        <item>"CM"</item>
+        <item>"CN"</item>
+        <item>"Colorado"</item>
+        <item>"CR"</item>
+        <item>"CU"</item>
+        <item>"CV"</item>
+        <item>"CX"</item>
+        <item>"CY"</item>
+        <item>"CZ"</item>
+        <item>"DE"</item>
+        <item>"DJ"</item>
+        <item>"DK"</item>
+        <item>"DM"</item>
+        <item>"DO"</item>
+        <item>"DZ"</item>
+        <item>"CE"</item>
+        <item>"EE"</item>
+        <item>"CE"</item>
+        <item>"EH"</item>
+        <item>"ER"</item>
+        <item>"ES"</item>
+        <item>"ET"</item>
+        <item>"FI"</item>
+        <item>"FJ"</item>
+        <item>"FK"</item>
+        <item>"FM"</item>
+        <item>"FO"</item>
+        <item>"FR"</item>
+        <item>"Georgia"</item>
+        <item>"GB"</item>
+        <item>"DG"</item>
+        <item>"GE"</item>
+        <item>"GF"</item>
+        <item>"GG"</item>
+        <item>"GH"</item>
+        <item>"GI"</item>
+        <item>"GL"</item>
+        <item>"GM"</item>
+        <item>"GN"</item>
+        <item>"GP"</item>
+        <item>"GQ"</item>
+        <item>"GR"</item>
+        <item>"GS"</item>
+        <item>"GT"</item>
+        <item>"GW"</item>
+        <item>"GY"</item>
+        <item>"HK"</item>
+        <item>"HN"</item>
+        <item>"HR"</item>
+        <item>"HT"</item>
+        <item>"HU"</item>
+        <item>"identificación"</item>
+        <item>"IE"</item>
+        <item>"Illinois"</item>
+        <item>"EN"</item>
+        <item>"IQ"</item>
+        <item>"IR"</item>
+        <item>"ES"</item>
+        <item>"informática"</item>
+        <item>"JM"</item>
+        <item>"JO"</item>
+        <item>"JP"</item>
+        <item>"KE"</item>
+        <item>"KG"</item>
+        <item>"KH"</item>
+        <item>"KI"</item>
+        <item>"KM"</item>
+        <item>"KN"</item>
+        <item>"KP"</item>
+        <item>"KR"</item>
+        <item>"KW"</item>
+        <item>"Kentucky"</item>
+        <item>"campo de concentración"</item>
+        <item>"Los Ángeles"</item>
+        <item>"LB"</item>
+        <item>"LC"</item>
+        <item>"LI"</item>
+        <item>"LK"</item>
+        <item>"LR"</item>
+        <item>"LS"</item>
+        <item>"LT"</item>
+        <item>"LU"</item>
+        <item>"LV"</item>
+        <item>"LY"</item>
+        <item>"Massachusetts"</item>
+        <item>"MC"</item>
+        <item>"Maryland"</item>
+        <item>"MG"</item>
+        <item>"MH"</item>
+        <item>"MK"</item>
+        <item>"ML"</item>
+        <item>"MM"</item>
+        <item>"Minnesota"</item>
+        <item>"MO"</item>
+        <item>"MP"</item>
+        <item>"MQ"</item>
+        <item>"MR"</item>
+        <item>"EM"</item>
+        <item>"Montana"</item>
+        <item>"MU"</item>
+        <item>"MV"</item>
+        <item>"MW"</item>
+        <item>"MX"</item>
+        <item>"MI"</item>
+        <item>"MZ"</item>
+        <item>"NA"</item>
+        <item>"Carolina del Norte"</item>
+        <item>"Nebraska"</item>
+        <item>"NF"</item>
+        <item>"GN"</item>
+        <item>"NI"</item>
+        <item>"NL"</item>
+        <item>"NO"</item>
+        <item>"NP"</item>
+        <item>"NR"</item>
+        <item>"NU"</item>
+        <item>"Nueva Zelanda"</item>
+        <item>"OM"</item>
+        <item>"Pensilvania"</item>
+        <item>"PE"</item>
+        <item>"PF"</item>
+        <item>"PG"</item>
+        <item>"PH"</item>
+        <item>"PK"</item>
+        <item>"PL"</item>
+        <item>"primer ministro"</item>
+        <item>"PN"</item>
+        <item>"PS"</item>
+        <item>"PT"</item>
+        <item>"PW"</item>
+        <item>"PY"</item>
+        <item>"QA"</item>
+        <item>"RE"</item>
+        <item>"RO"</item>
+        <item>"RU"</item>
+        <item>"RW"</item>
+        <item>"SA"</item>
+        <item>"SB"</item>
+        <item>"SC"</item>
+        <item>"SD"</item>
+        <item>"SE"</item>
+        <item>"SG"</item>
+        <item>"SH"</item>
+        <item>"SI"</item>
+        <item>"SJ"</item>
+        <item>"SK"</item>
+        <item>"SL"</item>
+        <item>"SM"</item>
+        <item>"SN"</item>
+        <item>"SO"</item>
+        <item>"SR"</item>
+        <item>"ST"</item>
+        <item>"SV"</item>
+        <item>"SY"</item>
+        <item>"SZ"</item>
+        <item>"TC"</item>
+        <item>"TD"</item>
+        <item>"TF"</item>
+        <item>"TG"</item>
+        <item>"TH"</item>
+        <item>"TJ"</item>
+        <item>"TK"</item>
+        <item>"TM"</item>
+        <item>"TN"</item>
+        <item>"A"</item>
+        <item>"TR"</item>
+        <item>"TT"</item>
+        <item>"TV"</item>
+        <item>"TW"</item>
+        <item>"TZ"</item>
+        <item>"UA"</item>
+        <item>"UG"</item>
+        <item>"UY"</item>
+        <item>"UZ"</item>
+        <item>"VC"</item>
+        <item>"VE"</item>
+        <item>"VG"</item>
+        <item>"VI"</item>
+        <item>"VN"</item>
+        <item>"VU"</item>
+        <item>"WF"</item>
+        <item>"WS"</item>
+        <item>"YE"</item>
+        <item>"YT"</item>
+        <item>"ZA"</item>
+        <item>"ZM"</item>
+        <item>"ZR"</item>
+        <item>"ZW"</item>
+        <item>"EE.UU."</item>
+    </string-array>
+
+    <string name="txt_gruppen">"grupos"</string>
+    <string name="XX_txt_share_own_app">"https://play.google.com/store/apps/details?id=esaph.spotlight"</string>
+    <string name="txt_newMessageCount">"%s nuevos mensajes"</string>
+    <string name="txt_still_working">"Sigo trabajando &#8230;"</string>
+
+    <string name="txt_no_chats_info">"Aún no tienes amigos."</string>
+    <string name="txt_no_saved_pics">"Sus imágenes guardadas se mostrarán aquí"</string>
+
+    <string name="txt_days_ago">"Hace %d días"</string>
+    <string name="txt_weeks_ago">"Hace %d semanas"</string>
+    <string name="txt_take_pic">"Tomar una foto"</string>
+    <string name="txt_smileys_not_allowed">"Emojis no están permitidos."</string>
+    <string name="txt_delete">"borrar"</string>
+    <string name="txt_blocked_info_dialog">"Toca arriba para acceder a tus fotos"</string>
+    <string name="txt_createAccount">"Nueva actualización: crea una cuenta y pruébala: D"</string>
+
+
+    <string name="txt_rules_accept">"Acepto"</string>
+    <string name="txt_register_lawandorder_DIALOG">"Al presionar \"Acepto\", está aceptando nuestros Términos de uso y nuestra Política de privacidad. Descargo de responsabilidad incl."</string>
+    <string name="txt_unsave_warning">"Han pasado 24 horas, la contribución se elimina cuando la guarda."</string>
+    <string name="txt_bildFreigeben">"compartir"</string>
+    <string name="txt_bildEntspeichern">"Entspeichern"</string>
+    <string name="txt_Speichern">"guardar"</string>
+    <string name="txt_ImageNotOpened">"La publicación aún no ha sido abierta por el usuario."</string>
+    <string name="txt_chat_information_write_user">"Comience la conversación con %s"</string>
+    <string name="txt_really_remove">"¿Realmente eliminar?"</string>
+    <string name="txt_berechtigungenFreigebenCameraSperre">"No asignó permisos de SpotLight a la cámara."</string>
+    <string name="txt_requestPermissions">"Desbloquear permisos"</string>
+    <string name="txt_no_hashtags_set">"Aún no has creado ningún hashtags."</string>
+    <string name="txt_choose_hashtag">"Elige un hashtag"</string>
+    <string name="txt_createFirstHashtag">"Crear un hashtag"</string>
+    <string name="txt_hashtTagChar">"# %s"</string>
+    <string name="txt_welcome_dummy_login">"bienvenida"</string>
+    <string name="txt_draw">"dibujar"</string>
+    <string name="txt_hashtag">"hashtag"</string>
+    <string name="txtUserTypingTrippleDot">Escribe&#8230;</string>
+    <string name="txt_NEW">"nuevo"</string>
+    <string name="txt_alert_noMomentsTodayWithTitle">"Fotos de hoy"</string>
+    <string name="txt_alert_noMomentsTodayWithDetails">"Envía la primera foto a %s"</string>
+    <string name="txt_tap_to_invite">"Toca para invitar a tu amigo."</string>
+    <string name="txt_text">"texto"</string>
+    <string name="txt_tab_to_edit">"Toque para escribir"</string>
+    <string name="txt_emojie">"Emojie"</string>
+    <string name="txt_filter">"filtro"</string>
+    <string name="txt_undo">"deshacer"</string>
+    <string name="txt_saveSticker">"Guardar etiqueta"</string>
+    <string name="txt_sticker">"etiqueta engomada"</string>
+    <string name="txt_no_stickerpacks_created">"Crea tu primera pegatina"</string>
+    <string name="txt_write_new_StickerPackNameEdittextHint">"Busca, o escribe para crear un paquete de pegatinas."</string>
+    <string name="txt_ups">"Vaya"</string>
+    <string name="txt_save_all">"Guardar todo"</string>
+    <string name="txt_nothing_new">"No hay noticias"</string>
+    <string name="txt_lifecloud">LifeCloud</string>
+
+    <string-array name="arrayInfoStatesForChatPartner">
+        <item>"%s tiene su %s salvado"</item>
+        <item>"%s tiene su %s eliminado"</item>
+        <item>"%s borró algo"</item>
+        <item>"%s %s compartió a %s"</item>
+        <item>"%s %s sacó su %s"</item>
+    </string-array>
+
+    <string-array name="arrayRegisterGeschlecht">
+        <item>"masculino"</item>
+        <item>"femenino"</item>
+    </string-array>
+
+    <string name="txt_invite">"invitar"</string>
+    <string name="txt_gesichert">"asegurado"</string>
+    <string name="txt_lifecloud_your_postings">"Tu copia de seguridad"</string>
+    <string name="txt_something_went_wrong">"Algo salió mal"</string>
+    <string name="txt_chat_status_partner_allowed">"Ha hecho algo visible de nuevo."</string>
+    <string name="txt_chat_status_partner_disallowed">"Algo desaparecio"</string>
+    <string name="txt_share">"cuota"</string>
+    <string name="txt_edit">"editar"</string>
+    <string name="txt_effect">"efectos"</string>
+    <string name="txt_distance">"distancia"</string>
+    <string name="txt_laenge">"longitud"</string>
+    <string name="txt_your_hashtags">"Tus hashtags"</string>
+    <string name="txt_insgesamt">"Total %s"</string>
+    <string name="txt_choose_storage_size">"Elija la cantidad de espacio que desea que tenga disponible SpotLight"</string>
+    <string name="txt_storage_usage">"uso de la memoria"</string>
+    <string name="txt_momentsYourPictureWillDisplayHereToday">"Tus imágenes se muestran aquí, guarda tu primera foto"</string>
+    <string name="txt_sorted_by_day">"Agrupados por dias"</string>
+    <string name="txt_YouHashtagsWillDisplayHere">"Tus hashtags se mostrarán aquí."</string>
+    <string name="txt_allMoments">"Todos los momentos"</string>
+    <string name="txt_show_all">"Mostrar todo"</string>
+    <string name="txt_lifecloud_hereFind">Aquí puedes encontrar tus aportaciones aseguradas</string>
+    <string name="txt_gestern">Ayer</string>
+    <string name="txt_heute">Hoy</string>
+
+    <plurals name="txtSentToPersons">
+        <item quantity="one">Enviado a un amigo</item>
+        <item quantity="other">Enviado a los amigos de %s</item>
+    </plurals>
+
+    <plurals name="txtBeitragCount">
+        <item quantity="one">Un post con este hashtag</item>
+        <item quantity="other">%s mensajes usando este hashtag</item>
+    </plurals>
+
+    <string name="crop_image_menu_rotate_left">Rotar a la izquierda</string>
+    <string name="crop_image_menu_rotate_right">Rotar a la derecha</string>
+    <string name="crop_image_menu_crop">Cortar</string>
+    <string name="crop_image_menu_flip">Dar la vuelta</string>
+    <string name="crop_image_menu_flip_horizontally">Voltear horizontalmente</string>
+    <string name="crop_image_menu_flip_vertically">Voltear verticalmente</string>
+    <string name="pick_image_intent_chooser_title">Seleccionar fuente</string>
+    <string name="crop_image_activity_no_permissions">Cancelando, los permisos requeridos no han sido otorgados</string>
+
+    <string name="txt_with">mito</string>
+    <string name="txt_hintSearchForLifeCloud">Busca tu LifeCloud</string>
+    <string name="txt_back">espalda</string>
+    <string name="txt_hintSearchForSeason">Buscar la temporada</string>
+    <string name="txt_AlsoRegistred">Ya estoy registrado</string>
+    <string name="txt_SpotLightSkipButtonTutorial" >¿No quieres registrarte? Le ofrecemos la oportunidad de probar la aplicación sin tener que registrarse. :)</string>
+    <string name="txt_at_placeholder">\@%s</string>
+
+
+    <string name="txt_TutTakePicAndVid">"Presione una vez para tomar una foto, deténgase para grabar un video."</string>
+    <string name="txt_person">"persona"</string>
+    <string name="txt_message">"mensaje"</string>
+    <string name="txt_tab_to_record">"Toque para iniciar la grabación. Toque de nuevo para detener la grabación"</string>
+    <string name="txt_speek_somethink">"Dime algo"</string>
+    <string name="txt_tell_somethingAboutYou">"Cuentame algo de ti"</string>
+    <string name="txt_text_normal">"normalmente"</string>
+    <string name="txt_text_bold">"grasa"</string>
+    <string name="txt_text_cursiv">"itálico"</string>
+    <string name="txt_shaderGlow">"brillar"</string>
+    <string name="txt_shaderPoints">"puntos"</string>
+    <string name="txt_no_effects">"Sin efecto"</string>
+    <string name="txt_camera_effect_normal">"sin"</string>
+    <string name="txt_tab_to_choose">"Toque para seleccionar un emoticono"</string>
+    <string name="txt_camera_effect_sticker_hunt">"cara Hunter"</string>
+    <string name="txt_alertDbPositiveButtonTryAgain">"Inténtalo de nuevo"</string>
+    <string name="txt_text_placeholder">Texto</string>
+    <string name="txt_done">"hecho"</string>
+    <string name="txt_tap_to_create">"Toque para crear"</string>
+    <string name="txt_title_find_new_friends">"Encontrar amigos"</string>
+    <string name="txt_friend_status_follow_too">"También seguir"</string>
+    <string name="txt_friend_status_unfollow">"No seguir mas"</string>
+    <string name="txt_friend_status_follow">"seguir"</string>
+
+    <string name="txt_chat_status_message_text">"mensaje"</string>
+    <string name="txt_chat_status_message_audio">"Mensaje de audio"</string>
+    <string name="txt_chat_status_message_sticker">"etiqueta engomada"</string>
+    <string name="txt_chat_status_message_emojie">"Emojie"</string>
+    <string name="txt_chat_status_message_bild">"imagen"</string>
+    <string name="txt_chat_status_message_video">"vídeo"</string>
+    <string name="txt_chat_status_new_message_audio">"Nuevo mensaje de audio"</string>
+    <string name="txt_chat_status_new_message_sticker">"Nuevas pegatinas"</string>
+    <string name="txt_chat_status_new_message_emojie">"Nueva Emojie"</string>
+    <string name="txt_profilanzeigen" >Ver perfil</string>
+    <string name="txt_privateChatTutorialExpandTextualEditor" >Tire hacia arriba con el dedo para abrir el editor</string>
+    <string name="txt_profilbild" >Imagen de perfil</string>
+    <string name="txt_profilbild_aendern" >Cambiar la foto de perfil</string>
+    <string name="txt_profilbild_entfernen" >Eliminar foto de perfil</string>
+    <string name="txt_dialog_send_info_state_senden">Enviar</string>
+    <string name="txt_dialog_send_info_state_gesendet">Enviado</string>
+    <string name="txt_loginOrRegister">Iniciar sesión o Registrarse</string>
+    <string name="txt_tryApp">Primer intento solamente</string>
+    <string name="txt_dont_wanna_share">No, no quiero compartir eso.😞</string>
+
+
+    <string name="txt_share_big_text">¡Se te pregunta! Apóyanos si te gusta y comparte tu diversión con tus amigos. Nos alegraría si recomendara Spotlight a alguien. :)</string>
+    <string name="txt_yes_with_pleasure">Sí, con mucho gusto!😎</string>
+    <string name="txt_overlay_filter">Overlay</string>
+    <string name="txt_notification_not_uploaded_yet">Algunas fotos no fueron subidas</string>
+    <string name="txt_do_not_show_again">No mostrar mas</string>
+    <string name="txt_dragUp">Tirar hacia arriba</string>
+    <string name="txt_new_faces">New Faces</string>
+
+
+</resources>

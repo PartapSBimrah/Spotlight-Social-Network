@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_margin="25dp"
+    android:padding="20dp"
+    android:background="@drawable/background_rounded_dialog"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:id="@+id/textViewEsaphDialogTitle"
+        android:text="Title"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/textViewEsaphDialogTitle"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:id="@+id/textViewEsaphDialogDetails"
+        android:text="Details"
+        android:textColor="@color/colorBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

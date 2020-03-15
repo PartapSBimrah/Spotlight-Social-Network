@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:padding="3dp">
+
+    <ImageView
+        android:layout_gravity="center"
+        android:scaleType="center"
+        android:id="@+id/imageViewFaceHunterPreview"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <TextView
+        android:stateListAnimator="@animator/bubble_button_animation"
+        android:padding="6dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/background_rounded_white"
+        android:text="@string/txt_saveSticker"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="@color/colorBlack"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/textViewFaceHunterPreviewAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

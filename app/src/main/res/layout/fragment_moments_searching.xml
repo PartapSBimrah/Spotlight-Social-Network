@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="8dp"
+    android:paddingEnd="8dp"
+    android:paddingLeft="8dp"
+    android:paddingStart="8dp"
+    android:background="@color/colorWhite"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".navigation.spotlight.Moments.MomentSearching.MomentsSearchingFragment">
+
+    <RelativeLayout
+        android:id="@+id/relativLayoutMomentsSearchingTop"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/imageViewStopSearching"
+            android:layout_toStartOf="@+id/imageViewStopSearching"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textCursorDrawable="@null"
+            android:layout_marginTop="8dp"
+            android:drawablePadding="8dp"
+            android:drawableLeft="@drawable/ic_search_edittext"
+            android:drawableStart="@drawable/ic_search_edittext"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:hint="@string/txt_search"
+            android:textColorHint="#A7A7A7"
+            android:textColor="@color/colorBlack"
+            android:background="@drawable/edittext_rounded_search_swipeview"
+            android:id="@+id/editTextSearchingMoments"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:tint="#000000"
+            android:background="@drawable/background_chat_icons"
+            app:srcCompat="@drawable/ic_remove_close"
+            android:id="@+id/imageViewStopSearching"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:padding="8dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/relativLayoutMomentsSearchingTop"
+        android:id="@+id/recyclerViewMomentsSearching"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/linearLayoutNoSearchResults"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:tint="#DBDBDB"
+            app:srcCompat="@drawable/ic_search_chats"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#B9B9B9"
+            android:text="@string/txt_searchStatus_KeinErgebniss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".navigation.spotlight.Moments.SortingFragment.InternGallery.InternGalleryFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:clipToPadding="false"
+        android:fitsSystemWindows="true"
+        android:id="@+id/momentsMainRecylerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animationCache="false"
+        android:background="@drawable/viewpager_main_background"
+        android:scrollingCache="false"
+        android:smoothScrollbar="true">
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

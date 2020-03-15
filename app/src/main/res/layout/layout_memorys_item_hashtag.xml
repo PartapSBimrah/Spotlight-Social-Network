@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rootViewMemorysItemHashtag"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="6dp"
+        app:cardElevation="3dp"
+        app:cardCornerRadius="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/imageViewMemoryItemCollectionImage"
+                android:scaleType="centerCrop"
+                android:layout_height="200dp"
+                android:layout_width="150dp"
+                app:riv_corner_radius_top_left="6dip"
+                app:riv_corner_radius_top_right="6dip"
+                app:riv_corner_radius_bottom_right="6dip"
+                app:riv_corner_radius_bottom_left="6dip" />
+
+            <ProgressBar
+                android:layout_margin="20dp"
+                android:layout_alignBottom="@+id/imageViewMemoryItemCollectionImage"
+                android:layout_alignTop="@+id/imageViewMemoryItemCollectionImage"
+                android:layout_alignRight="@+id/imageViewMemoryItemCollectionImage"
+                android:layout_alignStart="@+id/imageViewMemoryItemCollectionImage"
+                android:layout_alignLeft="@+id/imageViewMemoryItemCollectionImage"
+                android:layout_alignEnd="@+id/imageViewMemoryItemCollectionImage"
+                android:visibility="gone"
+                android:id="@+id/progressBarSmallViewLoading"
+                android:progressDrawable="@drawable/esaph_progressbar_light"
+                android:indeterminate="false"
+                android:background="@drawable/esaph_progressbar_light_background"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+            <TextView
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:maxWidth="150dp"
+                android:layout_margin="6dp"
+                android:layout_below="@+id/imageViewMemoryItemCollectionImage"
+                android:textStyle="bold"
+                android:gravity="start"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewHashtagNameMemorys" />
+
+            <TextView
+                android:layout_alignLeft="@+id/textViewHashtagNameMemorys"
+                android:layout_alignStart="@+id/textViewHashtagNameMemorys"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:maxWidth="150dp"
+                android:layout_below="@+id/textViewHashtagNameMemorys"
+                android:textSize="15sp"
+                android:id="@+id/textViewHashtagAnzahl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

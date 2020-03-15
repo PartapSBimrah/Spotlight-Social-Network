@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<esaph.spotlight.Esaph.EsaphDragable.EsaphDragingUpLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    android:layout_margin="6dp"
+    android:padding="10dp"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="80dp"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <View
+        android:id="@+id/dividerViewShowCanDrag"
+        android:layout_gravity="center"
+        android:background="@drawable/background_esaph_bottom_drag_line"
+        android:layout_width="100dp"
+        android:layout_height="3dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutOptionsSpotLightChangeAlpha"
+        android:orientation="vertical"
+        android:background="@drawable/background_big_view_trigger"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/topViewSpotLightOptions"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <esaph.spotlight.Esaph.EsaphCircleImageView.EsaphCircleImageView
+                android:id="@+id/imageViewTop"
+                android:layout_centerInParent="true"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+            <ProgressBar
+                android:layout_marginRight="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                android:id="@+id/progressBarSmallViewLoading"
+                android:progressDrawable="@drawable/esaph_progressbar_light"
+                android:indeterminate="false"
+                android:background="@drawable/esaph_progressbar_light_background"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/textViewBelowImage"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/imageViewTop"
+                android:textSize="18sp"
+                android:textColor="@color/colorBlack"
+                android:text="Subrim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutSpotLightOptionsMiddle"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:id="@+id/textViewHashtags"
+                android:textColor="@color/colorGrey"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content" />
+
+            <com.borjabravo.readmoretextview.ReadMoreTextView
+                android:paddingRight="6dp"
+                android:paddingEnd="6dp"
+                android:paddingStart="6dp"
+                android:paddingLeft="6dp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:id="@+id/textViewDesciption"
+                android:textSize="15sp"
+                app:trimLength="50"
+                app:trimMode="trimModeLength"
+                app:colorClickableText="@color/colorDarkerGrey"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textViewEditImage"
+                    android:layout_margin="6dp"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorDarkerGrey"
+                    android:text="@string/txt_edit"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textViewSharePost"
+                    android:layout_margin="6dp"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorDarkerGrey"
+                    android:text="@string/txt_share"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textViewDelete"
+                    android:layout_margin="6dp"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorDarkerGrey"
+                    android:text="@string/txt_delete"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:fitsSystemWindows="false"
+            android:id="@+id/relativLayoutBottomSpotLightOptions"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/textViewReceiverCount"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryChat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorGrey"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</esaph.spotlight.Esaph.EsaphDragable.EsaphDragingUpLayout>

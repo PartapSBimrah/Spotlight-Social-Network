@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".einstellungen.SpotLightStoragePreferences">
+
+    <esaph.spotlight.Esaph.EsaphCloudStorageOptionView.EsaphStorageCloudOptionsView
+        android:id="@+id/esaphBackUpView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </esaph.spotlight.Esaph.EsaphCloudStorageOptionView.EsaphStorageCloudOptionsView>
+
+    <View
+        android:layout_below="@+id/esaphBackUpView"
+        android:background="@color/colorGrey"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <TextView
+        android:textAlignment="center"
+        android:id="@+id/textInfo"
+        android:layout_marginTop="3dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorDarkerGrey"
+        android:textSize="16sp"
+        android:layout_below="@+id/esaphBackUpView"
+        android:text="@string/txt_choose_storage_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_below="@+id/textInfo"
+        android:textSize="30sp"
+        android:id="@+id/textViewCurrentChoosenMaxLimit"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <SeekBar
+        android:tickMarkTint="@color/colorBlack"
+        android:maxHeight="1.5dp"
+        android:layout_below="@+id/textViewCurrentChoosenMaxLimit"
+        android:id="@+id/seekBar"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="4"
+        android:progress="3"
+        android:progressDrawable="@drawable/seekbar_style"
+        android:thumb="@drawable/custom_thumb" />
+
+</RelativeLayout>

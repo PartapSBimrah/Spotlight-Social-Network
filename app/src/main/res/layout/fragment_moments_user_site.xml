@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".navigation.spotlight.Moments.MomentsViewAdapterUsers.FragmentUserSite.MomentsUserSite">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:fitsSystemWindows="true"
+        android:clipToPadding="true"
+        android:background="@color/colorWhite"
+        android:id="@+id/recylerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:fitsSystemWindows="true"
+        android:clipToPadding="true"
+        android:layout_marginTop="200dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:tint="@color/colorBlack"
+        app:srcCompat="@drawable/ic_camera"
+        android:id="@+id/nagivationGroupImageViewNoChats"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
+
+    <TextView
+        android:fitsSystemWindows="true"
+        android:clipToPadding="true"
+        android:layout_alignRight="@+id/nagivationGroupImageViewNoChats"
+        android:layout_alignEnd="@+id/nagivationGroupImageViewNoChats"
+        android:layout_alignLeft="@+id/nagivationGroupImageViewNoChats"
+        android:layout_alignStart="@+id/nagivationGroupImageViewNoChats"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/nagivationGroupImageViewNoChats"
+        android:visibility="gone"
+        android:padding="6dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="17sp"
+        android:text="@string/txt_no_savedPostsPrivateGallerie"
+        android:id="@+id/nagivationGroupTextViewNoChats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

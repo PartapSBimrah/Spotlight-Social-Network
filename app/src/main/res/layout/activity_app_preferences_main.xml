@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:fitsSystemWindows="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="esaph.spotlight.einstellungen.AppPreferencesMain">
+
+    <RelativeLayout
+        android:fitsSystemWindows="true"
+        android:id="@+id/awdawd"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="12dp">
+
+        <ImageView
+            android:stateListAnimator="@animator/bubble_button_animation"
+            android:fitsSystemWindows="true"
+            android:tint="@color/colorBlack"
+            android:layout_centerVertical="true"
+            android:id="@+id/imageViewPreferencesBack"
+            android:padding="10dp"
+            app:srcCompat="@drawable/ic_backward_arrow"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:fitsSystemWindows="true"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageViewPreferencesBack"
+            android:layout_toEndOf="@+id/imageViewPreferencesBack"
+            android:text="@string/txt_einstellungen"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:fitsSystemWindows="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shadow_line_top_to_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="2dp" />
+
+    </RelativeLayout>
+
+
+    
+    
+    <LinearLayout
+        android:layout_below="@+id/awdawd"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@+id/imageViewLifeCloud"
+                android:layout_toEndOf="@+id/imageViewLifeCloud"
+                android:textSize="18sp"
+                android:stateListAnimator="@animator/bubble_button_animation"
+                android:textColor="@color/colorBlack"
+                android:text="@string/txt_lifecloud"
+                android:layout_margin="6dp"
+                android:id="@+id/textViewSpotLightStorageOptions"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <ImageView
+                android:padding="6dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/imageViewLifeCloud"
+                android:tint="@color/colorBlack"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                app:srcCompat="@drawable/ic_spotlight_storage_options"
+                android:layout_width="45dp"
+                android:layout_height="45dp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@+id/imageViewImprint"
+                android:layout_toEndOf="@+id/imageViewImprint"
+                android:textSize="18sp"
+                android:stateListAnimator="@animator/bubble_button_animation"
+                android:textColor="@color/colorBlack"
+                android:text="@string/txt_impressum"
+                android:layout_margin="6dp"
+                android:id="@+id/textViewImpressum"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <ImageView
+                android:padding="6dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/imageViewImprint"
+                android:tint="@color/colorBlack"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                app:srcCompat="@drawable/ic_company_imprint"
+                android:layout_width="45dp"
+                android:layout_height="45dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@+id/imageViewDisclaimer"
+                android:layout_toEndOf="@+id/imageViewDisclaimer"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp"
+                android:stateListAnimator="@animator/bubble_button_animation"
+                android:text="@string/txt_login_haftungsausschluss"
+                android:layout_margin="6dp"
+                android:id="@+id/textViewHaftungsausschluss"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <ImageView
+                android:padding="6dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/imageViewDisclaimer"
+                android:tint="@color/colorBlack"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                app:srcCompat="@drawable/ic_disclaimer"
+                android:layout_width="45dp"
+                android:layout_height="45dp" />
+
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@+id/imageViewDataProtection"
+                android:layout_toEndOf="@+id/imageViewDataProtection"
+                android:stateListAnimator="@animator/bubble_button_animation"
+                android:textSize="18sp"
+                android:textColor="@color/colorBlack"
+                android:text="@string/txt_login_datenschutzerklarung"
+                android:layout_margin="6dp"
+                android:id="@+id/textViewDatenschutz"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <ImageView
+                android:padding="6dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/imageViewDataProtection"
+                android:tint="@color/colorBlack"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                app:srcCompat="@drawable/ic_data_protection"
+                android:layout_width="45dp"
+                android:layout_height="45dp" />
+
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@+id/imageViewSupport"
+                android:layout_toEndOf="@+id/imageViewSupport"
+                android:stateListAnimator="@animator/bubble_button_animation"
+                android:textSize="18sp"
+                android:textColor="@color/colorBlack"
+                android:text="@string/txt_Support"
+                android:layout_margin="6dp"
+                android:id="@+id/textViewSupport"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <ImageView
+                android:padding="6dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/imageViewSupport"
+                android:tint="@color/colorBlack"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                app:srcCompat="@drawable/ic_support"
+                android:layout_width="45dp"
+                android:layout_height="45dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@+id/imageViewSignOut"
+                android:layout_toEndOf="@+id/imageViewSignOut"
+                android:stateListAnimator="@animator/bubble_button_animation"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp"
+                android:text="@string/txt_login_Abmelden"
+                android:layout_margin="6dp"
+                android:id="@+id/textViewAusloggenOnClick"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <ImageView
+                android:padding="6dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/imageViewSignOut"
+                android:tint="@color/colorBlack"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                app:srcCompat="@drawable/ic_log_out"
+                android:layout_width="45dp"
+                android:layout_height="45dp" />
+
+        </RelativeLayout>
+
+        <View
+            android:background="#e1e1e1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:stateListAnimator="@animator/bubble_button_animation"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:text="@string/txt_AccountDelete"
+                android:layout_margin="6dp"
+                android:id="@+id/textViewAccountDeleteOnClick"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

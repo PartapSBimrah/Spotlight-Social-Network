@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/momentsMainRecylerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animationCache="false"
+        android:background="@drawable/viewpager_main_background"
+        android:scrollingCache="false"
+        android:smoothScrollbar="true">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <ImageView
+        android:layout_marginTop="130dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:tint="@color/colorBlack"
+        app:srcCompat="@drawable/ic_camera"
+        android:id="@+id/imageViewMomentsNoData"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
+
+    <TextView
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/imageViewMomentsNoData"
+        android:visibility="gone"
+        android:padding="6dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="17sp"
+        android:text="@string/txt_no_saved_pics"
+        android:id="@+id/textViewMomentsNoData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:stateListAnimator="@animator/bubble_button_animation"
+        android:paddingStart="45dp"
+        android:paddingLeft="45dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/textViewMomentsNoData"
+        android:layout_centerHorizontal="true"
+        android:padding="6dp"
+        android:textSize="17sp"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:text="@string/txt_take_pic"
+        android:background="@drawable/background_rounded_red"
+        android:id="@+id/nagivationGroupTextViewNoChats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/imageViewCameraIconNoData"
+        android:padding="6dp"
+        android:tint="@color/colorWhite"
+        app:srcCompat="@drawable/ic_camera"
+        android:layout_alignTop="@+id/nagivationGroupTextViewNoChats"
+        android:layout_alignBottom="@+id/nagivationGroupTextViewNoChats"
+        android:layout_alignLeft="@+id/nagivationGroupTextViewNoChats"
+        android:layout_alignStart="@+id/nagivationGroupTextViewNoChats"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:id="@+id/frameLayoutBigView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+
+</RelativeLayout>
