@@ -1,7 +1,20 @@
 # Spotlight-Social-Network
 SpotLight was supposed to be a social network, I started developing it when I was 16. I developed it about 3 Years, now I have stopped working and share the source code. I uploaded the server and app code, you can use it. A camera with face recognition and filters is also installed in the app. You can send pictures and videos and then save them.
 There is no Sql-Scheme file with in just code. I coded it so you can use some feature, for all Feature you need
-to host the Server:
+to host the Server.
+
+
+
+Server Projects:
+
+https://github.com/Esaph/SpotLight-PLServer
+https://github.com/Esaph/SpotLight-MSGServer
+https://github.com/Esaph/SpotLight-LCServer
+https://github.com/Esaph/SpotLight-LRServer
+https://github.com/Esaph/SpotLight-FServer
+https://github.com/Esaph/SpotLight-EsaphServerCrawler
+
+All this Server jars working
 
 
 
