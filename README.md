@@ -2,9 +2,10 @@
 <br><br>
 # Spotlight-Social-Network
 <br>
-SpotLight was supposed to be a social network, I started developing it when I was 16. I developed it about 3 Years, now I have stopped working and share the source code. I uploaded the server and app code. A camera with face recognition and filters is also installed in the app. You can send pictures and videos and then save them.
-There is no Sql-Scheme file with in just code. I coded it so you can use some feature, for all Feature you need
-to host the Server.
+SpotLight was supposed to be a social network, I started developing it complete alone when I was 16. I developed it about 3 Years, now I have stopped working and share the source code. I uploaded the server and app code. A camera with face recognition and filters is also installed in the app. You can send pictures and videos and then save them.
+
+<br><br>
+The database schema and the server structure, folder, system structure are not included. If you want to connect the app to the server, you have to build the database and folder structure yourself from the source code. I want to protect the project with this measure.
 
 
 PS: if(iAmSearchingAJob) System.out.println("Send me a mail if you have Work for me esaph.re@gmail.com);
