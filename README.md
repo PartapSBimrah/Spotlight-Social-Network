@@ -7,14 +7,15 @@ to host the Server.
 
 Server Projects:
 
-https://github.com/Esaph/SpotLight-PLServer
-https://github.com/Esaph/SpotLight-MSGServer
-https://github.com/Esaph/SpotLight-LCServer
-https://github.com/Esaph/SpotLight-LRServer
-https://github.com/Esaph/SpotLight-FServer
-https://github.com/Esaph/SpotLight-EsaphServerCrawler
+All server files work together. All jar files must be executed for the server to run.    
 
-All this Server jars working
+https://github.com/Esaph/SpotLight-PLServer 
+https://github.com/Esaph/SpotLight-MSGServer 
+https://github.com/Esaph/SpotLight-LCServer  
+https://github.com/Esaph/SpotLight-LRServer  
+https://github.com/Esaph/SpotLight-FServer  
+https://github.com/Esaph/SpotLight-EsaphServerCrawler  
+
 
 
 
