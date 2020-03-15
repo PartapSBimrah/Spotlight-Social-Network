@@ -1,3 +1,11 @@
+<!--
+  ~ /* Copyright (C) Esaph, Julian Auguscik - All Rights Reserved
+  ~  * Unauthorized copying of this file, via any medium is strictly prohibited
+  ~  * Proprietary and confidential
+  ~  * Written by Julian Auguscik <esaph.re@gmail.com>, March  2020
+  ~  */
+  -->
+
 <vector android:height="121dp" android:viewportHeight="420.8"
     android:viewportWidth="420.8" android:width="121dp" xmlns:android="http://schemas.android.com/apk/res/android">
     <path android:fillColor="@color/colorPrimaryChat" android:pathData="M406.8,96.4c-8.4,-8.8 -20,-14 -33.2,-14h-66.4v-0.8c0,-10 -4,-19.6 -10.8,-26c-6.8,-6.8 -16,-10.8 -26,-10.8h-120c-10.4,0 -19.6,4 -26.4,10.8c-6.8,6.8 -10.8,16 -10.8,26v0.8h-66c-13.2,0 -24.8,5.2 -33.2,14c-8.4,8.4 -14,20.4 -14,33.2v199.2C0,342 5.2,353.6 14,362c8.4,8.4 20.4,14 33.2,14h326.4c13.2,0 24.8,-5.2 33.2,-14c8.4,-8.4 14,-20.4 14,-33.2V129.6C420.8,116.4 415.6,104.8 406.8,96.4zM400,328.8h-0.4c0,7.2 -2.8,13.6 -7.6,18.4s-11.2,7.6 -18.4,7.6H47.2c-7.2,0 -13.6,-2.8 -18.4,-7.6c-4.8,-4.8 -7.6,-11.2 -7.6,-18.4V129.6c0,-7.2 2.8,-13.6 7.6,-18.4s11.2,-7.6 18.4,-7.6h77.2c6,0 10.8,-4.8 10.8,-10.8V81.2c0,-4.4 1.6,-8.4 4.4,-11.2s6.8,-4.4 11.2,-4.4h119.6c4.4,0 8.4,1.6 11.2,4.4c2.8,2.8 4.4,6.8 4.4,11.2v11.6c0,6 4.8,10.8 10.8,10.8H374c7.2,0 13.6,2.8 18.4,7.6s7.6,11.2 7.6,18.4V328.8z"/>

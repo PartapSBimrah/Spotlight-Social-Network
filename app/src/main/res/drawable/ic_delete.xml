@@ -1,3 +1,11 @@
+<!--
+  ~ /* Copyright (C) Esaph, Julian Auguscik - All Rights Reserved
+  ~  * Unauthorized copying of this file, via any medium is strictly prohibited
+  ~  * Proprietary and confidential
+  ~  * Written by Julian Auguscik <esaph.re@gmail.com>, March  2020
+  ~  */
+  -->
+
 <vector android:height="111dp" android:viewportHeight="511.89816"
     android:viewportWidth="511.0" android:width="111dp" xmlns:android="http://schemas.android.com/apk/res/android">
     <path android:fillColor="#FF000000" android:pathData="m235.1,145c13.8,-0 26.2,-8.3 31.5,-21.1 5.3,-12.8 2.4,-27.4 -7.4,-37.2 -13.5,-12.9 -34.8,-12.9 -48.3,0 -9.8,9.8 -12.7,24.4 -7.4,37.2 5.3,12.8 17.7,21.1 31.5,21.1zM223.1,98.8c4.3,-4.4 10.6,-6.2 16.6,-4.7 6,1.6 10.6,6.2 12.2,12.2 1.6,6 -0.2,12.3 -4.7,16.6 -6.8,6.4 -17.4,6.4 -24.1,0 -6.7,-6.7 -6.7,-17.5 0,-24.1zM223.1,98.8"/>
