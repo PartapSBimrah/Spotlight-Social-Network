@@ -1,4 +1,7 @@
+![app_logo](https://user-images.githubusercontent.com/61155778/76707834-d6cb7c00-66f2-11ea-85a9-133fcd67229d.png)
+<br><br>
 # Spotlight-Social-Network
+<br>
 SpotLight was supposed to be a social network, I started developing it when I was 16. I developed it about 3 Years, now I have stopped working and share the source code. I uploaded the server and app code. A camera with face recognition and filters is also installed in the app. You can send pictures and videos and then save them.
 There is no Sql-Scheme file with in just code. I coded it so you can use some feature, for all Feature you need
 to host the Server.
