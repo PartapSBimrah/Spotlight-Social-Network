@@ -1,4 +1,4 @@
-![app_logo](https://user-images.githubusercontent.com/61155778/76707834-d6cb7c00-66f2-11ea-85a9-133fcd67229d.png)
+![app_logo(1)](https://user-images.githubusercontent.com/61155778/76707868-067a8400-66f3-11ea-9e58-51f4d611bf3c.png)
 <br><br>
 # Spotlight-Social-Network
 <br>
